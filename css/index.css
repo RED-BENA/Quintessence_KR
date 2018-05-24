@@ -131,8 +131,16 @@
 /* Navigation bar */
 
 .nav {
+  width: 100%;
   height: 50px;
   background-color: #1B62AB;
+}
+
+.nav.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .nav__hamburger-menu {
@@ -140,6 +148,7 @@
   height: 50px;
   background-color: #2b4987;
   float: left;
+  cursor: pointer;
 }
 
 .nav__hamburger-menu:hover a {
@@ -211,6 +220,87 @@
   letter-spacing: -1px;
 }
 
+/* Category */
+
+.category {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #2b4987;
+  padding: 8px 4px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 9999;
+}
+
+.category.open {
+  display: block;
+}
+
+.category:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.category__container {
+  font-size: 14px;
+  border-right: 1px solid #E2E8EB;
+  padding: 0 4px;
+  float: left;
+}
+
+.category__container:last-child {
+  border: 0;
+}
+
+.category__title {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #394685;
+  padding: 5px;
+}
+
+.category__list {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.category__list.large {
+  width: 400px;
+}
+
+.category__list.large:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.category__list li {
+  margin-bottom: 10px;
+}
+
+.category__list.large li {
+  width: 50%;
+  float: left;
+}
+
+.category__list li:hover {
+  text-decoration: underline;
+}
+
+.category__list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.category--large__list li:hover a {
+  color: #fff;
+}
+
 /* Banner */
 
 .banner {
@@ -259,6 +349,10 @@
   left: 0;
 }
 
+.banner .bx-wrapper .bx-controls-direction a {
+  z-index: 9998;
+}
+
 /* New Book */
 
 .new-book__container, .best-seller__container {
@@ -275,9 +369,14 @@
   background-color: #fff;
   border: 1px solid #e9e9e9;
   padding: 20px;
+  overflow: hidden;
 }
 
-.book__list:after {
+.book__list ul {
+  width: 1500px;
+}
+
+.book__list ul:after {
   display: block;
   content: '';
   clear: both;
@@ -290,7 +389,7 @@
   float: left;
 }
 
-.book__list li:nth-child(5n) {
+.book__list li:last-child {
   margin-right: 0;
 }
 
