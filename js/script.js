@@ -9,6 +9,8 @@ $(document).ready(function() {
 
   $('.js-nav__hamburger-menu').hover(function() {
     $('.js-category').addClass('open');
+  }, function() {
+    $('.js-category').removeClass('open');
   });
 
   $('.js-nav__hamburger-menu').click(function() {

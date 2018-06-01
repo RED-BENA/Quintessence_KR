@@ -133,7 +133,9 @@
 .nav {
   width: 100%;
   height: 50px;
-  background-color: #1B62AB;
+  background-color: #fff;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #585858;
 }
 
 .nav.over {
@@ -144,80 +146,94 @@
 }
 
 .nav__hamburger-menu {
-  width: 50px;
+  width: 170px;
   height: 50px;
   background-color: #2b4987;
   float: left;
   cursor: pointer;
 }
 
-.nav__hamburger-menu:hover a {
+.nav__hamburger-menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav__hamburger__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__hamburger-menu__icon {
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/hamburger.png) no-repeat;
+  background-size: 20px 17px;
+  background-position: center center;
+  float: left;
+}
+
+.nav__hamburger-menu:hover .nav__hamburger-menu__icon {
   background-image: url(../images/close.png);
   background-size: 20px 20px;
 }
 
-.nav__hamburger-menu a {
+.nav__hamburger-menu__text {
   display: block;
-  text-indent: -9999px;
-  width: 100%;
-  height: 100%;
-  background: url(../images/hamburger.png) no-repeat;
-  background-size: 20px 17px;
-  background-position: center center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 15px;
+  float: left;
 }
 
-/* Navigation menu - Left */
+/* .nav__hamburger-menu__arrow {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 13px;
+  height: 50px;
+  background: url(../images/nav_sitemap_ic.png) no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+} */
 
-.nav__category--left {
+/* Navigation menu */
+
+.nav__category {
   height: 100%;
   float: left;
 }
 
-.nav__category--left:after {
+.nav__category:after {
   display: block;
   content: '';
   clear: both;
 }
 
-.nav__category--left li {
+.nav__category li {
   height: 100%;
   line-height: 50px;
   padding: 0 15px;
   float: left;
 }
 
-.nav__category--left li a {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 700;
+.nav__category li a {
+  font-size: 14px;
+  color: #333;
   letter-spacing: -1px;
 }
 
-/* Navigation menu - Right */
-
-.nav__category--right {
-  height: 100%;
-  float: right;
+.nav__category .popular a {
+  color: #ff7200;
 }
 
-.nav__category--right:after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
-.nav__category--right li {
-  height: 100%;
-  line-height: 50px;
-  margin: 0 10px;
-  float: left;
-}
-
-.nav__category--right li a {
-  color: #d8dbe8;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: -1px;
+.nav__category .highlight a {
+  color: #1B62AB;
 }
 
 /* Category */
@@ -305,15 +321,41 @@
 /* Banner */
 
 .banner {
-  height: 400px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 400px;
-  text-align: center;
+
 }
 
-.banner .bx-wrapper {
+.banner__menu {
+  width: 170px;
+  background-color: #1B62AB;
+}
+
+.banner__menu__list {
+
+}
+
+.banner__menu__list li {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.banner__menu__list li:first-child {
+  padding-top: 15px;
+}
+
+.banner__menu__list li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.banner__menu__list .seperate {
+  height: 1px;
+  background-color: #2b4987;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+/* .banner .bx-wrapper {
   height: 100%;
   border: 0;
   box-shadow: none;
@@ -352,7 +394,7 @@
 
 .banner .bx-wrapper .bx-controls-direction a {
   z-index: 9998;
-}
+} */
 
 /* New Book */
 

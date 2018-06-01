@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css" />
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
   <script src="js/script.js"></script>
 
   <script>
@@ -15,7 +15,7 @@
     });
   </script>
 
-  <title>Title of the document</title>
+  <title>한국 퀸테센스 출판</title>
 </head>
 
 <body>
@@ -83,55 +83,47 @@
   <div class="nav">
     <div class="wrapper">
       <div class="nav__hamburger-menu js-nav__hamburger-menu">
-        <a href="#">all</a>
+        <a href="#" class="nav__hamburger__link">
+          <span class="nav__hamburger-menu__icon" href="#">all</span>
+          <span class="nav__hamburger-menu__text">카테고리 전체보기</span>
+        </a>
       </div>
 
-      <ul class="nav__category--left">
-        <li>
-          <a href="#">과월호 CD</a>
-        </li>
-
-        <li>
-          <a href="#">퀸테센스 저널</a>
-        </li>
-
-        <li>
-          <a href="#">2018</a>
-        </li>
-
-        <li>
-          <a href="#">QDT 저널</a>
-        </li>
-
-        <li>
-          <a href="#">교정학</a>
-        </li>
-
-        <li>
-          <a href="#">보철학 및 가공학</a>
-        </li>
-      </ul>
-
-      <ul class="nav__category--right">
-        <li>
+      <ul class="nav__category">
+        <li class="popular">
           <a href="#">베스트셀러</a>
         </li>
 
         <li>
-          <a href="#">새로 나온 책</a>
+          <a href="#">신간도서</a>
         </li>
 
         <li>
+          <a href="#">비어있음1</a>
+        </li>
+
+        <li>
+          <a href="#">비어있음2</a>
+        </li>
+
+        <li>
+          <a href="#">비어있음3</a>
+        </li>
+
+        <li class="highlight">
+          <a href="#">비어있음4 (강조)</a>
+        </li>
+
+        <li class="highlight">
+          <a href="#">비어있음5 (강조)</a>
+        </li>
+
+        <li class="popular">
           <a href="#">이벤트</a>
-        </li>
-
-        <li>
-          <a href="#">사은품</a>
         </li>
       </ul>
 
       <!-- 카테고리 -->
-
       <div class="category js-category">
         <div class="category__container">
           <div class="category--journal">
@@ -241,7 +233,56 @@
   <div class="section">
     <div class="banner">
       <div class="wrapper">
-        <div class="banner__slider">
+        <div class="banner__menu">
+          <ul class="banner__menu__list">
+            <li>
+              <a href="#">교정학</a>
+            </li>
+
+            <li>
+              <a href="#">보철학 및 치공학</a>
+            </li>
+
+            <li>
+              <a href="#">치과위생사</a>
+            </li>
+
+            <li>
+              <a href="#">치주학</a>
+            </li>
+
+            <li>
+              <a href="#">소아치과학</a>
+            </li>
+
+            <li>
+              <a href="#">교합학 및 TMJ</a>
+            </li>
+
+            <li>
+              <a href="#">근관치료학</a>
+            </li>
+
+            <li class="seperate"></li>
+
+            <li>
+              <a href="#">퀸테센스</a>
+            </li>
+
+            <li>
+              <a href="#">QDT</a>
+            </li>
+
+            <li>
+              <a href="#">치과위생사</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner__slide-box">
+
+        </div>
+        <!-- <div class="banner__slider">
           <div class="banner__slider--first">
             1
           </div>
@@ -257,7 +298,91 @@
           <div class="banner__slider--fourth">
             4
           </div>
-        </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="new-book__container">
+      <div class="wrapper">
+        <h2 class="book__container__title">신간 도서</h2>
+
+        <ul class="book__list">
+          <li>
+            <a href="#">
+              <div class="book__thumbnail">
+                <img src="images/119_shop1_131249.jpg" />
+              </div>
+
+              <p class="book__title">
+                누구나 찍을 수 있다 구내 사진촬영
+              </p>
+
+              <p class="book__category">
+                치위생학
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="book__thumbnail">
+                <img src="images/118_shop1_720840.jpg" />
+              </div>
+
+              <p class="book__title">
+                치아건강 - 치아의 구조.구강의 구조
+              </p>
+              <p class="book__category">
+                치위생학
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="book__thumbnail">
+                <img src="images/109_shop1_352618.jpg" />
+              </div>
+
+              <p class="book__title">
+                최신 심미수복학
+              </p>
+              <p class="book__category">
+                심미치과학
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="book__thumbnail">
+                <img src="images/174_shop1_452957.jpg" />
+              </div>
+
+              <p class="book__title">
+                임상교합보철치료
+              </p>
+              <p class="book__category">
+                교합학 및 TMJ
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="book__thumbnail">
+                <img src="images/107_shop1_770662.jpg" />
+              </div>
+
+              <p class="book__title">
+                Implant 주위의 tissue management
+              </p>
+              <p class="book__category">
+                Implant학
+              </p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -389,90 +514,6 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-
-    <div class="new-book__container">
-      <div class="wrapper">
-        <h2 class="book__container__title">신간 도서</h2>
-
-        <ul class="book__list">
-          <li>
-            <a href="#">
-              <div class="book__thumbnail">
-                <img src="images/119_shop1_131249.jpg" />
-              </div>
-
-              <p class="book__title">
-                누구나 찍을 수 있다 구내 사진촬영
-              </p>
-
-              <p class="book__category">
-                치위생학
-              </p>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="book__thumbnail">
-                <img src="images/118_shop1_720840.jpg" />
-              </div>
-
-              <p class="book__title">
-                치아건강 - 치아의 구조.구강의 구조
-              </p>
-              <p class="book__category">
-                치위생학
-              </p>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="book__thumbnail">
-                <img src="images/109_shop1_352618.jpg" />
-              </div>
-
-              <p class="book__title">
-                최신 심미수복학
-              </p>
-              <p class="book__category">
-                심미치과학
-              </p>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="book__thumbnail">
-                <img src="images/174_shop1_452957.jpg" />
-              </div>
-
-              <p class="book__title">
-                임상교합보철치료
-              </p>
-              <p class="book__category">
-                교합학 및 TMJ
-              </p>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="book__thumbnail">
-                <img src="images/107_shop1_770662.jpg" />
-              </div>
-
-              <p class="book__title">
-                Implant 주위의 tissue management
-              </p>
-              <p class="book__category">
-                Implant학
-              </p>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
