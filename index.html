@@ -8,20 +8,13 @@
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
   <script src="js/script.js"></script>
-
-  <script>
-    $(document).ready(function() {
-      $('.banner__slider').bxSlider();
-    });
-  </script>
-
   <title>한국 퀸테센스 출판</title>
 </head>
 
 <body>
   <div class="top">
     <div class="wrapper">
-      <ul class="top__right-menu">
+      <ul class="top__right-menu clearfix">
         <li class="top__right-menu__login">
           <a href="#">로그인</a>
         </li>
@@ -54,7 +47,7 @@
       </a>
 
       <!-- 검색창 -->
-      <div class="header__search-box">
+      <div class="header__search-box clearfix">
         <!-- 검색 옵션 -->
         <div class="header__search-box__option">
           <select>
@@ -82,14 +75,18 @@
   <!-- 네비게이션 바 -->
   <div class="nav">
     <div class="wrapper">
-      <div class="nav__hamburger-menu js-nav__hamburger-menu">
+
+      <!-- 햄버거 메뉴 (카테고리 전체보기) -->
+      <div class="nav__hamburger-menu js-nav__hamburger-menu clearfix">
         <a href="#" class="nav__hamburger__link">
           <span class="nav__hamburger-menu__icon" href="#">all</span>
           <span class="nav__hamburger-menu__text">카테고리 전체보기</span>
+          <span class="nav__hamburger-menu__arrow">arrow</span>
         </a>
       </div>
 
-      <ul class="nav__category">
+      <!-- 메인메뉴 -->
+      <ul class="nav__category clearfix">
         <li class="popular">
           <a href="#">베스트셀러</a>
         </li>
@@ -124,7 +121,7 @@
       </ul>
 
       <!-- 카테고리 -->
-      <div class="category js-category">
+      <div class="category js-category clearfix">
         <div class="category__container">
           <div class="category--journal">
             <h3 class="category__title">저널</h3>
@@ -167,7 +164,7 @@
           <div class="category--dentistry">
             <h3 class="category__title">치의학</h3>
 
-            <ul class="category__list large">
+            <ul class="category__list large clearfix">
               <li>
                 <a href="#">교정학</a>
               </li>
@@ -231,57 +228,102 @@
   </div>
 
   <div class="section">
+
+    <!-- 배너 전체 -->
     <div class="banner">
       <div class="wrapper">
-        <div class="banner__menu">
-          <ul class="banner__menu__list">
-            <li>
-              <a href="#">교정학</a>
-            </li>
+        <div class="banner__container clearfix">
 
-            <li>
-              <a href="#">보철학 및 치공학</a>
-            </li>
+          <!-- 배너 좌측 메뉴 -->
+          <div class="banner__menu">
+            <ul class="banner__menu__list">
+              <li>
+                <a href="#">교정학</a>
+              </li>
 
-            <li>
-              <a href="#">치과위생사</a>
-            </li>
+              <li>
+                <a href="#">보철학 및 치공학</a>
+              </li>
 
-            <li>
-              <a href="#">치주학</a>
-            </li>
+              <li>
+                <a href="#">치과위생사</a>
+              </li>
 
-            <li>
-              <a href="#">소아치과학</a>
-            </li>
+              <li>
+                <a href="#">치주학</a>
+              </li>
 
-            <li>
-              <a href="#">교합학 및 TMJ</a>
-            </li>
+              <li>
+                <a href="#">소아치과학</a>
+              </li>
 
-            <li>
-              <a href="#">근관치료학</a>
-            </li>
+              <li>
+                <a href="#">교합학 및 TMJ</a>
+              </li>
 
-            <li class="seperate"></li>
+              <li>
+                <a href="#">근관치료학</a>
+              </li>
 
-            <li>
-              <a href="#">퀸테센스</a>
-            </li>
+              <li class="seperate"></li>
 
-            <li>
-              <a href="#">QDT</a>
-            </li>
+              <li>
+                <a href="#">퀸테센스</a>
+              </li>
 
-            <li>
-              <a href="#">치과위생사</a>
-            </li>
-          </ul>
+              <li>
+                <a href="#">QDT</a>
+              </li>
+
+              <li>
+                <a href="#">치과위생사</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 배너 우측 캐러셀(Carousel) -->
+          <div class="banner__slide-box">
+
+            <!-- slide box -->
+            <ul class="banner__slide-box__list js-banner__slide-box__list clearfix">
+              <li class="banner__slide-box__item active">
+                1
+              </li>
+
+              <li class="banner__slide-box__item">
+                2
+              </li>
+
+              <li class="banner__slide-box__item">
+                3
+              </li>
+
+              <li class="banner__slide-box__item">
+                4
+              </li>
+            </ul>
+
+            <!-- indicator -->
+            <ul class="banner__slide-box__indicator js-banner__slide-box__indicator clearfix">
+              <li class="active">
+                <a href="#">비어있음1</a>
+              </li>
+
+              <li>
+                <a href="#">비어있음2</a>
+              </li>
+
+              <li>
+                <a href="#">비어있음3</a>
+              </li>
+
+              <li>
+                <a href="#">비어있음4</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="banner__slide-box">
-
-        </div>
         <!-- <div class="banner__slider">
           <div class="banner__slider--first">
             1
@@ -302,7 +344,7 @@
       </div>
     </div>
 
-    <div class="new-book__container">
+    <!-- <div class="new-book__container">
       <div class="wrapper">
         <h2 class="book__container__title">신간 도서</h2>
 
@@ -515,7 +557,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="footer">

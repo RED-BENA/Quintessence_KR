@@ -19,8 +19,14 @@ li {
 }
 
 .wrapper {
-  width: 950px;
+  width: 940px;
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
 }
