@@ -23,6 +23,10 @@ $(document).ready(function() {
     $('.js-category').removeClass('open');
   });
 
+
+  /* Banner */
+
+
   // indicator를 누르면 해당 이미지로 이동하는 event
   $(".js-banner__slide-box__indicator li").click(function() {
     let index = $(this).index();
@@ -71,6 +75,10 @@ $(document).ready(function() {
     $(".js-banner__slide-box__indicator li:nth-child("+(next_index+1)+")").addClass('active');
   }, 3000);
 
+
+  /* New Book Slide-box */
+
+
   // new book slide-box의 prev 버튼을 클릭했을 때
   $('.js-new-book__slide-box__prev').click(function() {
 
@@ -115,4 +123,25 @@ $(document).ready(function() {
     // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> 0
     $('.js-new-book__slide-box__list').css('margin-left', (first_index * -156)+'px');
   });
+
+  // new book slide-box automatically (자동화)
+  // setInterval(function() {
+  //   // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
+  //   // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
+  //   let first_index = $('.js-new-book__slide-box__list li.first').index()+1;
+  //
+  //   // first_index가 전체 도서 중 마지막 도서의 index일 경우
+  //   if (first_index == 7) {
+  //     first_index = 1; // 첫 번째 보여지는 도서(1 ~ 6)의 첫 번째 인덱스(1)로 세팅
+  //   }
+  //
+  //   // 전체 도서의 first 클래스 remove
+  //   // 현재 first_index의 다음 도서(first_index + 1)에 first 클래스 add
+  //   $('.js-new-book__slide-box__list li').removeClass('first');
+  //   $('.js-new-book__slide-box__list li:nth-child('+(first_index + 1)+')').addClass('first');
+  //
+  //   // 현재 first_index에서 오른쪽으로 한 칸(first_index + 1) 이동
+  //   // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> 0
+  //   $('.js-new-book__slide-box__list').css('margin-left', (first_index * -156)+'px');
+  // }, 3000);
 });
