@@ -141,6 +141,14 @@
   cursor: pointer;
 }
 
+.nav__hamburger-menu:hover {
+  background-color: #280F24;
+}
+
+.nav__hamburger-menu.active {
+  background-color: #280F24;
+}
+
 .nav__hamburger__link {
   display: block;
   width: 100%;
@@ -224,12 +232,12 @@
 
 .category {
   display: none;
+  width: 100%;
   background-color: #fff;
-  border: 1px solid #2b4987;
-  padding: 8px 4px;
-  box-shadow: 3px 0px 7px 0px #333;
+  border: 2px solid #280F24;
+  padding: 10px 5px;
   position: absolute;
-  top: 50px;
+  top: 48px;
   left: 0px;
   z-index: 9999;
 }
@@ -240,38 +248,39 @@
 
 .category__container {
   font-size: 14px;
-  border-right: 1px solid #E2E8EB;
-  padding: 0 4px;
+  padding: 0 5px;
   float: left;
 }
 
-.category__container:last-child {
-  border: 0;
-}
-
 .category__title {
-  color: #fff;
+  color: #280F24;
   font-size: 14px;
-  margin-bottom: 10px;
-  background-color: #2b4987;
-  padding: 5px;
+  border: 1px solid #d0d0d0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 15px;
+  padding: 10px 5px;
 }
 
 .category__list {
-  width: 200px;
-  margin-bottom: 20px;
+  width: 147.666px;
+  /* margin-bottom: 15px; */
+}
+
+.category__list {
+  /* margin-bottom: 15px; */
 }
 
 .category__list.large {
-  width: 700px;
+  width: 443px;
 }
 
 .category__list li {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .category__list.large li {
-  width: 25%;
+  width: 33.333%;
   float: left;
 }
 
@@ -284,6 +293,7 @@
   width: 100%;
   height: 100%;
   color: #333;
+  font-size: 12px;
 }
 
 .category--large__list li:hover a {
@@ -406,17 +416,6 @@
   /* height: 220px; */
 }
 
-.book-list__title {
-  color: #333;
-  font-size: 20px;
-  /* font-weight: 400; */
-  margin-top: 30px;
-}
-
-.book-list__title--blue {
-  color: #1B62AB;
-}
-
 .new-book__slide-box__container {
   height: 100%;
   border: 1px solid #888;
@@ -488,11 +487,22 @@
   transform: translateY(-50%);
 }
 
-/* New Book */
-
 .new-book__container, .best-seller__container {
   margin-top: 50px;
 }
+
+.book-list__title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.book-list__title--blue {
+  color: #1B62AB;
+}
+
+/* New Book */
 
 .book__container__title {
   font-size: 20px;

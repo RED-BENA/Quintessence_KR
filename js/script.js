@@ -14,13 +14,16 @@ $(document).ready(function() {
   });
 
   $('.js-nav__hamburger-menu').click(function() {
+    $('.js-nav__hamburger-menu').addClass('active');
     $('.js-category').removeClass('open');
   });
 
   $('.js-category').hover(function() {
-    $('.js-category').addClass('open');
+    $('.js-nav__hamburger-menu').addClass('active');
+    $(this).addClass('open');
   }, function() {
-    $('.js-category').removeClass('open');
+    $('.js-nav__hamburger-menu').removeClass('active');
+    $(this).removeClass('open');
   });
 
 
