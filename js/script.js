@@ -31,7 +31,9 @@ $(document).ready(function() {
 
 
   // indicator를 누르면 해당 이미지로 이동하는 event
-  $(".js-banner__slide-box__indicator li").click(function() {
+  $(".js-banner__slide-box__indicator li").click(function(e) {
+    e.preventDefault();
+    
     let index = $(this).index();
 
     $(".js-banner__slide-box__indicator li").removeClass('active');
@@ -83,7 +85,8 @@ $(document).ready(function() {
 
 
   // new book slide-box의 prev 버튼을 클릭했을 때
-  $('.js-new-book__slide-box__prev').click(function() {
+  $('.js-new-book__slide-box__prev').click(function(e) {
+    e.preventDefault();
 
     // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
@@ -106,7 +109,8 @@ $(document).ready(function() {
   });
 
   // new book slide-box의 next 버튼을 클릭했을 때
-  $('.js-new-book__slide-box__next').click(function() {
+  $('.js-new-book__slide-box__next').click(function(e) {
+    e.preventDefault();
 
     // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
