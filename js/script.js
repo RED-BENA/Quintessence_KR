@@ -1,9 +1,16 @@
 $(document).ready(function() {
+
+
+  /* 일정량만큼 스크롤을 했을 때 Nav와 최근 본 상품 fixed 상태로 변경 */
+
+
   $(window).scroll(function() {
     if ($(this).scrollTop() >= ($('.top').height() + $('.header').height())) {
       $('.nav').addClass('over');
+      $('.js-recent-book').addClass('over');
     } else {
       $('.nav').removeClass('over');
+      $('.js-recent-book').removeClass('over');
     }
   });
 
@@ -33,7 +40,7 @@ $(document).ready(function() {
   // indicator를 누르면 해당 이미지로 이동하는 event
   $(".js-banner__slide-box__indicator li").click(function(e) {
     e.preventDefault();
-    
+
     let index = $(this).index();
 
     $(".js-banner__slide-box__indicator li").removeClass('active');
