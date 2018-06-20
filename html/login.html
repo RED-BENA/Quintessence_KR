@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="../css/style.css" />
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <script src="../js/script.js"></script>
+  <script src="../js/login.js"></script>
   <title>한국 퀸테센스 출판</title>
 </head>
 
@@ -251,6 +251,61 @@
   </div>
 
   <div class="section">
+
+    <div class="login__header">
+      <div class="wrapper">
+        <div class="login__header__title">
+          <h2>로그인</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="login__content">
+      <div class="wrapper">
+        <form id="login-page" name="login-page" method="post" action="">
+          <div class="login__form-box">
+            <h2 class="login__form-box__title">로그인</h2>
+
+            <div class="login__form-box__input">
+              <div class="login__form-box__id">
+                <input type="text" required />
+              </div>
+
+              <div class="login__form-box__pw">
+                <input type="text" required />
+              </div>
+            </div>
+
+            <div class="login__form-box__submit">
+              <button type="submit">LOGIN</button>
+            </div>
+
+            <div class="login__form-box__maintain">
+              <input type="checkbox" /> 로그인 유지하기
+            </div>
+          </div>
+        </form>
+
+        <ul class="login__help">
+          <li class="login__help__item">
+            <p class="login__help__question">
+              로그인 정보를 잊어버리셨나요?
+            </p>
+
+            <a class="login__help__link">아이디/비번찾기</a>
+          </li>
+
+          <li class="login__help__item">
+            <p class="login__help__question">
+              아직 온라인 회원이 아니신가요?
+            </p>
+
+            <a class="login__help__link">온라인 회원가입</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="recent-book js-recent-book">
       <div class="recent-book__container">
         <div class="recent-book__header">
