@@ -61,34 +61,36 @@
 .login__form-box__id input,
 .login__form-box__pw input {
   color: #888;
-  width: 100%;
+  font-size: 19px;
+  width: 270px;
   height: 100%;
   border: 0;
   background: #ededed;
+  float: right;
+  outline: none;
 }
 
-.login__form-box__id:before {
-  content: '';
-  display: block;
-  width: 63px;
-  height: 63px;
-  background: url(../images/member_login_id.png) no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
+.login__form-box__id:before,
 .login__form-box__pw:before {
   content: '';
   display: block;
   width: 63px;
   height: 63px;
-  background: url(../images/member_login_pw.png) no-repeat;
-  background-position: center center;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.login__form-box__id:before {
+  background: url(../images/member_login_id.png) no-repeat;
+  background-position: center center;
+  background-color: #ededed;
+}
+
+.login__form-box__pw:before {
+  background: url(../images/member_login_pw.png) no-repeat;
+  background-position: center center;
+  background-color: #ededed;
 }
 
 .login__form-box__submit {
