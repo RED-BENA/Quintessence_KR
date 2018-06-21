@@ -351,7 +351,7 @@ li {
 
 .recent-book.over {
   position: fixed;
-  top: 60px;
+  top: 60px !important;
 }
 
 .recent-book__container {
@@ -409,6 +409,7 @@ li {
 /* Companies */
 
 .companies {
+  border-top: 2px solid #93939f;
   border-bottom: 1px solid #e4e4e4;
 }
 

@@ -262,51 +262,53 @@
 
     <div class="login__content">
       <div class="wrapper">
-        <form id="login-page" name="login-page" method="post" action="">
+        <form id="login-page" class="login__form" name="login-page" method="post" action="">
           <div class="login__form-box">
             <h2 class="login__form-box__title">로그인</h2>
 
-            <div class="login__form-box__input">
-              <div class="login__form-box__id">
-                <input type="text" required />
+            <div class="login__form-box__container clearfix">
+              <div class="login__form-box__input">
+                <div class="login__form-box__id">
+                  <input type="text" required />
+                </div>
+
+                <div class="login__form-box__pw">
+                  <input type="text" required />
+                </div>
               </div>
 
-              <div class="login__form-box__pw">
-                <input type="text" required />
+              <div class="login__form-box__submit">
+                <button type="submit">LOGIN</button>
               </div>
-            </div>
-
-            <div class="login__form-box__submit">
-              <button type="submit">LOGIN</button>
             </div>
 
             <div class="login__form-box__maintain">
               <input type="checkbox" /> 로그인 유지하기
             </div>
+
+            <ul class="login__help clearfix">
+              <li class="login__help__item find">
+                <p class="login__help__question">
+                  로그인 정보를 잊어버리셨나요?
+                </p>
+
+                <a class="login__help__link" href="#">아이디/비번찾기</a>
+              </li>
+
+              <li class="login__help__item join">
+                <p class="login__help__question">
+                  아직 온라인 회원이 아니신가요?
+                </p>
+
+                <a class="login__help__link" href="#">온라인 회원가입</a>
+              </li>
+            </ul>
           </div>
         </form>
-
-        <ul class="login__help">
-          <li class="login__help__item">
-            <p class="login__help__question">
-              로그인 정보를 잊어버리셨나요?
-            </p>
-
-            <a class="login__help__link">아이디/비번찾기</a>
-          </li>
-
-          <li class="login__help__item">
-            <p class="login__help__question">
-              아직 온라인 회원이 아니신가요?
-            </p>
-
-            <a class="login__help__link">온라인 회원가입</a>
-          </li>
-        </ul>
       </div>
     </div>
 
-    <div class="recent-book js-recent-book">
+    <div class="recent-book login js-recent-book">
       <div class="recent-book__container">
         <div class="recent-book__header">
           최근 본 상품
