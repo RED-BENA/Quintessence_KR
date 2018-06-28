@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
   font-family: 'Nanum Gothic';
 }
@@ -510,4 +514,27 @@ li {
 .copyrights__content__info {
   color: #888;
   font-size: 12px;
+}
+
+
+/* login & join header */
+
+.section__header {
+  height: 120px;
+  background-image: url(../images/dentist-1025338_1920.jpg);
+  background-size: cover;
+  background-position: center -225px;
+}
+
+.section__header__title {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.section__header__title h2 {
+  color: #fff;
+  font-size: 23px;
+  line-height: 120px;
+  text-align: center;
 }

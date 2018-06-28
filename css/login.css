@@ -2,30 +2,6 @@
   top: 130px;
 }
 
-.login__header {
-  height: 120px;
-  background-image: url(../images/dentist-1025338_1920.jpg);
-  background-size: cover;
-  background-position: center -225px;
-}
-
-.login__header__title {
-  width: 200px;
-  height: 100%;
-  background-color: rgba(51, 51, 51, 0.5);
-}
-
-.login__header__title h2 {
-  color: #fff;
-  font-size: 23px;
-  line-height: 120px;
-  text-align: center;
-}
-
-.login__content {
-
-}
-
 .login__form {
   margin-top: 80px;
   position: relative;
