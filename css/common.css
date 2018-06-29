@@ -35,6 +35,10 @@ li {
   clear: both;
 }
 
+.required {
+  color: #ff7200;
+}
+
 /* 맨 상단 메뉴 */
 
 .top {

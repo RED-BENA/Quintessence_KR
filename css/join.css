@@ -20,14 +20,7 @@
   left: 200px;
 }
 
-.section--right {
-  padding: 20px 30px;
-  float: left;
-}
-
-.section--left__menu {
-
-}
+/* 좌측 이동메뉴 */
 
 .section--left__menu li {
   border-bottom: 1px solid #efefef;
@@ -59,4 +52,150 @@
 
 .section--left__menu li.active a {
   color: #1B62AB;
+}
+
+
+/* 우측 회원가입 폼 */
+
+
+.section--right {
+  width: 739px;
+  padding: 20px 30px;
+  float: left;
+}
+
+.section--right__header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section--right__title {
+  display: inline-block;
+  color: #280F24;
+  font-size: 21px;
+}
+
+.section--right__location {
+  display: inline-block;
+  color: #9c9c9c;
+  font-size: 12px;
+  letter-spacing: -1px;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+.join__form-box {
+
+}
+
+.join__form-box__header {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.join__form-box__title {
+  display: inline-block;
+  color: #280F24;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.join__form-box__description {
+  display: inline-block;
+  color: #9c9c9c;
+  font-size: 12px;
+  letter-spacing: -1px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.join__form-box__container {
+  border-top: 2px solid #6F6F70;
+}
+
+/* small row (50%) */
+
+.join__form-box__row {
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #dedede;
+  float: left;
+}
+
+/* large row (100%) */
+
+.join__form-box__row.large {
+  clear: both;
+}
+
+
+/* row left (제목) */
+
+.join__form-box__row__left {
+  width: 135px;
+  color: #280F24;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px;
+  float: left;
+}
+
+/* row right (입력란) */
+
+.join__form-box__row__right {
+  width: 204.5px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #dedede;
+  padding: 10px;
+  float: left;
+}
+
+.join__form-box__row__right.large {
+  width: 544px;
+}
+
+.join__form-box__row__right input {
+  width: 180px;
+  height: 35px;
+  font-size: 12px;
+  background: #f1f1f1;
+  border: 1px solid #c1c1c1;
+  margin-bottom: 5px;
+  padding: 5px;
+  float: left;
+}
+
+.join__form-box__row__right.large input {
+  width: 300px;
+}
+
+.join__form-box__row__right .checkbox {
+  width: 13px;
+  height: 13px;
+  clear: both;
+}
+
+.join__form-box__row__description {
+  color: #999;
+  font-size: 12px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+.join__form-box__row__right .join-button {
+  color: #280F24;
+  height: 35px;
+  font-size 13px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  padding: 0px 20px;
+  float: left;
 }
