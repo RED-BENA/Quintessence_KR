@@ -39,6 +39,10 @@ li {
   color: #ff7200;
 }
 
+.not-required {
+  color: #A9A9A9;
+}
+
 /* 맨 상단 메뉴 */
 
 .top {

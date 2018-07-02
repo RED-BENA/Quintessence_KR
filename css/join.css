@@ -165,7 +165,6 @@
   font-size: 12px;
   background: #f1f1f1;
   border: 1px solid #c1c1c1;
-  margin-bottom: 5px;
   padding: 5px;
   float: left;
 }
@@ -174,20 +173,44 @@
   width: 300px;
 }
 
+.join__form-box__row__input label {
+  display: block;
+  color: #888;
+  height: 35px;
+  font-size: 12px;
+  line-height: 35px;
+  padding: 0 15px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin-right: 5px;
+  float: left;
+}
+
+
+/* 체크박스 / 라디오 */
+
+
 .join__form-box__row__right .checkbox {
   width: 13px;
   height: 13px;
-  clear: both;
+  margin-top: 12px;
+  margin-right: 5px;
 }
+
+
+/* 입력란 하단 설명 */
+
 
 .join__form-box__row__description {
   color: #999;
   font-size: 12px;
   letter-spacing: -1px;
   line-height: 1.5;
+  margin-top: 5px;
 }
 
-.join__form-box__row__right .join-button {
+.join__form-box__row__right .check-button {
   color: #280F24;
   height: 35px;
   font-size 13px;
@@ -198,4 +221,18 @@
   margin-left: 10px;
   padding: 0px 20px;
   float: left;
+}
+
+
+/* 우편번호 입력란 */
+
+.zip-code {
+  width: 135px !important;
+}
+
+
+/* 회원가입완료 / 이전페이지 */
+
+.join__form-box__buttons {
+
 }

@@ -310,7 +310,7 @@
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
                         <input type="text" class="id" required />
-                        <button type="button" class="join-button">아이디 중복체크</button>
+                        <button type="button" class="check-button">아이디 중복체크</button>
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -331,7 +331,7 @@
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
                         <input type="text" class="nickname" required />
-                        <button type="button" class="join-button">닉네임 중복체크</button>
+                        <button type="button" class="check-button">닉네임 중복체크</button>
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -384,7 +384,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="name" required />
+                        <input type="text" class="name" name="name" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -401,7 +401,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="date" class="birthday" required />
+                        <input type="date" class="birthday" name="birthday" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -430,20 +430,20 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        * 실명 한글 이름을 입력하세요.
+                        * 성별을 선택하세요.
                       </p>
                     </div>
                   </div>
 
-                  <!-- 생년월일 -->
+                  <!-- 전화번호 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="required">* </span>생년월일
+                      <span class="not-required">* </span>전화번호
                     </div>
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="date" class="birthday" required />
+                        <input type="tel" class="phone-number" name="phone-number" placeholder="하이픈(-) 없이 입력하세요." required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -451,6 +451,155 @@
                       </p>
                     </div>
                   </div>
+
+                  <!-- 휴대폰 번호 -->
+                  <div class="join__form-box__row large clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="required">* </span>휴대폰 번호
+                    </div>
+
+                    <div class="join__form-box__row__right large">
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="tel" class="cellphone-number" name="cellphone-number" placeholder="하이픈(-) 없이 입력하세요." required />
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 주문등과 관련된 중요한 문자 발송 및 아이디/비번 찾기에 사용됩니다.<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 이메일 주소 -->
+                  <div class="join__form-box__row large clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="required">* </span>이메일 주소
+                    </div>
+
+                    <div class="join__form-box__row__right large">
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="email" class="email" name="email" required />
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 주문등과 관련된 중요한 메일 발송 및 아이디/비번 찾기에 사용됩니다.<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- SMS 수신 -->
+                  <div class="join__form-box__row clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="not-required">* </span>SMS 수신
+                    </div>
+
+                    <div class="join__form-box__row__right">
+                      <div class="join__form-box__row__input clearfix">
+                        <label>
+                          <input type="radio" name="reception-sms" class="checkbox reception-sms" value="yes" checked />
+                          수신
+                        </label>
+
+                        <label>
+                          <input type="radio" name="reception-sms" class="checkbox reception-sms" value="no" />
+                          수신거부
+                        </label>
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 광고성정보, 이벤트 문자 수신여부<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 이메일 수신 -->
+                  <div class="join__form-box__row clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="not-required">* </span>이메일 수신
+                    </div>
+
+                    <div class="join__form-box__row__right">
+                      <div class="join__form-box__row__input clearfix">
+                        <label>
+                          <input type="radio" name="reception-email" class="checkbox reception-email" value="yes" checked />
+                          수신
+                        </label>
+
+                        <label>
+                          <input type="radio" name="reception-email" class="checkbox reception-email" value="no" />
+                          수신거부
+                        </label>
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 광고성정보, 이벤트 메일 수신여부<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 우편번호 -->
+                  <div class="join__form-box__row large clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="not-required">* </span>우편번호
+                    </div>
+
+                    <div class="join__form-box__row__right large">
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="text" class="zip-code" name="zip-code" placeholder="우편번호" />
+                        <button type="button" class="check-button">주소찾기</button>
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        * 주소찾기를 통해 자동으로 입력됩니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 도로명 주소 -->
+                  <div class="join__form-box__row large clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="not-required">* </span>도로명 주소
+                    </div>
+
+                    <div class="join__form-box__row__right large">
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="tel" class="road-name-adress" name="road-name-adress" />
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 지번 주소는 참고용이며 실제 택배는 도로명 주소를 사용합니다.<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 지번 주소 -->
+                  <div class="join__form-box__row large clearfix">
+                    <div class="join__form-box__row__left">
+                      <span class="not-required">* </span>지번 주소
+                    </div>
+
+                    <div class="join__form-box__row__right large">
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="text" class="parcel-address" name="parcel-address" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 회원가입완료 / 이전페이지 -->
+
+                <div class="join__form-box__buttons">
+                  <button type="button" class="prev-page">이전페이지</button>
+                  <button type="submit" class="join-button">회원가입완료</button>
                 </div>
             </form>
           </div>
