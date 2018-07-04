@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/style.css" />
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="../js/join.js"></script>
   <title>한국 퀸테센스 출판</title>
 </head>
 
@@ -281,13 +282,18 @@
 
           <div class="section--right">
             <div class="section--right__header">
+
+              <!-- 제목 -->
               <h2 class="section--right__title">회원가입</h2>
+
+              <!-- 현재 페이지 위치 (location) -->
               <p class="section--right__location">
                 홈 > 회원가입
               </p>
             </div>
 
-            <form id="join-page" class="join__form" name="join-page" method="post" action="">
+            <!-- 회원가입 폼 -->
+            <form id="join-page" class="join__form" name="join-page">
               <div class="join__form-box">
                 <div class="join__form-box__header">
                   <h3 class="join__form-box__title">
@@ -309,8 +315,8 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="id" required />
-                        <button type="button" class="check-button">아이디 중복체크</button>
+                        <input type="text" class="id js-id" required />
+                        <button type="button" class="check-button check-id">아이디 중복체크</button>
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -330,8 +336,8 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="nickname" required />
-                        <button type="button" class="check-button">닉네임 중복체크</button>
+                        <input type="text" class="nickname js-nickname" required />
+                        <button type="button" class="check-button check-nickname">닉네임 중복체크</button>
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -350,7 +356,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="password" class="password" required />
+                        <input type="password" class="password js-password" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -367,7 +373,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="password" class="password-cfm" required />
+                        <input type="password" class="password-cfm js-password-cfm" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -384,7 +390,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="name" name="name" required />
+                        <input type="text" class="name js-name" name="name" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -401,7 +407,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="date" class="birthday" name="birthday" required />
+                        <input type="date" class="birthday js-birthday" name="birthday" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -419,12 +425,12 @@
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
                         <label>
-                          <input type="radio" name="gender" class="checkbox gender" value="M" required />
+                          <input type="radio" name="gender" class="checkbox gender js-gender" value="M" required />
                           남성
                         </label>
 
                         <label>
-                          <input type="radio" name="gender" class="checkbox gender" value="F" required />
+                          <input type="radio" name="gender" class="checkbox gender js-gender" value="F" required />
                           여성
                         </label>
                       </div>
@@ -443,7 +449,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="tel" class="phone-number" name="phone-number" placeholder="하이픈(-) 없이 입력하세요." required />
+                        <input type="tel" class="phone-number js-phone-number" name="phone-number" placeholder="하이픈(-) 없이 입력하세요." />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -460,7 +466,7 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="tel" class="cellphone-number" name="cellphone-number" placeholder="하이픈(-) 없이 입력하세요." required />
+                        <input type="tel" class="cellphone-number js-cellphone-number" name="cellphone-number" placeholder="하이픈(-) 없이 입력하세요." required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -479,7 +485,7 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="email" class="email" name="email" required />
+                        <input type="email" class="email js-email" name="email" required />
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -499,12 +505,12 @@
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
                         <label>
-                          <input type="radio" name="reception-sms" class="checkbox reception-sms" value="yes" checked />
+                          <input type="radio" name="reception-sms" class="checkbox reception-sms js-reception-sms" value="yes" checked />
                           수신
                         </label>
 
                         <label>
-                          <input type="radio" name="reception-sms" class="checkbox reception-sms" value="no" />
+                          <input type="radio" name="reception-sms" class="checkbox reception-sms js-reception-sms" value="no" />
                           수신거부
                         </label>
                       </div>
@@ -526,12 +532,12 @@
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
                         <label>
-                          <input type="radio" name="reception-email" class="checkbox reception-email" value="yes" checked />
+                          <input type="radio" name="reception-email" class="checkbox reception-email js-reception-email" value="yes" checked />
                           수신
                         </label>
 
                         <label>
-                          <input type="radio" name="reception-email" class="checkbox reception-email" value="no" />
+                          <input type="radio" name="reception-email" class="checkbox reception-email js-reception-email" value="no" />
                           수신거부
                         </label>
                       </div>
@@ -552,8 +558,8 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="zip-code" name="zip-code" placeholder="우편번호" />
-                        <button type="button" class="check-button">주소찾기</button>
+                        <input type="text" class="zip-code js-zip-code" name="zip-code" placeholder="우편번호" disabled />
+                        <button type="button" class="check-button find-address">주소찾기</button>
                       </div>
 
                       <p class="join__form-box__row__description">
@@ -570,14 +576,9 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="tel" class="road-name-adress" name="road-name-adress" />
+                        <input type="text" class="adress js-adress" name="adress1" placeholder="도로명 주소" disabled />
+                        <input type="text" class="adress js-adress" name="adress2" placeholder="나머지 주소" />
                       </div>
-
-                      <p class="join__form-box__row__description">
-                        <span class="required">
-                          * 지번 주소는 참고용이며 실제 택배는 도로명 주소를 사용합니다.<br />
-                        </span>
-                      </p>
                     </div>
                   </div>
 
@@ -589,17 +590,31 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="parcel-address" name="parcel-address" />
+                        <input type="text" class="old-zip-code js-old-zip-code" name="old-zip-code1" disabled />
+                        <span class="dash"></span>
+                        <input type="text" class="old-zip-code js-old-zip-code" name="old-zip-code2" disabled />
                       </div>
+
+                      <div class="join__form-box__row__input clearfix">
+                        <input type="text" class="old-address js-old-address" name="old-adress" disabled />
+                      </div>
+
+                      <p class="join__form-box__row__description">
+                        <span class="required">
+                          * 지번 주소는 참고용이며 실제 택배는 도로명 주소를 사용합니다.<br />
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 회원가입완료 / 이전페이지 -->
+                <!-- 회원가입완료 / 이전페이지 버튼 -->
 
                 <div class="join__form-box__buttons">
-                  <button type="button" class="prev-page">이전페이지</button>
-                  <button type="submit" class="join-button">회원가입완료</button>
+                  <div class="join__form-box__buttons__list clearfix">
+                    <button type="button" class="join__form-box__buttons__item prev-page">이전페이지</button>
+                    <button type="submit" class="join__form-box__buttons__item join-button">회원가입완료</button>
+                  </div>
                 </div>
             </form>
           </div>

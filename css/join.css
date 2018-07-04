@@ -133,7 +133,7 @@
 }
 
 
-/* row left (제목) */
+/* 입력 항목명 (left) */
 
 .join__form-box__row__left {
   width: 135px;
@@ -144,7 +144,7 @@
   float: left;
 }
 
-/* row right (입력란) */
+/* 회원가입 폼 1/2열 (default) */
 
 .join__form-box__row__right {
   width: 204.5px;
@@ -155,9 +155,17 @@
   float: left;
 }
 
+
+/* 회원가입 폼 1열 */
+
+
 .join__form-box__row__right.large {
   width: 544px;
 }
+
+
+/* 입력란 (기본 크기) */
+
 
 .join__form-box__row__right input {
   width: 180px;
@@ -169,9 +177,17 @@
   float: left;
 }
 
+
+/* 입력란 (large) */
+
+
 .join__form-box__row__right.large input {
   width: 300px;
 }
+
+
+/* label 태그 */
+
 
 .join__form-box__row__input label {
   display: block;
@@ -210,6 +226,10 @@
   margin-top: 5px;
 }
 
+
+/* 회원가입 폼 버튼 (아이디 중복체크, 닉네임 중복체크, 주소찾기) */
+
+
 .join__form-box__row__right .check-button {
   color: #280F24;
   height: 35px;
@@ -221,6 +241,7 @@
   margin-left: 10px;
   padding: 0px 20px;
   float: left;
+  cursor: pointer;
 }
 
 
@@ -231,8 +252,73 @@
 }
 
 
+/* 도로명 주소 */
+
+.adress {
+  width: 250px !important;
+  margin-right: 10px;
+  float: left;
+}
+
+
+/* (구) 우편번호 */
+
+
+.old-zip-code {
+  width: 85px !important;
+}
+
+.dash {
+  width: 10px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 5px 0;
+  float: left;
+}
+
+
+/* 지번주소 */
+
+
+.old-address {
+  width: 100% !important;
+  margin-top: 10px;
+}
+
+
 /* 회원가입완료 / 이전페이지 */
 
 .join__form-box__buttons {
+  text-align: center;
+  margin-top: 30px;
+}
 
+.join__form-box__buttons__list {
+  display: inline-block;
+}
+
+.join__form-box__buttons__item {
+  color: #fff;
+  font-size: 17px;
+  background-color: #505258;
+  border: 0;
+  padding: 15px 35px;
+  float: left;
+  cursor: pointer;
+}
+
+.prev-page {
+  margin-right: 5px;
+}
+
+.prev-page:hover {
+  background-color: #111;
+}
+
+.join-button {
+  background-color: #1B62AB;
+}
+
+.join-button:hover {
+  background-color: #2b4987;
 }
