@@ -315,7 +315,7 @@
 
                     <div class="join__form-box__row__right large">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="text" class="id js-id" required />
+                        <input type="text" class="id js-id" pattern="[a-zA-Z0-9]{8,20}$" required />
                         <button type="button" class="check-button check-id">아이디 중복체크</button>
                       </div>
 
@@ -356,7 +356,7 @@
 
                     <div class="join__form-box__row__right">
                       <div class="join__form-box__row__input clearfix">
-                        <input type="password" class="password js-password" required />
+                        <input type="password" class="password js-password"  pattern="[a-zA-Z0-9]{8,20}$" required />
                       </div>
 
                       <p class="join__form-box__row__description">
