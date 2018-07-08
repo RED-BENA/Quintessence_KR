@@ -16,12 +16,6 @@ $(document).ready(function() {
   var old_zip_code = ""; // (구) 우편번호 (6자리)
   var old_address = ""; // (구) 주소 (지번주소)
 
-  var mock_ids = [ // 임시 아이디 DB (Mock data)
-    "asdf1234", "qwerty5678",
-    "arscyj333", "defsoul444",
-    "flawless853", "mark930904"
-  ];
-
   // 회원가입 폼 submit 이벤트
   $('#join-page').submit(function(e) {
     id = $('.js-id').val();
@@ -72,8 +66,8 @@ $(document).ready(function() {
     var isOverlap = false; // 아이디 중복여부
     id = $('.js-id').val(); // 아이디 입력값
 
-    for (id_index in mock_ids) {
-      if (id == mock_ids[id_index]) {
+    for (index in mock_data) {
+      if (id == mock_data[index].id) {
         isOverlap = true;
         break;
       }
@@ -82,14 +76,41 @@ $(document).ready(function() {
     if (isOverlap) {
       $('.js-id').removeClass('input--success');
       $('.js-id').addClass('input--alert');
-      $('.js-id--alert').show();
-      $('.js-id--success').hide();
+      $('.join__form-box__row__description.id .text--alert').show();
+      $('.join__form-box__row__description.id .text--success').hide();
 
     } else {
       $('.js-id').addClass('input--success');
       $('.js-id').removeClass('input--alert');
-      $('.js-id--alert').hide();
-      $('.js-id--success').show();
+      $('.join__form-box__row__description.id .text--alert').hide();
+      $('.join__form-box__row__description.id .text--success').show();
+    }
+  });
+
+  // 닉네임 중복체크
+
+  $('.check-nickname').click(function() {
+    var isOverlap = false; // 아이디 중복여부
+    nickname = $('.js-nickname').val(); // 아이디 입력값
+
+    for (index in mock_data) {
+      if (nickname == mock_data[index].nickname) {
+        isOverlap = true;
+        break;
+      }
+    }
+
+    if (isOverlap) {
+      $('.js-nickname').removeClass('input--success');
+      $('.js-nickname').addClass('input--alert');
+      $('.join__form-box__row__description.nickname .text--alert').show();
+      $('.join__form-box__row__description.nickname .text--success').hide();
+
+    } else {
+      $('.js-nickname').addClass('input--success');
+      $('.js-nickname').removeClass('input--alert');
+      $('.join__form-box__row__description.nickname .text--alert').hide();
+      $('.join__form-box__row__description.nickname .text--success').show();
     }
   });
 
@@ -107,12 +128,6 @@ $(document).ready(function() {
       $(".js-password-cfm").removeClass('input--alert'); // 비밀번호 확인 항목 alert 상태 해제
       $('.js-password--alert').hide(); // 경고문 hide
     }
-  });
-
-
-  // 닉네임 중복체크
-  $('.check-id').click(function() {
-
   });
 
 

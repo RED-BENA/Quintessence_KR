@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/style.css" />
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+  <script src="../js/mock-data.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/join.js"></script>
   <title>한국 퀸테센스 출판</title>
@@ -297,7 +298,7 @@
               <div class="join__form-box">
                 <div class="join__form-box__header">
                   <h3 class="join__form-box__title">
-                    <span class="text--alert">기본정보</span> 입력
+                    <span class="text--required">기본정보</span> 입력
                   </h3>
 
                   <p class="join__form-box__description">
@@ -319,23 +320,19 @@
                         <button type="button" class="check-button check-id">아이디 중복체크</button>
                       </div>
 
-                      <p class="join__form-box__row__description id--alert js-id--alert">
+                      <p class="join__form-box__row__description id">
                         <span class="text--alert">
                           * 이미 존재하는 아이디입니다.<br />
                         </span>
-                      </p>
 
-                      <p class="join__form-box__row__description id--success js-id--success">
                         <span class="text--success">
                           * 사용가능한 아이디입니다.<br />
                         </span>
-                      </p>
 
-                      <p class="join__form-box__row__description">
-                        <span class="text--alert">
+                        <span class="text--required">
                           * 아이디는 한번 가입한 이후에는 변경이 불가능합니다.<br />
                         </span>
-                        영문, 숫자로 6자~15자 이내로 입력하세요.
+                        * 영문, 숫자로 6자~15자 이내로 입력하세요.
                       </p>
                     </div>
                   </div>
@@ -352,8 +349,16 @@
                         <button type="button" class="check-button check-nickname">닉네임 중복체크</button>
                       </div>
 
-                      <p class="join__form-box__row__description">
+                      <p class="join__form-box__row__description nickname">
                         <span class="text--alert">
+                          * 이미 존재하는 닉네임입니다.<br />
+                        </span>
+
+                        <span class="text--success">
+                          * 사용가능한 닉네임입니다.<br />
+                        </span>
+
+                        <span class="text--required">
                           * 닉네임은 한글, 영문, 숫자로 3자 ~ 10자 이내만 가능합니다.<br />
                         </span>
                       </p>
@@ -513,7 +518,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        <span class="required">
+                        <span class="text--required">
                           * 주문등과 관련된 중요한 메일 발송 및 아이디/비번 찾기에 사용됩니다.<br />
                         </span>
                       </p>
@@ -540,7 +545,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        <span class="required">
+                        <span class="text--required">
                           * 광고성정보, 이벤트 문자 수신여부<br />
                         </span>
                       </p>
@@ -567,7 +572,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        <span class="required">
+                        <span class="text--required">
                           * 광고성정보, 이벤트 메일 수신여부<br />
                         </span>
                       </p>
@@ -624,7 +629,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        <span class="required">
+                        <span class="text--required">
                           * 지번 주소는 참고용이며 실제 택배는 도로명 주소를 사용합니다.<br />
                         </span>
                       </p>

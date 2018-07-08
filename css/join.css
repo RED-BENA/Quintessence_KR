@@ -114,6 +114,14 @@
   bottom: 10px;
 }
 
+.text--alert, .text--success {
+  display: none;
+}
+
+.text--required {
+  color: #ff7200;
+}
+
 
 /* 통과 (success) */
 
@@ -131,11 +139,11 @@
 
 
 .text--alert {
-  color: #ff7200;
+  color: #d9534f;
 }
 
 .input--alert {
-  border: 1px solid #ff7200 !important;
+  border: 1px solid #d9534f !important;
 }
 
 .join__form-box__container {
