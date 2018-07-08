@@ -114,6 +114,30 @@
   bottom: 10px;
 }
 
+
+/* 통과 (success) */
+
+
+.text--success {
+  color: #28a745;
+}
+
+.input--success {
+  border: 1px solid #28a745 !important;
+}
+
+
+/* 경고 (alert) */
+
+
+.text--alert {
+  color: #ff7200;
+}
+
+.input--alert {
+  border: 1px solid #ff7200 !important;
+}
+
 .join__form-box__container {
   border-top: 2px solid #6F6F70;
 }

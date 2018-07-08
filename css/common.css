@@ -35,10 +35,6 @@ li {
   clear: both;
 }
 
-.required {
-  color: #ff7200;
-}
-
 .not-required {
   color: #A9A9A9;
 }
