@@ -1,0 +1,48 @@
+/* 맨 상단 메뉴 */
+
+.top {
+  height: 30px;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #E2E8EB;
+}
+
+.top__right-menu {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.top__right-menu li {
+  float: left;
+}
+
+.top__right-menu li:after {
+  display: block;
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #E2E8EB;
+  margin: 5px 10px;
+  float: left;
+}
+
+.top__right-menu li:last-child:after {
+  display: none;
+}
+
+.top__right-menu li a {
+  color: #333;
+  font-size: 12px;
+  padding: 2px;
+  float: left;
+}
+
+
+/* 로그인 버튼 */
+
+
+.top__right-menu__login a {
+  background-color: #fff;
+  border: 1px solid #E2E8EB;
+}
