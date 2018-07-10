@@ -111,7 +111,7 @@
 /* New book slide box */
 
 
-.new-book__slide-box__container {
+.slide-box__container {
   height: 100%;
   border: 1px solid #888;
   border-left: 0;
@@ -119,20 +119,20 @@
   overflow: hidden;
 }
 
-.new-book__slide-box__list {
+.slide-box__list {
   width: 1980px;
   margin-left: 0;
   transition: margin-left .3s;
 }
 
-.new-book__slide-box__list li {
+.slide-box__list li {
   width: 156px;
   height: 100%;
   padding: 20px;
   float: left;
 }
 
-.new-book__slide-box__list li a {
+.slide-box__list li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -141,12 +141,12 @@
   text-align: center;
 }
 
-.new-book__slide-box__list__thumbnail {
+.slide-box__list__thumbnail {
   width: 100px;
   height: 135px;
 }
 
-.new-book__slide-box__list__title {
+.slide-box__list__title {
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -154,28 +154,28 @@
   overflow: hidden;
 }
 
-.new-book__slide-box__list__price {
+.slide-box__list__price {
   display: block;
   font-weight: bold;
 }
 
-.new-book__slide-box__arrow a {
+.slide-box__arrow a {
   display: block;
   width: 25px;
   position: absolute;
 }
 
-.new-book__slide-box__arrow a img {
+.slide-box__arrow a img {
   max-width: 100%;
 }
 
-.new-book__slide-box__prev {
+.slide-box__prev {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
-.new-book__slide-box__next {
+.slide-box__next {
   top: 50%;
   right: 0;
   transform: translateY(-50%);

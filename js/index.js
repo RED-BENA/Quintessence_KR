@@ -73,22 +73,22 @@ $(document).ready(function() {
 
     // 전체 도서의 first 클래스 remove
     // 현재 first_index의 이전 도서(first_index - 1)에 first 클래스 add
-    $('.js-new-book__slide-box__list li').removeClass('first');
-    $('.js-new-book__slide-box__list li:nth-child('+(first_index - 1)+')').addClass('first');
+    $('.js-slide-box__list li').removeClass('first');
+    $('.js-slide-box__list li:nth-child('+(first_index - 1)+')').addClass('first');
 
     // 현재 first_index에서 왼쪽으로 한 칸(first_index - 1) 이동
     // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> -2
-    $('.js-new-book__slide-box__list').css('margin-left', ((first_index - 2) * -156)+'px');
+    $('.js-slide-box__list').css('margin-left', ((first_index - 2) * -156)+'px');
 
   });
 
   // new book slide-box의 next 버튼을 클릭했을 때
-  $('.js-new-book__slide-box__next').click(function(e) {
+  $('.js-slide-box__next').click(function(e) {
     e.preventDefault();
 
     // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
-    let first_index = $('.js-new-book__slide-box__list li.first').index()+1;
+    let first_index = $('.js-slide-box__list li.first').index()+1;
 
     // first_index가 전체 도서 중 마지막 도서의 index일 경우
     if (first_index == 7) {
@@ -97,11 +97,11 @@ $(document).ready(function() {
 
     // 전체 도서의 first 클래스 remove
     // 현재 first_index의 다음 도서(first_index + 1)에 first 클래스 add
-    $('.js-new-book__slide-box__list li').removeClass('first');
-    $('.js-new-book__slide-box__list li:nth-child('+(first_index + 1)+')').addClass('first');
+    $('.js-slide-box__list li').removeClass('first');
+    $('.js-slide-box__list li:nth-child('+(first_index + 1)+')').addClass('first');
 
     // 현재 first_index에서 오른쪽으로 한 칸(first_index + 1) 이동
     // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> 0
-    $('.js-new-book__slide-box__list').css('margin-left', (first_index * -156)+'px');
+    $('.js-slide-box__list').css('margin-left', (first_index * -156)+'px');
   });
 });
