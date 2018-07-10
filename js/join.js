@@ -76,14 +76,14 @@ $(document).ready(function() {
     if (isOverlap) {
       $('.js-id').removeClass('input--success');
       $('.js-id').addClass('input--alert');
-      $('.join__form-box__row__description.id .text--alert').show();
-      $('.join__form-box__row__description.id .text--success').hide();
+      $('.js-row__description__id .text--alert').show();
+      $('.js-row__description__id .text--success').hide();
 
     } else {
       $('.js-id').addClass('input--success');
       $('.js-id').removeClass('input--alert');
-      $('.join__form-box__row__description.id .text--alert').hide();
-      $('.join__form-box__row__description.id .text--success').show();
+      $('.js-row__description__id .text--alert').hide();
+      $('.js-row__description__id .text--success').show();
     }
   });
 
@@ -103,14 +103,14 @@ $(document).ready(function() {
     if (isOverlap) {
       $('.js-nickname').removeClass('input--success');
       $('.js-nickname').addClass('input--alert');
-      $('.join__form-box__row__description.nickname .text--alert').show();
-      $('.join__form-box__row__description.nickname .text--success').hide();
+      $('.js-row__description__nickname .text--alert').show();
+      $('.js-row__description__nickname .text--success').hide();
 
     } else {
       $('.js-nickname').addClass('input--success');
       $('.js-nickname').removeClass('input--alert');
-      $('.join__form-box__row__description.nickname .text--alert').hide();
-      $('.join__form-box__row__description.nickname .text--success').show();
+      $('.js-row__description__nickname .text--alert').hide();
+      $('.js-row__description__nickname .text--success').show();
     }
   });
 
@@ -121,12 +121,16 @@ $(document).ready(function() {
     password = $('.js-password').val();
     password_cfm = $('.js-password-cfm').val();
 
+    $('.js-row__description__password-cfm .text--plain').hide(); // 기본문구 hide
+
     if (password != password_cfm) { // 아이디와 비밀번호가 일치하지 않을 때
       $(".js-password-cfm").addClass('input--alert'); // 비밀번호 확인 항목을 alert 상태로 변경
-      $('.js-password--alert').show(); // 경고문 show
+      $('.js-row__description__password-cfm .text--alert').show(); // 경고문 show
+      $('.js-row__description__password-cfm .text--success').hide(); // 성공문 hide
     } else { // 아이디와 비밀번호가 일치할 때
       $(".js-password-cfm").removeClass('input--alert'); // 비밀번호 확인 항목 alert 상태 해제
-      $('.js-password--alert').hide(); // 경고문 hide
+      $('.js-row__description__password-cfm .text--alert').hide(); // 경고문 hide
+      $('.js-row__description__password-cfm .text--success').show(); // 성공문 show
     }
   });
 

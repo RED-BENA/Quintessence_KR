@@ -311,7 +311,7 @@
                   <!-- 아이디 -->
                   <div class="join__form-box__row large clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>아이디
+                      <span class="text--required">* </span>아이디
                     </div>
 
                     <div class="join__form-box__row__right large">
@@ -320,7 +320,7 @@
                         <button type="button" class="check-button check-id">아이디 중복체크</button>
                       </div>
 
-                      <p class="join__form-box__row__description id">
+                      <p class="join__form-box__row__description js-row__description__id">
                         <span class="text--alert">
                           * 이미 존재하는 아이디입니다.<br />
                         </span>
@@ -340,7 +340,7 @@
                   <!-- 닉네임 -->
                   <div class="join__form-box__row large clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>닉네임
+                      <span class="text--required">* </span>닉네임
                     </div>
 
                     <div class="join__form-box__row__right large">
@@ -349,7 +349,7 @@
                         <button type="button" class="check-button check-nickname">닉네임 중복체크</button>
                       </div>
 
-                      <p class="join__form-box__row__description nickname">
+                      <p class="join__form-box__row__description js-row__description__nickname">
                         <span class="text--alert">
                           * 이미 존재하는 닉네임입니다.<br />
                         </span>
@@ -368,7 +368,7 @@
                   <!-- 비밀번호 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>비밀번호
+                      <span class="text--required">* </span>비밀번호
                     </div>
 
                     <div class="join__form-box__row__right">
@@ -377,12 +377,8 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        * 영문, 숫자로 6자이상 입력하세요.
-                      </p>
-
-                      <p class="join__form-box__row__description password--alert js-password--alert">
-                        <span class="text--alert">
-                          * 비밀번호와 일치하지 않습니다.<br />
+                        <span class="text--plain">
+                          * 영문, 숫자로 6자이상 입력하세요.<br />
                         </span>
                       </p>
                     </div>
@@ -391,7 +387,7 @@
                   <!-- 비밀번호 확인 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>비밀번호 확인
+                      <span class="text--required">* </span>비밀번호 확인
                     </div>
 
                     <div class="join__form-box__row__right">
@@ -399,11 +395,15 @@
                         <input type="password" class="password-cfm js-password-cfm" pattern="[a-zA-Z0-9]{8,20}$" required />
                       </div>
 
-                      <p class="join__form-box__row__description js-join__form-box__row__description">
-                        * 동일하게 다시 한번 입력하세요.
-                      </p>
+                      <p class="join__form-box__row__description js-row__description__password-cfm">
+                        <span class="text--plain">
+                          * 동일하게 다시 한번 입력하세요.<br />
+                        </span>
 
-                      <p class="join__form-box__row__description password--alert js-password--alert">
+                        <span class="text--success">
+                          * 비밀번호와 일치합니다.<br />
+                        </span>
+
                         <span class="text--alert">
                           * 비밀번호와 일치하지 않습니다.<br />
                         </span>
@@ -414,7 +414,7 @@
                   <!-- 이름 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>이름
+                      <span class="text--required">* </span>이름
                     </div>
 
                     <div class="join__form-box__row__right">
@@ -423,7 +423,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        * 실명 한글 이름을 입력하세요.
+                        * 실명을 입력하세요.
                       </p>
                     </div>
                   </div>
@@ -431,7 +431,7 @@
                   <!-- 생년월일 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>생년월일
+                      <span class="text--required">* </span>생년월일
                     </div>
 
                     <div class="join__form-box__row__right">
@@ -448,7 +448,7 @@
                   <!-- 성별 -->
                   <div class="join__form-box__row clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="text--alert">* </span>성별
+                      <span class="text--required">* </span>성별
                     </div>
 
                     <div class="join__form-box__row__right">
@@ -482,7 +482,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        * 생년월일을 입력하세요.
+                        * 전화번호를 입력하세요.
                       </p>
                     </div>
                   </div>
@@ -490,7 +490,7 @@
                   <!-- 휴대폰 번호 -->
                   <div class="join__form-box__row large clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="required">* </span>휴대폰 번호
+                      <span class="text--required">* </span>휴대폰 번호
                     </div>
 
                     <div class="join__form-box__row__right large">
@@ -509,7 +509,7 @@
                   <!-- 이메일 주소 -->
                   <div class="join__form-box__row large clearfix">
                     <div class="join__form-box__row__left">
-                      <span class="required">* </span>이메일 주소
+                      <span class="text--required">* </span>이메일 주소
                     </div>
 
                     <div class="join__form-box__row__right large">
@@ -518,9 +518,7 @@
                       </div>
 
                       <p class="join__form-box__row__description">
-                        <span class="text--required">
-                          * 주문등과 관련된 중요한 메일 발송 및 아이디/비번 찾기에 사용됩니다.<br />
-                        </span>
+                        * 주문등과 관련된 중요한 메일 발송 및 아이디/비번 찾기에 사용됩니다.<br />
                       </p>
                     </div>
                   </div>
