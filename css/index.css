@@ -58,19 +58,25 @@
 }
 
 .banner__slide-box__item:first-child {
-  background: url(../images/example/2784751803.jpg);
+  background: url(../images/banner1.jpg);
 }
 
 .banner__slide-box__item:nth-child(2) {
-  background: url(../images/example/371291710.jpg);
+  background: url(../images/banner2.jpg);
 }
 
 .banner__slide-box__item:nth-child(3) {
-  background: url(../images/example/834352490.jpg);
+  background: url(../images/banner3.jpg);
 }
 
 .banner__slide-box__item:last-child {
-  background: url(../images/example/1038239758.jpg);
+  background: url(../images/banner4.jpg);
+}
+
+.banner__slide-box__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .banner__slide-box__indicator {
