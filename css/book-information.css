@@ -1,0 +1,113 @@
+.book-information__top {
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #dadada;
+  padding: 30px 0;
+}
+
+.book-information__title {
+  color: #280F24;
+  font-size: 21px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #280F24;
+}
+
+
+/* 책 정보 - 왼쪽 */
+
+
+.book-information__feature__left {
+  width: 200px;
+  padding: 25px;
+  float: left;
+}
+
+
+/* 썸네일 */
+
+
+.book-information__feature__thumbnail {
+  width: 150px;
+  border: 1px solid #888;
+  margin-bottom: 10px;
+}
+
+.book-information__feature__thumbnail img {
+  max-width: 100%;
+}
+
+
+/* 크게보기 버튼 */
+
+
+.book-information__expand {
+  width: 150px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #888;
+}
+
+
+/* 책 정보 - 오른쪽 */
+
+
+.book-information__feature__right {
+  width: 740px;
+  padding: 25px 0;
+  float: left;
+}
+
+.book-information__feature__list {
+
+}
+
+.book-information__feature__item {
+  margin-bottom: 10px;
+}
+
+
+/* 책 정보 제목/내용 */
+
+
+.book-information__feature__title {
+  color: #888;
+  width: 60px;
+  font-size: 12px;
+  font-weight: bold;
+  float: left;
+}
+
+.book-information__feature__content {
+  width: 450px;
+  font-size: 12px;
+  padding-left: 15px;
+  float: left;
+  position: relative;
+}
+
+.book-information__feature__content:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #cecece;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.book-information__feature__price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.book-information__seperate {
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+  margin: 30px 0;
+}
