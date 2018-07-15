@@ -66,6 +66,7 @@
 
 .book-information__feature__item {
   margin-bottom: 10px;
+  position: relative;
 }
 
 
@@ -73,16 +74,20 @@
 
 
 .book-information__feature__title {
-  color: #888;
+  color: #333;
   width: 60px;
   font-size: 12px;
   font-weight: bold;
-  float: left;
+  margin-top: -7px;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .book-information__feature__content {
   width: 450px;
   font-size: 12px;
+  margin-left: 60px;
   padding-left: 15px;
   float: left;
   position: relative;
@@ -101,8 +106,13 @@
 }
 
 .book-information__feature__price {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+}
+
+.text--price {
+  color: #ff7200;
+  font-size: 20px;
 }
 
 .book-information__seperate {
@@ -110,4 +120,69 @@
   height: 1px;
   background-color: #dadada;
   margin: 30px 0;
+}
+
+.book-information__seperate.last {
+  height: 2px;
+  background-color: #280F24;
+}
+
+
+/* 장바구니 담기 / 바로구매 / 보관함 */
+
+
+.book-information__feature__count {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.book-information__feature__label {
+  margin-top: 8px;
+  float: left;
+}
+
+.book-information__feature__quantity {
+  width: 60px;
+  height: 30px;
+  text-align: right;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #c6c6c6;
+  float: left;
+}
+
+.book-information__feature__control {
+  color: #2b4987;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+  margin-top: 3px;
+  margin-left: 3px;
+  float: left;
+}
+
+.book-information__feature__button {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: -1px;
+  border: 0;
+  margin-right: 10px;
+  padding: 15px 20px;
+}
+
+.book-information__feature__button.cart {
+  background-color: #1B62AB;
+}
+
+.book-information__feature__button.buy {
+  background-color: #ff7200;
+}
+
+.book-information__feature__button.storage {
+  color: #888;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
 }

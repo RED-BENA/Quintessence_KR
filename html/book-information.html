@@ -250,7 +250,7 @@
 
           <div class="book-information__feature clearfix">
 
-            <!-- 왼쪽 -->
+            <!-- 왼쪽 (도서 썸네일, 크게보기) -->
 
             <div class="book-information__feature__left">
               <div class="book-information__feature__thumbnail">
@@ -260,78 +260,104 @@
               <button type=button class="book-information__expand">크게보기</button>
             </div>
 
-            <!-- 오른쪽 -->
+            <!-- 오른쪽 (도서 정보) -->
 
             <div class="book-information__feature__right">
-              <ul class="book-information__feature__list">
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">정가</div>
-                  <div class="book-information__feature__content">
-                    180,000원
+              <form class="sell-form" method="post">
+                <ul class="book-information__feature__list">
+
+                  <!-- 정가 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">정가</div>
+                    <div class="book-information__feature__content">
+                      180,000원
+                    </div>
+                  </li>
+
+                  <!-- 판매가 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">판매가</div>
+                    <div class="book-information__feature__content">
+                      <span class="book-information__feature__price">
+                        <span class="text--price">180,000</span>원
+                      </span>
+                    </div>
+                  </li>
+
+                  <!-- 배송비 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">배송비</div>
+                    <div class="book-information__feature__content">무료</div>
+                  </li>
+
+                  <!-- 구분선 -->
+
+                  <li class="book-information__seperate"></li>
+
+                  <!-- 저자 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">저자</div>
+                    <div class="book-information__feature__content">자제체작</div>
+                  </li>
+
+                  <!-- 자체제작 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">출판사</div>
+                    <div class="book-information__feature__content">자제체작</div>
+                  </li>
+
+                  <!-- 발행일 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">발행일</div>
+                    <div class="book-information__feature__content">2018.07.01</div>
+                  </li>
+
+                  <!-- 상품코드 -->
+
+                  <li class="book-information__feature__item clearfix">
+                    <div class="book-information__feature__title">상품코드</div>
+                    <div class="book-information__feature__content">P00000HB</div>
+                  </li>
+
+                  <!-- 구분선 (마지막줄) -->
+
+                  <li class="book-information__seperate last"></li>
+                </ul>
+
+                <!-- 구매버튼 (장바구니, 바로구매, 보관함) -->
+
+                <div class="book-information__feature__buy-item clearfix">
+
+                  <!-- 주문수량 -->
+
+                  <div class="book-information__feature__count clearfix">
+                    <span class="book-information__feature__label">주문수량</span>
+                    <input type="text" class="book-information__feature__quantity" value="1" />
+                    <button type="button" class="book-information__feature__control">+</button>
+                    <button type="button" class="book-information__feature__control">-</button>
                   </div>
-                </li>
 
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">판매가</div>
-                  <div class="book-information__feature__content">
-                    <span class="book-information__feature__price">
-                      <span class="text--required">180,000</span>원
-                    </span>
+                  <div class="book-information__feature__last">
+                    <button type="button" class="book-information__feature__button cart">
+                      🛒&nbsp;&nbsp;장바구니 담기
+                    </button>
+
+                    <button type="submit" class="book-information__feature__button buy">
+                      🗸&nbsp;&nbsp;바로구매
+                    </button>
+
+                    <button type="button" class="book-information__feature__button storage">
+                      ♡&nbsp;&nbsp;보관함 등록
+                    </button>
                   </div>
-                </li>
-
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">배송비</div>
-                  <div class="book-information__feature__content">무료</div>
-                </li>
-
-                <li class="book-information__seperate"></li>
-
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">저자</div>
-                  <div class="book-information__feature__content">자제체작</div>
-                </li>
-
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">출판사</div>
-                  <div class="book-information__feature__content">자제체작</div>
-                </li>
-
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">발행일</div>
-                  <div class="book-information__feature__content">2018.07.01</div>
-                </li>
-
-                <li class="book-information__feature__item clearfix">
-                  <div class="book-information__feature__title">상품코드</div>
-                  <div class="book-information__feature__content">P00000HB</div>
-                </li>
-
-                <li class="book-information__seperate"></li>
-              </ul>
-
-              <div class="book-information__feature__buy__item clearfix">
-                <div class="book-information__feature__quantity">
-                  주문수량
-                  <input type="text" value="1" />
-                  <button type="button" class="book-information__feature--plus">+</button>
-                  <button type="button" class="book-information__feature--minus">-</button>
                 </div>
-
-                <div class="book-information__feature__last">
-                  <button type="button" class="book-information__feature__cart">
-                    장바구니 담기
-                  </button>
-
-                  <button type="button" class="book-information__feature__cart">
-                    바로구매
-                  </button>
-
-                  <button type="button" class="book-information__feature__cart">
-                    보관함 등록
-                  </button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
