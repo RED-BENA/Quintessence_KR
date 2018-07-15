@@ -64,7 +64,7 @@
 
 }
 
-.book-information__feature__item {
+.book-information__feature li {
   margin-bottom: 10px;
   position: relative;
 }
@@ -188,15 +188,15 @@
   border: 1px solid #c6c6c6;
 }
 
-.book_information__bottom {
+.book-information__bottom {
   padding: 30px 0;
 }
 
-.book_information__details {
+.book-information__details {
 
 }
 
-.book_information__scroll {
+.book-information__scroll {
   text-indent: -9999px;
   padding-bottom: 5px;
 }
@@ -205,11 +205,11 @@
 /* 탭 */
 
 
-.book_information__details__list {
+.book-information__details__list {
   border-bottom: 2px solid #280F24;
 }
 
-.book_information__details__item {
+.book-information__details li {
   width: 25%;
   text-align: center;
   font-size: 15px;
@@ -222,13 +222,13 @@
   position: relative;
 }
 
-.book_information__details__item.active {
+.book-information__details li.active {
   background-color: #fff;
   border: 2px solid #280F24;
   border-bottom: 0;
 }
 
-.book_information__details__item.active:after {
+.book-information__details li.active:after {
   content: '';
   display: block;
   width: 100%;
@@ -240,12 +240,12 @@
   z-index: 1;
 }
 
-.book_information__details__item a {
+.book-information__details li a {
   color: #280F24;
   font-weight: bold;
 }
 
-.book_information__details__item.active a {
+.book-information__details li.active a {
   color: #1B62AB;
 }
 
@@ -253,17 +253,185 @@
 /* 상세정보 (detail1) */
 
 
-.book_information__detail1 {
+.book-information__detail1 {
   padding: 30px 0 0;
 }
 
-.book_information__detail1__title {
+.book-information__detail1__title {
   color: #1B62AB;
   font-size: 17px;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.book_information__detail1__description {
+.book-information__detail1__description {
   font-size: 13px;
+}
+
+
+/* 이용후기 (Detail2)  */
+
+
+.book-information__detail2 {
+  padding: 30px 0;
+}
+
+
+/* detail2 Header */
+
+
+.book-information__detail2__header {
+  margin-bottom: 15px;
+}
+
+.book-information__detail2__header--alert {
+  color: #888;
+  font-size: 12px;
+  letter-spacing: -1px;
+  float: left;
+}
+
+.book-information__detail2__add-review {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: -1px;
+  background-color: #1B62AB;
+  border: 0;
+  padding: 5px 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.book-information__detail2__review-container {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.book-information__detail2__review-form {
+
+}
+
+.book-information__detail2__review-form__title {
+  color: #280F24;
+  width: 90px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 35px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.book-information__detail2__review-form__content {
+  width: 808px;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: 0;
+  float: left;
+}
+
+
+/* 평가 점수 */
+
+.book-information__detail2__review-form__stars {
+  margin-bottom: 5px;
+}
+
+.book-information__detail2__review-form__stars__list {
+  padding: 0 20px;
+}
+
+.book-information__detail2__review-form__stars__list li {
+  width: 20%;
+  margin-top: 10px;
+  float: left;
+}
+
+.book-information__detail2__review-form__star-score {
+  margin-right: 10px;
+  float: left;
+}
+
+.book-information__detail2__review__base-star {
+  width: 75px;
+  height: 17px;
+  background-image: url(../images/inner_star.png);
+  float: left;
+}
+
+.book-information__detail2__review__red-star {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/inner_star.png);
+  background-position: 0 -18px;
+}
+
+.book-information__detail2__review__red-star.five {
+
+}
+
+.book-information__detail2__review__red-star.four {
+  width: 80%;
+}
+
+.book-information__detail2__review__red-star.three {
+  width: 60%;
+}
+
+.book-information__detail2__review__red-star.two {
+  width: 40%;
+}
+
+.book-information__detail2__review__red-star.one {
+  width: 20%;
+}
+
+
+/* 평가 제목 */
+
+
+.book-information__detail2__review-form__review-title {
+  margin-bottom: 5px;
+}
+
+.book-information__detail2__review-form__content .review-title {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 15px;
+  outline: none;
+}
+
+
+/* 평가내용 */
+
+
+.book-information__detail2__review-form__detail {
+  width: 763px;
+  height: 105px;
+  float: left;
+}
+
+.book-information__detail2__review-form__detail textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.book-information__detail2__review-form__submit {
+  color: #fff;
+  width: 125px;
+  height: 105px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  background-color: #1B62AB;
+  border: 0;
+  margin-left: 10px;
 }

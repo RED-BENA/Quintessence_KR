@@ -268,7 +268,7 @@
 
                   <!-- 정가 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">정가</div>
                     <div class="book-information__feature__content">
                       180,000원
@@ -277,7 +277,7 @@
 
                   <!-- 판매가 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">판매가</div>
                     <div class="book-information__feature__content">
                       <span class="book-information__feature__price">
@@ -288,7 +288,7 @@
 
                   <!-- 배송비 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">배송비</div>
                     <div class="book-information__feature__content">무료</div>
                   </li>
@@ -299,28 +299,28 @@
 
                   <!-- 저자 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">저자</div>
                     <div class="book-information__feature__content">자제체작</div>
                   </li>
 
                   <!-- 자체제작 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">출판사</div>
                     <div class="book-information__feature__content">자제체작</div>
                   </li>
 
                   <!-- 발행일 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">발행일</div>
                     <div class="book-information__feature__content">2018.07.01</div>
                   </li>
 
                   <!-- 상품코드 -->
 
-                  <li class="book-information__feature__item clearfix">
+                  <li class="clearfix">
                     <div class="book-information__feature__title">상품코드</div>
                     <div class="book-information__feature__content">P00000HB</div>
                   </li>
@@ -363,38 +363,38 @@
         </div>
       </div>
 
-      <div class="book_information__bottom">
+      <div class="book-information__bottom">
         <div class="wrapper">
           <!-- 책 상세 -->
 
-          <div class="book_information__details">
-            <div id="detail1" class="book_information__scroll">detail1</div>
+          <div class="book-information__details">
+            <div id="detail1" class="book-information__scroll">detail1</div>
 
-            <ul class="book_information__details__list clearfix">
-              <li class="book_information__details__item active">
+            <ul class="book-information__details__list clearfix">
+              <li class="active">
                 <a href="#detail1">상세정보</a>
               </li>
 
-              <li class="book_information__details__item">
+              <li>
                 <a href="#detail2">이용후기</a>
               </li>
 
-              <li class="book_information__details__item">
+              <li>
                 <a href="#detail3">상품문의</a>
               </li>
 
-              <li class="book_information__details__item">
+              <li>
                 <a href="#detail4">배송/반품/교환/AS</a>
               </li>
             </ul>
           </div>
 
-          <div class="book_information__detail1">
-            <h3 class="book_information__detail1__title">
+          <div class="book-information__detail1">
+            <h3 class="book-information__detail1__title">
               ◎ 목차
             </h3>
 
-            <div class="book_information__detail1__description">
+            <div class="book-information__detail1__description">
               스마트폰 동화상으로 배운다!<br />
               정밀도를 높이는 치료 수법<br />
               제 15회 implant 주위로의 tunneling technique에 의한 GBR<br />
@@ -455,30 +455,166 @@
             </div>
           </div>
 
-          <div class="book_information__details">
-            <div id="detail2" class="book_information__scroll">detail1</div>
 
-            <ul class="book_information__details__list clearfix">
-              <li class="book_information__details__item">
+          <!-- 이용후기 (datail2)  -->
+
+
+          <div class="book-information__details">
+            <div id="detail2" class="book-information__scroll">detail1</div>
+
+            <ul class="book-information__details__list clearfix">
+              <li>
                 <a href="#detail1">상세정보</a>
               </li>
 
-              <li class="book_information__details__item active">
+              <li class="active">
                 <a href="#detail2">이용후기</a>
               </li>
 
-              <li class="book_information__details__item">
+              <li>
                 <a href="#detail3">상품문의</a>
               </li>
 
-              <li class="book_information__details__item">
+              <li>
                 <a href="#detail4">배송/반품/교환/AS</a>
               </li>
             </ul>
           </div>
 
-          <div class="book_information__detail2">
-            
+          <div class="book-information__detail2">
+
+            <!-- 이용후기 Header -->
+
+            <div class="book-information__detail2__header clearfix">
+              <p  class="book-information__detail2__header--alert">
+                게시판 성격과 다른내용의 글을 등록하실 경우 임의로 삭제처리 될 수 있습니다.
+              </p>
+
+              <button type="button" class="book-information__detail2__add-review">
+                이용후기 입력하기
+              </button>
+            </div>
+
+            <!-- 후기 입력 폼 -->
+
+            <div class="book-information__detail2__review-container">
+              <form class="book-information__detail2__review-form" method="post">
+
+                <!-- 평가점수 -->
+
+                <div class="book-information__detail2__review-form__stars clearfix">
+
+                  <!-- 평가점수 (제목) -->
+
+                  <div class="book-information__detail2__review-form__title">
+                    평가 점수
+                  </div>
+
+                  <!-- 평가점수 (내용) -->
+
+                  <div class="book-information__detail2__review-form__content">
+                    <ul class="book-information__detail2__review-form__stars__list clearfix">
+
+                      <!-- 별 다섯 개 -->
+
+                      <li>
+                        <label class="clearfix">
+                          <input class="book-information__detail2__review-form__star-score" type="radio" name="star" />
+
+                          <span class="book-information__detail2__review__base-star">
+                            <span class="book-information__detail2__review__red-star five"></span>
+                          </span>
+                        </label>
+                      </li>
+
+                      <!-- 별 네 개 -->
+
+                      <li>
+                        <label>
+                          <input class="book-information__detail2__review-form__star-score" type="radio" name="star" />
+
+                          <span class="book-information__detail2__review__base-star">
+                            <span class="book-information__detail2__review__red-star four"></span>
+                          </span>
+                        </label>
+                      </li>
+
+                      <!-- 별 세 개 -->
+
+                      <li>
+                        <label>
+                          <input class="book-information__detail2__review-form__star-score" type="radio" name="star" />
+
+                          <span class="book-information__detail2__review__base-star">
+                            <span class="book-information__detail2__review__red-star three"></span>
+                          </span>
+                        </label>
+                      </li>
+
+                      <!-- 별 두 개 -->
+
+                      <li>
+                        <label>
+                          <input class="book-information__detail2__review-form__star-score" type="radio" name="star" />
+
+                          <span class="book-information__detail2__review__base-star">
+                            <span class="book-information__detail2__review__red-star two"></span>
+                          </span>
+                        </label>
+                      </li>
+
+                      <!-- 별 한 개 -->
+
+                      <li>
+                        <label>
+                          <input class="book-information__detail2__review-form__star-score" type="radio" name="star" />
+
+                          <span class="book-information__detail2__review__base-star">
+                            <span class="book-information__detail2__review__red-star one"></span>
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 평가 제목 -->
+
+                <div class="book-information__detail2__review-form__review-title clearfix">
+                  <div class="book-information__detail2__review-form__title">평가 제목</div>
+                  <div class="book-information__detail2__review-form__content">
+                    <input type="text" class="review-title" />
+                  </div>
+                </div>
+
+                <!-- 평가 내용 -->
+
+                <div class="book-information__detail2__review-form__review-content clearfix">
+                  <div class="book-information__detail2__review-form__detail">
+                    <textarea></textarea>
+                  </div>
+
+                  <button type="submit" class="book-information__detail2__review-form__submit">
+                    등록
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- 리뷰 목록 -->
+
+            <ul class="book-information__detail2__review">
+              <li>
+                <span class="book-information__detail2__review__base-star">
+                  <span calss="book-information__detail2__review__red-star"></span>
+                </span>
+
+                <span class="book-information__detail2__review__title">
+                  제목
+                </span>
+
+              </li>
+            </ul>
           </div>
         </div>
       </div>
