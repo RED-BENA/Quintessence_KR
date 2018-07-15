@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/style.css" />
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <script src="../js/script.js"></script>
+  <script src="../js/book-information.js"></script>
   <title>한국 퀸테센스 출판</title>
 </head>
 
@@ -367,6 +368,8 @@
         <div class="wrapper">
           <!-- 책 상세 -->
 
+          <!-- 상세정보 (detail1) -->
+
           <div class="book-information__details">
             <div id="detail1" class="book-information__scroll">detail1</div>
 
@@ -389,12 +392,14 @@
             </ul>
           </div>
 
-          <div class="book-information__detail1">
-            <h3 class="book-information__detail1__title">
+          <!-- 상세정보 (detail1) -->
+
+          <div class="book-information__detail">
+            <h3 class="book-information__detail__title">
               ◎ 목차
             </h3>
 
-            <div class="book-information__detail1__description">
+            <div class="book-information__detail__description">
               스마트폰 동화상으로 배운다!<br />
               정밀도를 높이는 치료 수법<br />
               제 15회 implant 주위로의 tunneling technique에 의한 GBR<br />
@@ -460,7 +465,7 @@
 
 
           <div class="book-information__details">
-            <div id="detail2" class="book-information__scroll">detail1</div>
+            <div id="detail2" class="book-information__scroll">detail2</div>
 
             <ul class="book-information__details__list clearfix">
               <li>
@@ -481,24 +486,27 @@
             </ul>
           </div>
 
-          <div class="book-information__detail2">
+          <!-- 이용후기 (detail2) 내용 -->
+
+          <div class="book-information__detail">
 
             <!-- 이용후기 Header -->
 
-            <div class="book-information__detail2__header clearfix">
-              <p  class="book-information__detail2__header--alert">
+            <div class="book-information__detail__header clearfix">
+              <p  class="book-information__detail__header--alert detail2">
                 게시판 성격과 다른내용의 글을 등록하실 경우 임의로 삭제처리 될 수 있습니다.
               </p>
 
-              <button type="button" class="book-information__detail2__add-review">
+              <button type="button" class="book-information__detail__add-review js-book-information__detail2__add-review">
                 이용후기 입력하기
               </button>
             </div>
 
             <!-- 후기 입력 폼 -->
 
-            <div class="book-information__detail2__review-container">
-              <form class="book-information__detail2__review-form" method="post">
+
+            <div class="book-information__detail__review-container js-book-information__detail2__review-container">
+              <form class="book-information__detail__review-form" method="post">
 
                 <!-- 평가점수 -->
 
@@ -506,13 +514,13 @@
 
                   <!-- 평가점수 (제목) -->
 
-                  <div class="book-information__detail2__review-form__title">
+                  <div class="book-information__detail__review-form__title">
                     평가 점수
                   </div>
 
                   <!-- 평가점수 (내용) -->
 
-                  <div class="book-information__detail2__review-form__content">
+                  <div class="book-information__detail__review-form__content">
                     <ul class="book-information__detail2__review-form__stars__list clearfix">
 
                       <!-- 별 다섯 개 -->
@@ -580,21 +588,21 @@
 
                 <!-- 평가 제목 -->
 
-                <div class="book-information__detail2__review-form__review-title clearfix">
-                  <div class="book-information__detail2__review-form__title">평가 제목</div>
-                  <div class="book-information__detail2__review-form__content">
+                <div class="book-information__detail__review-form__review-title clearfix">
+                  <div class="book-information__detail__review-form__title">평가 제목</div>
+                  <div class="book-information__detail__review-form__content">
                     <input type="text" class="review-title" />
                   </div>
                 </div>
 
                 <!-- 평가 내용 -->
 
-                <div class="book-information__detail2__review-form__review-content clearfix">
-                  <div class="book-information__detail2__review-form__detail">
+                <div class="book-information__detail__review-form__review-content clearfix">
+                  <div class="book-information__detail__review-form__detail">
                     <textarea></textarea>
                   </div>
 
-                  <button type="submit" class="book-information__detail2__review-form__submit">
+                  <button type="submit" class="book-information__detail__review-form__submit">
                     등록
                   </button>
                 </div>
@@ -603,18 +611,381 @@
 
             <!-- 리뷰 목록 -->
 
-            <ul class="book-information__detail2__review">
+            <ul class="book-information__detail__review">
               <li>
-                <span class="book-information__detail2__review__base-star">
-                  <span calss="book-information__detail2__review__red-star"></span>
-                </span>
+                <div class="book-information__detail__review__summary js-book-information__detail__review__summary clearfix">
 
-                <span class="book-information__detail2__review__title">
-                  제목
-                </span>
+                  <!-- 리뷰 왼쪽 -->
 
+                  <div class="book-information__detail__review--left clearfix">
+                    <span class="book-information__detail2__review__base-star">
+                      <span class="book-information__detail2__review__red-star five"></span>
+                    </span>
+
+                    <span class="book-information__detail__review__title">
+                      <a href="#">제목</a>
+                    </span>
+                  </div>
+
+                  <!-- 리뷰 오른쪽 -->
+
+                  <div class="book-information__detail__review--right clearfix">
+                    <span class="book-information__detail__review__nickname-container">
+                      ✏️ <span class="book-information__detail__review__nickname">닉네임</span>
+                    </span>
+
+                    <span class="book-information__detail__review__date">
+                      2018.07.14
+                    </span>
+
+                    <button type="button" class="book-information__detail__review__open js-book-information__detail__review__open">
+                      내용보기
+                    </button>
+                  </div>
+                </div>
+
+                <div class="book-information__detail__whole-review js-book-information__detail__review__whole-review">
+                  <p class="book-information__detail__whole-review__title">
+                    제목
+                  </p>
+
+                  전체내용
+                </div>
               </li>
             </ul>
+
+            <div class="book__section__page-num">
+              <div class="book__section__buttons">
+                <ul class="book__section__move clearfix">
+                  <li>
+                    <a href="#">
+                      <span class="all-prev-button"></span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span class="prev-button"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="book__section__page-num__list clearfix">
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                </ul>
+
+                <ul class="book__section__move clearfix">
+                  <li>
+                    <a href="#">
+                      <span class="all-next-button"></span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span class="next-button"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 상품문의 (detail3) -->
+
+
+          <div class="book-information__details">
+            <div id="detail3" class="book-information__scroll">detail3</div>
+
+            <ul class="book-information__details__list clearfix">
+              <li>
+                <a href="#detail1">상세정보</a>
+              </li>
+
+              <li>
+                <a href="#detail2">이용후기</a>
+              </li>
+
+              <li class="active">
+                <a href="#detail3">상품문의</a>
+              </li>
+
+              <li>
+                <a href="#detail4">배송/반품/교환/AS</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상품문의 (detail3) 내용 -->
+
+          <div class="book-information__detail">
+
+            <!-- 상품문의 Header -->
+
+            <div class="book-information__detail__header clearfix">
+              <p  class="book-information__detail__header--alert detail3">
+                주문 및 배송 관련 문의는 1:1문의/고객게시판을 이용해 주세요.
+              </p>
+
+              <button type="button" class="book-information__detail__add-review js-book-information__detail2__add-review">
+                상품문의 입력하기
+              </button>
+            </div>
+
+            <!-- 후기 입력 폼 -->
+
+            <div class="book-information__detail__qna-container js-book-information__detail2__qna-container">
+              <form class="book-information__detail__qna-form" method="post">
+
+                <!-- 평가 제목 -->
+
+                <div class="book-information__detail__qna-form__qna-title clearfix">
+                  <div class="book-information__detail__qna-form__title">평가 제목</div>
+                  <div class="book-information__detail__qna-form__content">
+                    <input type="text" class="qna-title" />
+                  </div>
+                </div>
+
+                <!-- 평가 내용 -->
+
+                <div class="book-information__detail__qna-form__qna-content clearfix">
+                  <div class="book-information__detail__qna-form__detail">
+                    <textarea></textarea>
+                  </div>
+
+                  <button type="submit" class="book-information__detail__qna-form__submit">
+                    등록
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- 리뷰 목록 -->
+
+            <ul class="book-information__detail__qna">
+              <li>
+                <div class="book-information__detail__qna__summary js-book-information__detail__qna__summary clearfix">
+
+                  <!-- 리뷰 왼쪽 -->
+
+                  <div class="book-information__detail__qna--left clearfix">
+                    <span class="book-information__detail__qna__status ok">답변완료</span>
+
+                    <span class="book-information__detail__qna__title">
+                      <a href="#">제목</a>
+                    </span>
+                  </div>
+
+                  <!-- 리뷰 오른쪽 -->
+
+                  <div class="book-information__detail__qna--right clearfix">
+                    <span class="book-information__detail__qna__nickname-container">
+                      ✏️ <span class="book-information__detail__qna__nickname">닉네임</span>
+                    </span>
+
+                    <span class="book-information__detail__qna__date">
+                      2018.07.14
+                    </span>
+
+                    <button type="button" class="book-information__detail__qna__open js-book-information__detail__qna__open">
+                      내용보기
+                    </button>
+                  </div>
+                </div>
+
+                <div class="book-information__detail__whole-qna js-book-information__detail__qna__whole-qna">
+                  <p class="book-information__detail__whole-qna__title">
+                    제목
+                  </p>
+
+                  전체내용
+
+                  <div class="book-information__detail__whole-qna__answer">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="book__section__page-num">
+              <div class="book__section__buttons">
+                <ul class="book__section__move clearfix">
+                  <li>
+                    <a href="#">
+                      <span class="all-prev-button"></span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span class="prev-button"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="book__section__page-num__list clearfix">
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                </ul>
+
+                <ul class="book__section__move clearfix">
+                  <li>
+                    <a href="#">
+                      <span class="all-next-button"></span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span class="next-button"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 배송/반품/교환/AS (detail4) -->
+
+          <div class="book-information__details">
+            <div id="detail4" class="book-information__scroll">detail4</div>
+
+            <ul class="book-information__details__list clearfix">
+              <li>
+                <a href="#detail1">상세정보</a>
+              </li>
+
+              <li>
+                <a href="#detail2">이용후기</a>
+              </li>
+
+              <li>
+                <a href="#detail3">상품문의</a>
+              </li>
+
+              <li class="active">
+                <a href="#detail4">배송/반품/교환/AS</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- (detail4) 내용 -->
+
+          <div class="book-information__detail">
+            <h3 class="book-information__detail__title">
+              ◎ 배송안내
+            </h3>
+
+            <div class="book-information__detail__description">
+              <dl class="book-information__detail__description__row">
+                <dt>
+                  배송비
+                </dt>
+
+                <dd>
+                  기본적으로 무료배송이나, 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.
+                </dd>
+              </dl>
+
+              <dl class="book-information__detail__description__row">
+                <dt>
+                  배송기간
+                </dt>
+
+                <dd>
+                  고객님께서 주문하신 상품의 평균 배송일은 입금 확인후 3일 ~ 7일입니다.<br />
+                  상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.
+                </dd>
+              </dl>
+
+              <dl class="book-information__detail__description__row">
+                <dt>
+                  배송정보
+                </dt>
+
+                <dd>
+                  ?? 택배 이용
+                </dd>
+              </dl>
+            </div>
+
+            <!--  -->
+
+            <h3 class="book-information__detail__title">
+              ◎ 반품/교환/AS안내
+            </h3>
+
+            <div class="book-information__detail__description">
+              <dl class="book-information__detail__description__row">
+                <dt>
+                  반품/교환<br />
+                  신청기준
+                </dt>
+
+                <dd>
+                  <h4>◎ 반품/교환 가능</h4>
+
+                  - 상품을 공급 받으신 날로부터 7일이내 단, 가전제품의 경우 포장을
+                  개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br />
+                  - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과 다르거나
+                  다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내<br />
+
+                  <div class="book-information__detail__description__seperate"></div>
+
+                  <h4>◎ 반품/교환 불가능</h4>
+
+                  - 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여
+                    포장 등을 훼손한 경우는 제외<br />
+                  - 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br />
+                    (예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에
+                    따른 반품/교환은 제조사 기준에 따릅니다.)<br />
+                  - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 단, 화장품등의 경우 시용제품을
+                    제공한 경우에 한 합니다.<br />
+                  - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br />
+                  - 복제가 가능한 상품등의 포장을 훼손한 경우<br />
+                    (자세한 내용은 고객만족센터를 이용해 주시기 바랍니다.)<br />
+
+                  ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br />
+                    (색상 교환, 사이즈 교환 등 포함)
+                </dd>
+              </dl>
+            </div>
           </div>
         </div>
       </div>

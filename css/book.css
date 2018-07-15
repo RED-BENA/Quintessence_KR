@@ -1,0 +1,266 @@
+.book-information__detail {
+  padding: 30px 0;
+}
+
+/* 상세정보 (detail1) */
+
+.book-information__detail__title {
+  color: #1B62AB;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.book-information__detail__description {
+  font-size: 13px;
+}
+
+
+/* detail2 Header */
+
+
+.book-information__detail__header {
+  margin-bottom: 15px;
+}
+
+.book-information__detail__header--alert {
+  font-size: 12px;
+  letter-spacing: -1px;
+  float: left;
+}
+
+.book-information__detail__add-review {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: -1px;
+  background-color: #1B62AB;
+  border: 0;
+  padding: 5px 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.book-information__detail__review-container,
+.book-information__detail__qna-container {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.book-information__detail__review-form__title,
+.book-information__detail__qna-form__title {
+  color: #280F24;
+  width: 90px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 35px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.book-information__detail__review-form__content,
+.book-information__detail__qna-form__content {
+  width: 808px;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: 0;
+  float: left;
+}
+
+/* 평가/문의 제목 */
+
+
+.book-information__detail__review-form__review-title,
+.book-information__detail__qna-form__qna-title {
+  margin-bottom: 5px;
+}
+
+.book-information__detail__review-form__content .review-title,
+.book-information__detail__qna-form__content .qna-title {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 15px;
+  outline: none;
+}
+
+
+/* 평가/문의 내용 */
+
+
+.book-information__detail__review-form__detail,
+.book-information__detail__qna-form__detail {
+  width: 763px;
+  height: 105px;
+  float: left;
+}
+
+.book-information__detail__review-form__detail textarea,
+.book-information__detail__qna-form__detail textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.book-information__detail__review-form__submit,
+.book-information__detail__qna-form__submit {
+  color: #fff;
+  width: 125px;
+  height: 105px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  background-color: #1B62AB;
+  border: 0;
+  margin-left: 10px;
+}
+
+
+/* 리뷰/문의 목록 */
+
+
+.book-information__detail__review,
+.book-information__detail__qna {
+  border-top: 2px solid #555;
+}
+
+.book-information__detail__review li,
+.book-information__detail__qna li {
+  font-size: 13px;
+}
+
+.book-information__detail__review__summary,
+.book-information__detail__qna__summary {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.book-information__detail__review__summary:hover,
+.book-information__detail__qna__summary:hover {
+  background-color: #FBFBFB;
+}
+
+.book-information__detail__review__summary.open,
+.book-information__detail__qna__summary.open {
+  border-bottom: 1px dotted #ccc;
+}
+
+
+/* 리뷰/문의 왼쪽 */
+
+
+.book-information__detail__review--left,
+.book-information__detail__qna--left {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  margin-top: -8.5px;
+}
+
+
+/* 별점 */
+
+
+.book-information__detail__review--left
+.book-information__detail__review__base-star {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+}
+
+.book-information__detail__review__title {
+  margin-left: 15px;
+
+}
+
+.book-information__detail__review__title a {
+  color: #280F24;
+  vertical-align: middle;
+}
+
+.book-information__detail__review__title a:hover {
+  text-decoration: underline;
+}
+
+
+/* 리뷰 오른쪽 */
+
+
+.book-information__detail__review--right,
+.book-information__detail__qna--right {
+  float: right;
+}
+
+
+/* 리뷰 올린 사람의 닉네임 */
+
+
+.book-information__detail__review__nickname-container,
+.book-information__detail__qna__nickname-container {
+  font-weight: bold;
+
+}
+
+
+/* 리뷰 올린 날짜 */
+
+
+.book-information__detail__review__date,
+.book-information__detail__qna__date {
+  color: #888;
+
+}
+
+.book-information__detail__review__date:before,
+.book-information__detail__qna__date:before {
+  content:'';
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 0 15px;
+}
+
+/* 내용보기 */
+
+.book-information__detail__review__open,
+.book-information__detail__qna__open {
+  color: #280F24;
+  letter-spacing: -1px;
+  background-color: #ECF4FD;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+
+/* 리뷰 전체보기 */
+
+
+.book-information__detail__whole-review,
+.book-information__detail__whole-qna {
+  display: none;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 25px;
+}
+
+.book-information__detail__whole-review.open,
+.book-information__detail__whole-qna.open {
+  display: block;
+}
+
+.book-information__detail__whole-review__title,
+.book-information__detail__whole-qna__title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
