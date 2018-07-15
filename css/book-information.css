@@ -171,6 +171,7 @@
   border: 0;
   margin-right: 10px;
   padding: 15px 20px;
+  cursor: pointer;
 }
 
 .book-information__feature__button.cart {
@@ -185,4 +186,84 @@
   color: #888;
   background-color: #fff;
   border: 1px solid #c6c6c6;
+}
+
+.book_information__bottom {
+  padding: 30px 0;
+}
+
+.book_information__details {
+
+}
+
+.book_information__scroll {
+  text-indent: -9999px;
+  padding-bottom: 5px;
+}
+
+
+/* 탭 */
+
+
+.book_information__details__list {
+  border-bottom: 2px solid #280F24;
+}
+
+.book_information__details__item {
+  width: 25%;
+  text-align: center;
+  font-size: 15px;
+  background-color: #e4e6e9;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-bottom: 0;
+  padding: 15px;
+  float: left;
+  position: relative;
+}
+
+.book_information__details__item.active {
+  background-color: #fff;
+  border: 2px solid #280F24;
+  border-bottom: 0;
+}
+
+.book_information__details__item.active:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  z-index: 1;
+}
+
+.book_information__details__item a {
+  color: #280F24;
+  font-weight: bold;
+}
+
+.book_information__details__item.active a {
+  color: #1B62AB;
+}
+
+
+/* 상세정보 (detail1) */
+
+
+.book_information__detail1 {
+  padding: 30px 0 0;
+}
+
+.book_information__detail1__title {
+  color: #1B62AB;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.book_information__detail1__description {
+  font-size: 13px;
 }
