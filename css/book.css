@@ -2,17 +2,11 @@
   padding: 30px 0;
 }
 
-/* 상세정보 (detail1) */
-
 .book-information__detail__title {
   color: #1B62AB;
   font-size: 17px;
   font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.book-information__detail__description {
-  font-size: 13px;
+  margin-bottom: 20px;
 }
 
 
@@ -29,7 +23,8 @@
   float: left;
 }
 
-.book-information__detail__add-review {
+.book-information__detail__add-review,
+.book-information__detail__add-qna {
   color: #fff;
   font-size: 12px;
   letter-spacing: -1px;
@@ -42,6 +37,7 @@
 
 .book-information__detail__review-container,
 .book-information__detail__qna-container {
+  display: none;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   margin-bottom: 20px;

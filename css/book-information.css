@@ -250,6 +250,14 @@
 }
 
 
+/* 상세정보 (detail1) */
+
+
+.book-information__detail1__description {
+  font-size: 13px;
+}
+
+
 /* 이용후기 (Detail2)  */
 
 
@@ -332,4 +340,65 @@
 
 .book-information__detail__qna__title {
   padding-left: 10px;
+}
+
+
+/* 배송/반품/교환/AS (detail4) */
+
+
+.book-information__detail4__description {
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.book-information__detail__description__row {
+  display: table-row;
+  border-bottom: 0;
+}
+
+.book-information__detail__description__row dt {
+  display: table-cell;
+  width: 188px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  vertical-align: middle;
+}
+
+.book-information__detail__description__row dd {
+  display: table-cell;
+  width: 752px;
+  line-height: 1.5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 15px;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.book-information__detail__description__row dd h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text--possible {
+  color: #395DC9;
+  text-decoration: underline;
+}
+
+.text--impossible {
+  color: #CC2F40;
+  text-decoration: underline;
+}
+
+.book-information__detail__description__seperate {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
 }
