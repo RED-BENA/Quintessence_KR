@@ -333,9 +333,16 @@
   color: #fff;
   font-size: 12px;
   letter-spacing: -1px;
-  background-color: #ff7200;
   border-radius: 15px;
   padding: 5px 15px;
+}
+
+.book-information__detail__qna__status.ok {
+  background-color: #ff7200;
+}
+
+.book-information__detail__qna__status.yet {
+  background-color: #808080;
 }
 
 .book-information__detail__qna__title {
@@ -343,12 +350,17 @@
 }
 
 .book-information__detail3__whole-qna__answer {
+  display: block;
   background: url(../images/ic_faq_a.gif) no-repeat;
   background-color: #fff;
   background-position: 18px 20px;
   border: 1px dotted #ccc;
   margin: 20px 0 0 50px;
   padding: 20px 30px 15px 55px;
+}
+
+.book-information__detail3__whole-qna__answer.yet {
+  display: none;
 }
 
 .book-information__detail3__whole-qna__answer--top {

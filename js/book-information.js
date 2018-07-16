@@ -13,12 +13,14 @@ $(document).ready(function() {
   // 내용보기 버튼 click 이벤트
 
   $('.js-book-information__detail__review__open').click(function() {
-    $('.js-book-information__detail__review__summary').toggleClass('open');
-    $('.js-book-information__detail__review__whole-review').toggle();
+    var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__review li의 인덱스 번호
+    $('.js-book-information__detail__review li:nth-child('+(index+1)+') .js-book-information__detail__review__summary').toggleClass('open');
+    $('.js-book-information__detail__review li:nth-child('+(index+1)+') .js-book-information__detail__review__whole-review').toggle();
   });
 
   $('.js-book-information__detail__qna__open').click(function() {
-    $('.js-book-information__detail__qna__summary').toggleClass('open');
-    $('.js-book-information__detail__qna__whole-qna').toggle();
+    var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__qna li의 인덱스 번호
+    $('.js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna__summary').toggleClass('open');
+    $('.js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna__whole-qna').toggle();
   });
 });
