@@ -450,3 +450,8 @@
   background-color: #ccc;
   margin: 20px 0;
 }
+
+.js-book-information__detail__qna li:nth-child(1)
+.js-book-information__detail__qna__summary {
+  color: #;
+}
