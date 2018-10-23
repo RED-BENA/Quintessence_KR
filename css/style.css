@@ -5,8 +5,10 @@
 @import "footer.css";
 @import "all-books.css";
 @import "index.css";
+@import "forms.css";
 @import "login.css";
 @import "join.css";
 @import "book-list.css";
 @import "book.css";
 @import "book-information.css";
+@import "terms.css";

@@ -1,0 +1,15 @@
+.term__form-box__background {
+  background-color: #fafafa;
+  padding: 25px;
+}
+
+.term__form-box__note {
+  height: 200px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  overflow-y: scroll;
+}
