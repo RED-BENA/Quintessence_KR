@@ -174,18 +174,37 @@
   cursor: pointer;
 }
 
+.book-information__feature__icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+}
+
 .book-information__feature__button.cart {
   background-color: #1B62AB;
+}
+
+.book-information__feature__icon.cart {
+  background-image: url(../images/shopping-cart.png);
 }
 
 .book-information__feature__button.buy {
   background-color: #ff7200;
 }
 
+.book-information__feature__icon.buy {
+  background-image: url(../images/checked.png);
+}
+
 .book-information__feature__button.storage {
   color: #888;
   background-color: #fff;
   border: 1px solid #c6c6c6;
+}
+
+.book-information__feature__icon.storage {
+  background-image: url(../images/heart.png);
 }
 
 .book-information__bottom {

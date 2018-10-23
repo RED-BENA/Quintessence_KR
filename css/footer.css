@@ -78,17 +78,18 @@
 }
 
 .copyrights__logo {
-  width: 314px;
+  width: 200px;
+  margin-right: 40px;
   float: left;
 }
 
 .copyrights__logo img {
-  width: 170px;
+  max-width: 100%;
 }
 
 .copyrights__content {
   width: 313px;
-  height: 150px;
+  height: 200px;
   padding: 0 20px;
   border-left: 1px solid #e4e4e4;
   float: left;
@@ -103,4 +104,5 @@
 .copyrights__content__info {
   color: #888;
   font-size: 12px;
+  line-height: 1.5;
 }
