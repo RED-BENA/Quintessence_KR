@@ -15,10 +15,10 @@ $(document).ready(function() {
   });
 
 
-  /* 카테고리 open & close */ 
+  /* 카테고리 open & close */
 
 
-  $('.js-nav__hamburger-menu').hover(function() {
+  $('.js-hamburger-menu').hover(function() {
     $('.js-category').addClass('open');
   }, function() {
     $('.js-category').removeClass('open');

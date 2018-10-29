@@ -13,11 +13,11 @@
   right: 0;
 }
 
-.top__right-menu li {
+.top__item {
   float: left;
 }
 
-.top__right-menu li:after {
+.top__item:after {
   display: block;
   content: '';
   width: 1px;
@@ -27,11 +27,11 @@
   float: left;
 }
 
-.top__right-menu li:last-child:after {
+.top__item:last-child:after {
   display: none;
 }
 
-.top__right-menu li a {
+.top__right-menu .top__item a {
   color: #333;
   font-size: 12px;
   padding: 2px;
@@ -42,7 +42,7 @@
 /* 로그인 버튼 */
 
 
-.top__right-menu__login a {
+.top__item.login a {
   background-color: #fff;
   border: 1px solid #E2E8EB;
 }

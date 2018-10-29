@@ -19,7 +19,7 @@
   vertical-align: top;
 }
 
-.header__search-box {
+.search-box {
   width: 430px;
   height: 40px;
   box-sizing: content-box;
@@ -30,13 +30,13 @@
   left: 400px;
 }
 
-.header__search-box__option {
+.search-box__option {
   width: 87px;
   height: 100%;
   float: left;
 }
 
-.header__search-box__option select {
+.search-box__option select {
   font-size: 12px;
   height: 100%;
   padding: 12px;
@@ -44,26 +44,26 @@
   outline: none;
 }
 
-.header__search-box__input {
+.search-box__input {
   width: 303px;
   height: 100%;
   float: left;
 }
 
-.header__search-box__input input {
+.search-box__input input {
   width: 100%;
   height: 100%;
   border: 0;
   outline: none;
 }
 
-.header__search-box__button {
+.search-box__button {
   width: 40px;
   height: 40px;
   float: left;
 }
 
-.header__search-box__button a {
+.search-box__button a {
   display: block;
   width: 100%;
   height: 100%;
