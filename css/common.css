@@ -85,7 +85,7 @@ input {
   border-bottom: 1px solid #ccc;
 }
 
-.recent-book-menu--small {
+.recent-book__counter {
   color: #5a5a5a;
   font-size: 12px;
   background: #e0e0e0;
@@ -94,7 +94,11 @@ input {
   position: relative;
 }
 
-.recent-book-menu__count {
+.recent-book__counter:last-child {
+  border-bottom: 0;
+}
+
+.recent-book__counter > span {
   color: #000;
   font-size: 12px;
   font-weight: bold;
@@ -104,7 +108,7 @@ input {
   transform: translateY(-50%);
 }
 
-.top-button {
+.recent-book__top-button {
   font-size: 12px;
   text-align: center;
   margin-top: 10px;
@@ -112,7 +116,7 @@ input {
   padding: 5px 0;
 }
 
-.top-button a {
+.recent-book__top-button a {
   color: #fff;
 }
 
