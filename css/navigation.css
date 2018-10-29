@@ -101,11 +101,11 @@
   letter-spacing: -1px;
 }
 
-.nav__item.popular a {
+.nav__item--popular a {
   color: #ff7200;
 }
 
-.nav__item.highlight a {
+.nav__item--highlight a {
   color: #1B62AB;
 }
 
@@ -152,7 +152,7 @@
   /* margin-bottom: 15px; */
 }
 
-.category__list.large {
+.category__list--large {
   width: 443px;
 }
 

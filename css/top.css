@@ -42,7 +42,7 @@
 /* 로그인 버튼 */
 
 
-.top__item.login a {
+.top__item--login a {
   background-color: #fff;
   border: 1px solid #E2E8EB;
 }

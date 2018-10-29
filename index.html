@@ -17,7 +17,7 @@
   <div class="top">
     <div class="wrapper">
       <ul class="top__right-menu clearfix">
-        <li class="top__item login">
+        <li class="top__item top__item--login">
           <a href="html/login.html">로그인</a>
         </li>
 
@@ -104,7 +104,7 @@
           <a href="#">신간도서</a>
         </li>
 
-        <li class="nav__item popular">
+        <li class="nav__item nav__item--popular">
           <a href="#">베스트셀러</a>
         </li>
 
@@ -112,15 +112,15 @@
           <a href="#">저널</a>
         </li>
 
-        <li class="nav__item highlight">
+        <li class="nav__item nav__item--highlight">
           <a href="#">치의학</a>
         </li>
 
-        <li class="nav__item highlight">
+        <li class="nav__item nav__item--highlight">
           <a href="#">원서</a>
         </li>
 
-        <li class="nav__item popular">
+        <li class="nav__item nav__item--popular">
           <a href="#">이벤트</a>
         </li>
 
@@ -176,7 +176,7 @@
 
           <!-- 치의학 1~3열 -->
 
-          <ul class="category__list large clearfix">
+          <ul class="category__list category__list--large clearfix">
             <li>
               <a href="#">교정학</a>
             </li>
@@ -265,94 +265,97 @@
   <div class="section">
 
     <!-- 배너 전체 -->
+
     <div class="banner">
       <div class="wrapper">
         <div class="banner__container clearfix">
 
           <!-- 배너 좌측 메뉴 -->
-          <div class="banner__menu">
-            <ul class="banner__menu__list">
-              <li>
+
+          <div class="bannerMenu">
+            <ul class="bannerMenu__list">
+              <li class="bannerMenu__item">
                 <a href="#">교정학</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">보철학 및 치공학</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">임플란트학</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">치주학</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">소아치과학</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">교합학 및 TMJ</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">근관치료학</a>
               </li>
 
-              <li class="seperate"></li>
+              <li class="bannerMenu__item--seperate"></li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">퀸테센스</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">QDT</a>
               </li>
 
-              <li>
+              <li class="bannerMenu__item">
                 <a href="#">치과위생사</a>
               </li>
             </ul>
           </div>
 
           <!-- 배너 우측 캐러셀(Carousel) -->
-          <div class="banner__slide-box">
+
+          <div class="bannerSlide-box">
 
             <!-- slide box -->
-            <ul class="banner__slide-box__list js-banner__slide-box__list clearfix">
-              <li class="banner__slide-box__item active">
+            <ul class="bannerSlide-box__list js-bannerSlide-box__list clearfix">
+              <li class="bannerSlide-box__item js-bannerSlide-box__item active">
                 <a href="#">1</a>
               </li>
 
-              <li class="banner__slide-box__item">
+              <li class="bannerSlide-box__item js-bannerSlide-box__item">
                 <a href="#">2</a>
               </li>
 
-              <li class="banner__slide-box__item">
+              <li class="bannerSlide-box__item js-bannerSlide-box__item">
                 <a href="#">3</a>
               </li>
 
-              <li class="banner__slide-box__item">
+              <li class="bannerSlide-box__item js-bannerSlide-box__item">
                 <a href="#">4</a>
               </li>
             </ul>
 
             <!-- indicator -->
-            <ul class="banner__slide-box__indicator js-banner__slide-box__indicator clearfix">
-              <li class="active">
+            <ul class="bannerIndicator clearfix">
+              <li class="bannerIndicator__item js-bannerIndicator__item active">
                 <a href="#">신간도서</a>
               </li>
 
-              <li>
+              <li class="bannerIndicator__item js-bannerIndicator__item">
                 <a href="#">베스트셀러</a>
               </li>
 
-              <li>
+              <li class="bannerIndicator__item js-bannerIndicator__item">
                 <a href="#">퀸테센스's PICK</a>
               </li>
 
-              <li>
+              <li class="bannerIndicator__item js-bannerIndicator__item">
                 <a href="#">원서</a>
               </li>
             </ul>
@@ -361,6 +364,8 @@
       </div>
     </div>
 
+    <!-- 최근 본 상품 -->
+
     <div class="recent-book js-recent-book">
       <div class="recent-book__container">
         <div class="recent-book__header">
@@ -368,7 +373,7 @@
         </div>
 
         <div class="recent-book__content">
-          <ul class="recent-booK__content__list"></ul>
+          <ul class="recent-book__content__list"></ul>
         </div>
 
         <div class="recent-book-menu--small">

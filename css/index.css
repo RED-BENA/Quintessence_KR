@@ -1,91 +1,91 @@
-/* Banner */
+/* 배너 */
 
 .banner {
   background: #F3F3F3;
 }
 
-.banner__menu {
+.bannerMenu {
   width: 200px;
   background-color: #1B62AB;
   float: left;
 }
 
-.banner__menu__list {
+.bannerMenu__list {
   height: 100%;
 }
 
-.banner__menu__list li {
+.bannerMenu__item {
   padding: 19px;
   padding-top: 0;
 }
 
-.banner__menu__list li:first-child {
+.bannerMenu__item:first-child {
   padding-top: 17px;
 }
 
-.banner__menu__list li a {
+.bannerMenu__item a {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
 }
 
-.banner__menu__list .seperate {
+.bannerMenu__item--seperate {
   height: 1px;
   background-color: #2b4987;
   margin-bottom: 17px;
   padding: 0;
 }
 
-.banner__slide-box {
+.bannerSlide-box {
   width: 740px;
   height: 415px;
   overflow: hidden;
   float: left;
 }
 
-.banner__slide-box__list {
+.bannerSlide-box__list {
   width: 2960px;
   height: 360px;
   margin-left: 0px;
   transition: margin-left .5s .1s;
 }
 
-.banner__slide-box__item {
+.bannerSlide-box__item {
   width: 740px;
   height: 100%;
   text-indent: -9999px;
   float: left;
 }
 
-.banner__slide-box__item:first-child {
+.bannerSlide-box__item:first-child {
   background: url(../images/banner1.jpg);
 }
 
-.banner__slide-box__item:nth-child(2) {
+.bannerSlide-box__item:nth-child(2) {
   background: url(../images/banner2.jpg);
 }
 
-.banner__slide-box__item:nth-child(3) {
+.bannerSlide-box__item:nth-child(3) {
   background: url(../images/banner3.jpg);
 }
 
-.banner__slide-box__item:last-child {
+.bannerSlide-box__item:last-child {
   background: url(../images/banner4.jpg);
 }
 
-.banner__slide-box__item a {
+.bannerSlide-box__item a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.banner__slide-box__indicator {
+.bannerIndicator {
   height: 55px;
   border: 1px solid #333;
   border-top: 0;
 }
 
-.banner__slide-box__indicator li {
+.bannerIndicator__item {
   width: 25%;
   text-align: center;
   line-height: 55px;
@@ -93,25 +93,25 @@
   float: left;
 }
 
-.banner__slide-box__indicator li:last-child {
+.bannerIndicator__item:last-child {
   border-right: 0;
 }
 
-.banner__slide-box__indicator li.active {
+.bannerIndicator__item.active {
   background-color: #EB6E44;
 }
 
-.banner__slide-box__indicator li.active a {
-  color: #fff;
-}
-
-.banner__slide-box__indicator li a {
+.bannerIndicator__item a {
   display: block;
   width: 100%;
   height: 100%;
   color: #333;
   letter-spacing: -1px;
   font-size: 14px;
+}
+
+.bannerIndicator__item.active a {
+  color: #fff;
 }
 
 /* New book slide box */
