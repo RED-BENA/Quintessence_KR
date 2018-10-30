@@ -5,29 +5,29 @@ $(document).ready(function() {
 
 
   // indicator를 누르면 해당 이미지로 이동하는 event
-  $(".js-bannerIndicator__item").click(function(e) {
+  $(".js-banner-indicator__item").click(function(e) {
     e.preventDefault();
 
     // 클릭한 Indicator의 인덱스를 저장한다.
     let index = $(this).index();
 
     // 모든 Indicator의 active 클래스를 제거한 후 클릭한 Indicator에 active 클래스를 추가한다.
-    $(".js-bannerIndicator__item").removeClass('active');
+    $(".js-banner-indicator__item").removeClass('active');
     $(this).addClass('active');
 
     // margin-left를 사용하여 이미지 슬라이드를 이동시킨다.
     switch(index) {
       case 0:
-        $('.js-bannerSlideBox__list').css('margin-left', '0px');
+        $('.js-banner-slide-box__list').css('margin-left', '0px');
         break;
       case 1:
-        $('.js-bannerSlideBox__list').css('margin-left', '-740px');
+        $('.js-banner-slide-box__list').css('margin-left', '-740px');
         break;
       case 2:
-        $('.js-bannerSlideBox__list').css('margin-left', '-1480px');
+        $('.js-banner-slide-box__list').css('margin-left', '-1480px');
         break;
       case 3:
-        $('.js-bannerSlideBox__list').css('margin-left', '-2220px');
+        $('.js-banner-slide-box__list').css('margin-left', '-2220px');
     }
   });
 
@@ -36,27 +36,27 @@ $(document).ready(function() {
 
     // active 상태의 slide-box item의 다음 인덱스
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
-    let next_index = $(".js-bannerIndicator__item.active").index()+1;
+    let next_index = $(".js-banner-indicator__item.active").index()+1;
 
     // margin-left를 사용하여 이미지 슬라이드를 이동시킨다.
     switch(next_index) {
       case 1:
-        $('.js-bannerSlide-box__list').css('margin-left', '-740px');
+        $('.js-banner-slide-box__list').css('margin-left', '-740px');
         break;
       case 2:
-        $('.js-bannerSlide-box__list').css('margin-left', '-1480px');
+        $('.js-banner-slide-box__list').css('margin-left', '-1480px');
         break;
       case 3:
-        $('.js-bannerSlide-box__list').css('margin-left', '-2220px');
+        $('.js-banner-slide-box__list').css('margin-left', '-2220px');
         break;
       case 4:
-        $('.js-bannerSlide-box__list').css('margin-left', '0px');
+        $('.js-banner-slide-box__list').css('margin-left', '0px');
         next_index = 0; // 첫 번째 슬라이드로 돌아가기 위해 0으로 reset
     }
 
     // Indicator의 모든 요소의 active 클래스를 제거한 후 현재 활성화된 요소에 active 클래스를 추가한다.
-    $(".js-bannerIndicator__item").removeClass('active');
-    $(".js-bannerIndicator__item:nth-child("+(next_index+1)+")").addClass('active');
+    $(".js-banner-indicator__item").removeClass('active');
+    $(".js-banner-indicator__item:nth-child("+(next_index+1)+")").addClass('active');
   }, 3000);
 
 
