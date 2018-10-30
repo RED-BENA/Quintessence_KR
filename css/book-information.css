@@ -1,4 +1,4 @@
-.book-information__top {
+.book-information--top {
   background-color: #f7f7f7;
   border-bottom: 2px solid #dadada;
   padding: 30px 0;
@@ -16,7 +16,7 @@
 /* 책 정보 - 왼쪽 */
 
 
-.book-information__feature__left {
+.book-information__feature--left {
   width: 200px;
   padding: 25px;
   float: left;
@@ -26,13 +26,13 @@
 /* 썸네일 */
 
 
-.book-information__feature__thumbnail {
+.book-information-feature__thumbnail {
   width: 150px;
   border: 1px solid #888;
   margin-bottom: 10px;
 }
 
-.book-information__feature__thumbnail img {
+.book-information-feature__thumbnail img {
   max-width: 100%;
 }
 
@@ -40,7 +40,7 @@
 /* 크게보기 버튼 */
 
 
-.book-information__expand {
+.book-information-feature__expand {
   width: 150px;
   height: 30px;
   font-size: 13px;
@@ -54,17 +54,13 @@
 /* 책 정보 - 오른쪽 */
 
 
-.book-information__feature__right {
+.book-information__feature--right {
   width: 740px;
   padding: 25px 0;
   float: left;
 }
 
-.book-information__feature__list {
-
-}
-
-.book-information__feature li {
+.book-information-feature__item {
   margin-bottom: 10px;
   position: relative;
 }
@@ -73,7 +69,7 @@
 /* 책 정보 제목/내용 */
 
 
-.book-information__feature__title {
+.book-information-feature__title {
   color: #333;
   width: 60px;
   font-size: 12px;
@@ -84,7 +80,7 @@
   left: 0;
 }
 
-.book-information__feature__content {
+.book-information-feature__content {
   width: 450px;
   font-size: 12px;
   margin-left: 60px;
@@ -93,7 +89,7 @@
   position: relative;
 }
 
-.book-information__feature__content:before {
+.book-information-feature__content:before {
   content: '';
   display: block;
   width: 1px;
@@ -105,7 +101,7 @@
   left: 0;
 }
 
-.book-information__feature__price {
+.book-information-feature__price {
   font-size: 16px;
   font-weight: bold;
 }
@@ -115,14 +111,14 @@
   font-size: 20px;
 }
 
-.book-information__seperate {
+.book-information-feature__seperate {
   width: 100%;
   height: 1px;
   background-color: #dadada;
   margin: 30px 0;
 }
 
-.book-information__seperate.last {
+.book-information__seperate--last {
   height: 2px;
   background-color: #280F24;
 }
@@ -131,17 +127,17 @@
 /* 장바구니 담기 / 바로구매 / 보관함 */
 
 
-.book-information__feature__count {
+.book-information-feature__count {
   font-size: 12px;
   margin-bottom: 20px;
 }
 
-.book-information__feature__label {
+.book-information-feature__label {
   margin-top: 8px;
   float: left;
 }
 
-.book-information__feature__quantity {
+.book-information-feature__quantity {
   width: 60px;
   height: 30px;
   text-align: right;
@@ -151,7 +147,7 @@
   float: left;
 }
 
-.book-information__feature__control {
+.book-information-feature__control {
   color: #2b4987;
   width: 25px;
   height: 25px;
@@ -164,7 +160,7 @@
   float: left;
 }
 
-.book-information__feature__button {
+.book-information-feature__button {
   color: #fff;
   font-size: 18px;
   letter-spacing: -1px;
@@ -174,45 +170,41 @@
   cursor: pointer;
 }
 
-.book-information__feature__icon {
+.book-information-feature__icon {
   display: inline-block;
   width: 18px;
   height: 18px;
   background-size: cover;
 }
 
-.book-information__feature__button.cart {
+.book-information-feature__button.cart {
   background-color: #1B62AB;
 }
 
-.book-information__feature__icon.cart {
+.book-information-feature__icon.cart {
   background-image: url(../images/shopping-cart.png);
 }
 
-.book-information__feature__button.buy {
+.book-information-feature__button.buy {
   background-color: #ff7200;
 }
 
-.book-information__feature__icon.buy {
+.book-information-feature__icon.buy {
   background-image: url(../images/checked.png);
 }
 
-.book-information__feature__button.storage {
+.book-information-feature__button.storage {
   color: #888;
   background-color: #fff;
   border: 1px solid #c6c6c6;
 }
 
-.book-information__feature__icon.storage {
+.book-information-feature__icon.storage {
   background-image: url(../images/heart.png);
 }
 
 .book-information__bottom {
   padding: 30px 0;
-}
-
-.book-information__details {
-
 }
 
 .book-information__scroll {
@@ -223,12 +215,15 @@
 
 /* 탭 */
 
+.book-information-detail1 {
+  padding-top: 20px;
+}
 
-.book-information__details__list {
+.book-information-detail__list {
   border-bottom: 2px solid #280F24;
 }
 
-.book-information__details li {
+.book-information-detail__item {
   width: 25%;
   text-align: center;
   font-size: 15px;
@@ -241,13 +236,13 @@
   position: relative;
 }
 
-.book-information__details li.active {
+.book-information-detail__item.active {
   background-color: #fff;
   border: 2px solid #280F24;
   border-bottom: 0;
 }
 
-.book-information__details li.active:after {
+.book-information-detail__item.active:after {
   content: '';
   display: block;
   width: 100%;
@@ -259,20 +254,25 @@
   z-index: 1;
 }
 
-.book-information__details li a {
+.book-information-detail__item a {
   color: #280F24;
   font-weight: bold;
 }
 
-.book-information__details li.active a {
+.book-information-detail__item.active a {
   color: #1B62AB;
 }
 
 
 /* 상세정보 (detail1) */
 
+.book-information-detail1__title {
+  color: #1B62AB;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
 
-.book-information__detail1__description {
+.book-information-detail1__description {
   font-size: 13px;
 }
 
@@ -280,40 +280,40 @@
 /* 이용후기 (Detail2)  */
 
 
-.book-information__detail__header--alert.detail2 {
+.book-information-detail2__header--alert {
   color: #888;
 }
 
 
 /* 평가 점수 */
 
-.book-information__detail2__review-form__stars {
+.book-information-detail2__review-form__stars {
   margin-bottom: 5px;
 }
 
-.book-information__detail2__review-form__stars__list {
+.book-information-detail2__review-form__stars__list {
   padding: 0 20px;
 }
 
-.book-information__detail2__review-form__stars__list li {
+.book-information-detail2__review-form__stars__list li {
   width: 20%;
   margin-top: 10px;
   float: left;
 }
 
-.book-information__detail2__review-form__star-score {
+.book-information-detail2__review-form__star-score {
   margin-right: 10px;
   float: left;
 }
 
-.book-information__detail2__review__base-star {
+.book-information-detail2__review__base-star {
   width: 75px;
   height: 17px;
   background-image: url(../images/inner_star.png);
   float: left;
 }
 
-.book-information__detail2__review__red-star {
+.book-information-detail2__review__red-star {
   display: block;
   width: 100%;
   height: 100%;
@@ -321,34 +321,35 @@
   background-position: 0 -18px;
 }
 
-.book-information__detail2__review__red-star.five {
+.book-information-detail2__review__red-star.five {
 
 }
 
-.book-information__detail2__review__red-star.four {
+.book-information-detail2__review__red-star.four {
   width: 80%;
 }
 
-.book-information__detail2__review__red-star.three {
+.book-information-detail2__review__red-star.three {
   width: 60%;
 }
 
-.book-information__detail2__review__red-star.two {
+.book-information-detail2__review__red-star.two {
   width: 40%;
 }
 
-.book-information__detail2__review__red-star.one {
+.book-information-detail2__review__red-star.one {
   width: 20%;
 }
 
 
 /* 상품문의 (detail3) */
 
-.book-information__detail__header--alert.detail3 {
+
+.book-information-detail__header--alert.detail3 {
   color: #ff0000;
 }
 
-.book-information__detail__qna__status {
+.book-information-detail__qna__status {
   color: #fff;
   font-size: 12px;
   letter-spacing: -1px;
@@ -356,19 +357,19 @@
   padding: 5px 15px;
 }
 
-.book-information__detail__qna__status.ok {
+.book-information-detail__qna__status.ok {
   background-color: #ff7200;
 }
 
-.book-information__detail__qna__status.yet {
+.book-information-detail__qna__status.yet {
   background-color: #808080;
 }
 
-.book-information__detail__qna__title {
+.book-information-detail__qna__title {
   padding-left: 10px;
 }
 
-.book-information__detail3__whole-qna__answer {
+.book-information-detail3__whole-qna__answer {
   display: block;
   background: url(../images/ic_faq_a.gif) no-repeat;
   background-color: #fff;
@@ -378,25 +379,25 @@
   padding: 20px 30px 15px 55px;
 }
 
-.book-information__detail3__whole-qna__answer.yet {
+.book-information-detail3__whole-qna__answer.yet {
   display: none;
 }
 
-.book-information__detail3__whole-qna__answer--top {
+.book-information-detail3__whole-qna__answer--top {
   letter-spacing: -1px;
   margin-bottom: 10px;
 }
 
-.book-information__detail3__whole-qna__answer__nickname {
+.book-information-detail3__whole-qna__answer__nickname {
   color: #ff7200;
   font-weight: bold;
 }
 
-.book-information__detail3__whole-qna__answer__date {
+.book-information-detail3__whole-qna__answer__date {
 
 }
 
-.book-information__detail3__whole-qna__answer__date:before {
+.book-information-detail3__whole-qna__answer__date:before {
   content: '';
   display: inline-block;
   width: 1px;
@@ -405,7 +406,7 @@
   margin: 0 5px;
 }
 
-.book-information__detail3__whole-qna__answer--bottom {
+.book-information-detail3__whole-qna__answer--bottom {
   line-height: 1.5;
 }
 
@@ -413,19 +414,19 @@
 /* 배송/반품/교환/AS (detail4) */
 
 
-.book-information__detail4__description {
+.book-information-detail4__description {
   font-size: 12px;
   border-left: 1px solid #ccc;
   border-top: 1px solid #ccc;
   margin-bottom: 30px;
 }
 
-.book-information__detail__description__row {
+.book-information-detail__description__row {
   display: table-row;
   border-bottom: 0;
 }
 
-.book-information__detail__description__row dt {
+.book-information-detail__description__row dt {
   display: table-cell;
   width: 188px;
   font-size: 13px;
@@ -437,7 +438,7 @@
   vertical-align: middle;
 }
 
-.book-information__detail__description__row dd {
+.book-information-detail__description__row dd {
   display: table-cell;
   width: 752px;
   line-height: 1.5;
@@ -448,7 +449,7 @@
   vertical-align: middle;
 }
 
-.book-information__detail__description__row dd h4 {
+.book-information-detail__description__row dd h4 {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -464,13 +465,13 @@
   text-decoration: underline;
 }
 
-.book-information__detail__description__seperate {
+.book-information-detail__description__seperate {
   height: 1px;
   background-color: #ccc;
   margin: 20px 0;
 }
 
-.js-book-information__detail__qna li:nth-child(1)
-.js-book-information__detail__qna__summary {
+.js-book-information-detail__qna li:nth-child(1)
+.js-book-information-detail__qna__summary {
   color: #;
 }
