@@ -18,16 +18,16 @@ $(document).ready(function() {
     // margin-left를 사용하여 이미지 슬라이드를 이동시킨다.
     switch(index) {
       case 0:
-        $('.js-bannerSlide-box__list').css('margin-left', '0px');
+        $('.js-bannerSlideBox__list').css('margin-left', '0px');
         break;
       case 1:
-        $('.js-bannerSlide-box__list').css('margin-left', '-740px');
+        $('.js-bannerSlideBox__list').css('margin-left', '-740px');
         break;
       case 2:
-        $('.js-bannerSlide-box__list').css('margin-left', '-1480px');
+        $('.js-bannerSlideBox__list').css('margin-left', '-1480px');
         break;
       case 3:
-        $('.js-bannerSlide-box__list').css('margin-left', '-2220px');
+        $('.js-bannerSlideBox__list').css('margin-left', '-2220px');
     }
   });
 
@@ -64,12 +64,12 @@ $(document).ready(function() {
 
 
   // new book slide-box의 prev 버튼을 클릭했을 때
-  $('.js-new-book__slide-box__prev').click(function(e) {
+  $('.js-new-book__prev').click(function(e) {
     e.preventDefault();
 
     // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
-    let first_index = $('.js-new-book__slide-box__list li.first').index()+1;
+    let first_index = $('.js-new-book__item.first').index()+1;
 
     // first_index가 전체 도서 중 첫 번째 도서의 index일 경우
     if (first_index == 1) {
@@ -78,22 +78,22 @@ $(document).ready(function() {
 
     // 전체 도서의 first 클래스 remove
     // 현재 first_index의 이전 도서(first_index - 1)에 first 클래스 add
-    $('.js-slide-box__list li').removeClass('first');
-    $('.js-slide-box__list li:nth-child('+(first_index - 1)+')').addClass('first');
+    $('.js-new-book__item').removeClass('first');
+    $('.js-new-book__item:nth-child('+(first_index - 1)+')').addClass('first');
 
     // 현재 first_index에서 왼쪽으로 한 칸(first_index - 1) 이동
     // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> -2
-    $('.js-slide-box__list').css('margin-left', ((first_index - 2) * -156)+'px');
+    $('.js-new-book__list').css('margin-left', ((first_index - 2) * -156)+'px');
 
   });
 
   // new book slide-box의 next 버튼을 클릭했을 때
-  $('.js-slide-box__next').click(function(e) {
+  $('.js-new-book__next').click(function(e) {
     e.preventDefault();
 
     // new book slide-box에 보여지는 도서 중에서 첫 번째 도서의 index
     // (index는 0부터, nth-child는 1부터 계산하기 때문에 index에 먼저 1을 더해준다.)
-    let first_index = $('.js-slide-box__list li.first').index()+1;
+    let first_index = $('.js-new-book__item.first').index()+1;
 
     // first_index가 전체 도서 중 마지막 도서의 index일 경우
     if (first_index == 7) {
@@ -102,11 +102,11 @@ $(document).ready(function() {
 
     // 전체 도서의 first 클래스 remove
     // 현재 first_index의 다음 도서(first_index + 1)에 first 클래스 add
-    $('.js-slide-box__list li').removeClass('first');
-    $('.js-slide-box__list li:nth-child('+(first_index + 1)+')').addClass('first');
+    $('.js-new-book__item').removeClass('first');
+    $('.js-new-book__item:nth-child('+(first_index + 1)+')').addClass('first');
 
     // 현재 first_index에서 오른쪽으로 한 칸(first_index + 1) 이동
     // + -1 ((현재 인덱스 - 1) * -156 만큼 margin-left를 설정해야함) -> 0
-    $('.js-slide-box__list').css('margin-left', (first_index * -156)+'px');
+    $('.js-new-book__list').css('margin-left', (first_index * -156)+'px');
   });
 });

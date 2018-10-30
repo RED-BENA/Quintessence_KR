@@ -14,7 +14,7 @@
   border-bottom: 0;
 }
 
-.all-books__list__item {
+.all-books__item {
   width: 20%;
   text-align: center;
   border: 1px solid #d2d2d2;
@@ -29,22 +29,22 @@
 /* 목록 1열의 끝 (5, 10, 15... 번째) 은 margin-right 해제 */
 
 
-.all-books__list__item:nth-child(5n) {
+.all-books__item:nth-child(5n) {
   border-right: 0;
 }
 
-.all-books__list__item a {
+.all-books__item a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.all-books__list__thumbnail {
+.all-books__thumbnail {
   width: 100px;
   height: 130px;
 }
 
-.all-books__list__title {
+.all-books__title {
   color: #280F24;
   font-size: 13px;
   font-weight: bold;
@@ -54,19 +54,19 @@
   text-overflow: ellipsis;
 }
 
-.all-books__list__author {
+.all-books__author {
   color: #666;
   font-size: 12px;
   margin-top: 5px;
 }
 
-.all-books__list__price {
+.all-books__price {
   color: #280F24;
   font-size: 12px;
   margin-top: 5px;
 }
 
-.all-books__list__price--red {
+.all-books__price--red {
   color: #ff6d38;
   font-size: 16px;
   font-weight: 800;
