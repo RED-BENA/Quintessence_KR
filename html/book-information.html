@@ -428,7 +428,7 @@
             </ul>
           </div>
 
-          <!-- 상세정보 (detail1) -->
+          <!-- 상세정보 (detail1) 내용 -->
 
           <div class="book-information-detail1">
             <h3 class="book-information-detail1__title">
@@ -496,11 +496,9 @@
             </div>
           </div>
 
+          <!-- 이용후기 (datail2) 탭 -->
 
-          <!-- 이용후기 (datail2)  -->
-
-
-          <div class="book-information-detail2">
+          <div class="book-information-detail">
             <div id="detail2" class="book-information__scroll">detail2</div>
 
             <ul class="book-information-detail__list clearfix">
@@ -524,12 +522,12 @@
 
           <!-- 이용후기 (detail2) 내용 -->
 
-          <div class="book-information-detail">
+          <div class="book-information-detail2">
 
             <!-- 이용후기 Header -->
 
             <div class="book-information-detail2__header clearfix">
-              <p  class="book-information-detail2__header--alert">
+              <p  class="book-information-detail2__alert">
                 게시판 성격과 다른내용의 글을 등록하실 경우 임의로 삭제처리 될 수 있습니다.
               </p>
 
@@ -540,12 +538,12 @@
 
             <!-- 후기 입력 폼 -->
 
-            <div class="book-information-detail2__review-container js-book-information-detail__review-container">
+            <div class="book-information-detail2__review js-book-information-detail__review">
               <form class="review-form" method="post">
 
                 <!-- 평가점수 -->
 
-                <div class="review-form__stars clearfix">
+                <div class="review-form__row clearfix">
 
                   <!-- 평가점수 (제목) -->
 
@@ -556,64 +554,64 @@
                   <!-- 평가점수 (내용) -->
 
                   <div class="review-form__content">
-                    <ul class="review-form__stars__list clearfix">
+                    <ul class="review-form__star-score clearfix">
 
-                      <!-- 별 다섯 개 -->
+                      <!-- 별 5개 -->
 
-                      <li>
+                      <li class="review-form__star">
                         <label class="clearfix">
-                          <input class="review-form__star-score" type="radio" name="star" />
+                          <input class="review-form__star-checkbox" type="radio" name="star" />
 
                           <span class="review__base-star">
-                            <span class="review__red-star five"></span>
+                            <span class="review__red-star review__red-star--five"></span>
                           </span>
                         </label>
                       </li>
 
-                      <!-- 별 네 개 -->
+                      <!-- 별 4개 -->
 
-                      <li>
-                        <label>
-                          <input class="review-form__star-score" type="radio" name="star" />
+                      <li class="review-form__star">
+                        <label class="clearfix">
+                          <input class="review-form__star-checkbox" type="radio" name="star" />
 
                           <span class="review__base-star">
-                            <span class="review__red-star four"></span>
+                            <span class="review__red-star review__red-star--four"></span>
                           </span>
                         </label>
                       </li>
 
-                      <!-- 별 세 개 -->
+                      <!-- 별 3개 -->
 
-                      <li>
-                        <label>
-                          <input class="review-form__star-score" type="radio" name="star" />
+                      <li class="review-form__star">
+                        <label class="clearfix">
+                          <input class="review-form__star-checkbox" type="radio" name="star" />
 
                           <span class="review__base-star">
-                            <span class="review__red-star three"></span>
+                            <span class="review__red-star review__red-star--three"></span>
                           </span>
                         </label>
                       </li>
 
-                      <!-- 별 두 개 -->
+                      <!-- 별 2개 -->
 
-                      <li>
+                      <li class="review-form__star">
                         <label>
-                          <input class="review-form__star-score" type="radio" name="star" />
+                          <input class="review-form__star-checkbox" type="radio" name="star" />
 
                           <span class="review__base-star">
-                            <span class="review__red-star two"></span>
+                            <span class="review__red-star review__red-star--two"></span>
                           </span>
                         </label>
                       </li>
 
-                      <!-- 별 한 개 -->
+                      <!-- 별 1개 -->
 
-                      <li>
+                      <li class="review-form__star">
                         <label>
-                          <input class="review-form__star-score" type="radio" name="star" />
+                          <input class="review-form__star-checkbox" type="radio" name="star" />
 
                           <span class="review__base-star">
-                            <span class="review__red-star one"></span>
+                            <span class="review__red-star review__red-star--one"></span>
                           </span>
                         </label>
                       </li>
@@ -623,18 +621,18 @@
 
                 <!-- 평가 제목 -->
 
-                <div class="review-form__review-title clearfix">
+                <div class="review-form__row clearfix">
                   <div class="review-form__title">평가 제목</div>
                   <div class="review-form__content">
-                    <input type="text" class="review-title" />
+                    <input type="text" class="review-form__review-title" placeholder="로그인 후 이용 가능합니다." />
                   </div>
                 </div>
 
                 <!-- 평가 내용 -->
 
-                <div class="review-form__review-content clearfix">
+                <div class="review-form__row review-form__row--large clearfix">
                   <div class="review-form__detail">
-                    <textarea></textarea>
+                    <textarea placeholder="로그인 후 이용 가능합니다."></textarea>
                   </div>
 
                   <button type="submit" class="review-form__submit">
@@ -653,11 +651,11 @@
                   <!-- 리뷰 왼쪽 -->
 
                   <div class="review-list--left clearfix">
-                    <span class="review-list--left__base-star">
-                      <span class="review-list--left__red-star five"></span>
+                    <span class="review__base-star">
+                      <span class="review__red-star review-form__red-star--five"></span>
                     </span>
 
-                    <span class="review-list--left__title">
+                    <span class="review-list__title">
                       <a href="#">제목</a>
                     </span>
                   </div>
@@ -665,15 +663,17 @@
                   <!-- 리뷰 오른쪽 -->
 
                   <div class="review-list--right clearfix">
-                    <span class="review-list--right__nickname-container">
-                      ✏️ <span class="review-list--right__nickname">닉네임</span>
+                    <span class="review-list__writer clearfix">
+                      <span class="review-list__pencil"></span>
+                      <span class="review-list__nickname clearfix">닉네임</span>
+                      <!-- <span class="review-list__seperate"></span> -->
                     </span>
 
-                    <span class="review-list--right__date">
+                    <span class="review-list__date">
                       2018.07.14
                     </span>
 
-                    <button type="button" class="review-list--right__open js-review-list--right__open">
+                    <button type="button" class="review-list__open js-review-list--right__open">
                       내용보기
                     </button>
                   </div>

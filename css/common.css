@@ -22,7 +22,9 @@ li {
   list-style: none;
 }
 
-input {
+input, textarea {
+  font-family: 'Nanum Gothic';
+  letter-spacing: -1px;
   outline: none;
 }
 
