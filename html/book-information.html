@@ -645,7 +645,7 @@
             <!-- 리뷰 목록 -->
 
             <ul class="review-list js-review-list">
-              <li class="review-list__item">
+              <li class="review-list__item js-review-list__item">
                 <div class="review-list__summary js-review-list__summary clearfix">
 
                   <!-- 리뷰 왼쪽 -->
@@ -674,17 +674,21 @@
                     </span>
 
                     <button type="button" class="review-list__open js-review-list--right__open">
-                      내용보기
+                      전체내용
                     </button>
                   </div>
                 </div>
 
-                <div class="review-list--right__whole-review js-review-list--right__review__whole-review">
-                  <p class="review-list--right__whole-review__title">
+                <!-- 리뷰 전체 내용 -->
+
+                <div class="review-list__detail-review js-review-list__detail-review">
+                  <p class="review-list__detail-title">
                     제목
                   </p>
 
-                  전체내용
+                  <p class="review-list__detail-content">
+                    전체내용
+                  </p>
                 </div>
               </li>
             </ul>
@@ -692,52 +696,44 @@
             <div class="page-indicator">
               <div class="page-indicator__buttons">
                 <ul class="page-indicator__move clearfix">
-                  <li>
-                    <a href="#">
-                      <span class="all-prev-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__all-prev-button" href="#"></a>
                   </li>
 
-                  <li>
-                    <a href="#">
-                      <span class="prev-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__prev-button" href="#"></a>
                   </li>
                 </ul>
 
                 <ul class="page-indicator__numbers clearfix">
-                  <li class="page-indicator__item active">
+                  <li class="page-indicator__item page-indicator__item--numbers active">
                     <a href="#">1</a>
                   </li>
 
-                  <li class="page-indicator__item">
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">2</a>
                   </li>
 
-                  <li class="page-indicator__item">
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">3</a>
                   </li>
 
-                  <li class="page-indicator__item">
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">4</a>
                   </li>
 
-                  <li class="page-indicator__item">
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">5</a>
                   </li>
                 </ul>
 
                 <ul class="page-indicator__move clearfix">
-                  <li>
-                    <a href="#">
-                      <span class="all-next-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__all-next-button" href="#"></a>
                   </li>
 
-                  <li>
-                    <a href="#">
-                      <span class="next-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__next-button" href="#"></a>
                   </li>
                 </ul>
               </div>
@@ -1173,25 +1169,25 @@
         <ul class="companies__list clearfix">
           <li class="companies__item">
             <a href="#">
-              <img src="images/참윤.png" />
+              <img src="../images/참윤.png" />
             </a>
           </li>
 
           <li class="companies__item">
             <a href="#">
-              <img src="images/덴탈아리랑.png" />
+              <img src="../images/덴탈아리랑.png" />
             </a>
           </li>
 
           <li class="companies__item">
             <a href="#">
-              <img src="images/덴포라인.gif" />
+              <img src="../images/덴포라인.gif" />
             </a>
           </li>
 
           <li class="companies__item">
             <a href="#">
-              <img src="images/제로.gif" />
+              <img src="../images/제로.gif" />
             </a>
           </li>
         </ul>
@@ -1242,7 +1238,7 @@
       <div class="wrapper">
         <div class="copyrights__container clearfix">
           <div class="copyrights__logo">
-            <img src="images/logo.png" />
+            <img src="../images/logo.png" />
           </div>
 
           <div class="copyrights__content">

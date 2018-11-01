@@ -2,25 +2,25 @@ $(document).ready(function() {
 
   // 이용후기/상품문의 입력하기 버튼 click 이벤트
 
-  $('.js-book-information__detail__add-review').click(function() {
-    $('.js-book-information__detail__review-container').toggle();
+  $('.js-book-information-detail__add-review').click(function() {
+    $('.js-book-information-detail__review').toggle();
   });
 
-  $('.js-book-information__detail__add-qna').click(function() {
-    $('.js-book-information__detail__qna-container').toggle();
+  $('.js-book-information-detail__add-qna').click(function() {
+    $('.js-book-information__detail__qna').toggle();
   })
 
   // 내용보기 버튼 click 이벤트
 
-  $('.js-book-information__detail__review__open').click(function() {
+  $('.js-review-list--right__open').click(function() {
     var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__review li의 인덱스 번호
-    $('.js-book-information__detail__review li:nth-child('+(index+1)+') .js-book-information__detail__review__summary').toggleClass('open');
-    $('.js-book-information__detail__review li:nth-child('+(index+1)+') .js-book-information__detail__review__whole-review').toggle();
+    $('.js-review-list__item:nth-child('+(index+1)+') .js-review-list__summary').toggleClass('open');
+    $('.js-review-list__item:nth-child('+(index+1)+') .js-review-list__detail-review').toggle();
   });
 
   $('.js-book-information__detail__qna__open').click(function() {
     var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__qna li의 인덱스 번호
-    $('.js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna__summary').toggleClass('open');
-    $('.js-book-information__detail__qna li:nth-child('+(index+1)+') .js-book-information__detail__qna__whole-qna').toggle();
+    $('.js-qna-list__item:nth-child('+(index+1)+') .js-qna-list__summary').toggleClass('open');
+    $('.js-qna-list__item:nth-child('+(index+1)+') .js-qna-list__detail-qna').toggle();
   });
 });
