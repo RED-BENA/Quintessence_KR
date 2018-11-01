@@ -7,18 +7,18 @@ $(document).ready(function() {
   });
 
   $('.js-book-information-detail__add-qna').click(function() {
-    $('.js-book-information__detail__qna').toggle();
+    $('.js-book-information-detail__qna').toggle();
   })
 
   // 내용보기 버튼 click 이벤트
 
-  $('.js-review-list--right__open').click(function() {
+  $('.js-review-list__open').click(function() {
     var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__review li의 인덱스 번호
     $('.js-review-list__item:nth-child('+(index+1)+') .js-review-list__summary').toggleClass('open');
     $('.js-review-list__item:nth-child('+(index+1)+') .js-review-list__detail-review').toggle();
   });
 
-  $('.js-book-information__detail__qna__open').click(function() {
+  $('.js-qna-list__open').click(function() {
     var index = $(this).parent().parent().parent().index(); // .js-book-information__detail__qna li의 인덱스 번호
     $('.js-qna-list__item:nth-child('+(index+1)+') .js-qna-list__summary').toggleClass('open');
     $('.js-qna-list__item:nth-child('+(index+1)+') .js-qna-list__detail-qna').toggle();

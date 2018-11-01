@@ -276,24 +276,9 @@
   font-size: 13px;
 }
 
-
 /* 이용후기 (Detail2)  */
 
-
-.book-information-detail2 {
-  padding: 30px 0;
-}
-
-.book-information-detail2__review {
-  background-color: #f8f8f8;
-  border: 1px solid #e6e6e6;
-  margin-top: 15px;
-  padding: 20px;
-}
-
-
 /* 평가 점수 */
-
 
 .review-form__stars-score {
   padding: 0 20px;
@@ -314,11 +299,11 @@
 /* 상품문의 (detail3) */
 
 
-.book-information-detail__header--alert.detail3 {
+.book-information-detail3__alert {
   color: #ff0000;
 }
 
-.book-information-detail__qna__status {
+.qna-list__status {
   color: #fff;
   font-size: 12px;
   letter-spacing: -1px;
@@ -326,11 +311,11 @@
   padding: 5px 15px;
 }
 
-.book-information-detail__qna__status.ok {
+.qna-list__status--ok {
   background-color: #ff7200;
 }
 
-.book-information-detail__qna__status.yet {
+.qna-list__status--yet {
   background-color: #808080;
 }
 
@@ -357,16 +342,16 @@
   margin-bottom: 10px;
 }
 
-.book-information-detail3__whole-qna__answer__nickname {
+.qna-list__detail-qna__nickname {
   color: #ff7200;
   font-weight: bold;
 }
 
-.book-information-detail3__whole-qna__answer__date {
+.qna-list__detail-qna__date {
 
 }
 
-.book-information-detail3__whole-qna__answer__date:before {
+.qna-list__detail-qna__date:before {
   content: '';
   display: inline-block;
   width: 1px;

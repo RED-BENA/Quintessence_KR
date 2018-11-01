@@ -526,7 +526,7 @@
 
             <!-- 이용후기 Header -->
 
-            <div class="book-information-detail2__header clearfix">
+            <div class="book-information-detail__header clearfix">
               <p  class="book-information-detail2__alert">
                 게시판 성격과 다른내용의 글을 등록하실 경우 임의로 삭제처리 될 수 있습니다.
               </p>
@@ -538,7 +538,7 @@
 
             <!-- 후기 입력 폼 -->
 
-            <div class="book-information-detail2__review js-book-information-detail__review">
+            <div class="book-information-detail__review js-book-information-detail__review">
               <form class="review-form" method="post">
 
                 <!-- 평가점수 -->
@@ -664,7 +664,7 @@
 
                   <div class="review-list--right clearfix">
                     <span class="review-list__writer clearfix">
-                      <span class="review-list__pencil"></span>
+                      <span class="pencil-icon"></span>
                       <span class="review-list__nickname clearfix">닉네임</span>
                       <!-- <span class="review-list__seperate"></span> -->
                     </span>
@@ -673,7 +673,7 @@
                       2018.07.14
                     </span>
 
-                    <button type="button" class="review-list__open js-review-list--right__open">
+                    <button type="button" class="review-list__open js-review-list__open">
                       전체내용
                     </button>
                   </div>
@@ -692,6 +692,8 @@
                 </div>
               </li>
             </ul>
+
+            <!-- 페이지 이동 -->
 
             <div class="page-indicator">
               <div class="page-indicator__buttons">
@@ -748,19 +750,19 @@
             <div id="detail3" class="book-information__scroll">detail3</div>
 
             <ul class="book-information-detail__list clearfix">
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail1">상세정보</a>
               </li>
 
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail2">이용후기</a>
               </li>
 
-              <li class="active">
+              <li class="book-information-detail__item active">
                 <a href="#detail3">상품문의</a>
               </li>
 
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail4">배송/반품/교환/AS</a>
               </li>
             </ul>
@@ -768,12 +770,12 @@
 
           <!-- 상품문의 (detail3) 내용 -->
 
-          <div class="book-information-detail">
+          <div class="book-information-detail3">
 
             <!-- 상품문의 Header -->
 
             <div class="book-information-detail__header clearfix">
-              <p  class="book-information-detail__header--alert detail3">
+              <p class="book-information-detail3__alert">
                 주문 및 배송 관련 문의는 1:1문의/고객게시판을 이용해 주세요.
               </p>
 
@@ -782,69 +784,70 @@
               </button>
             </div>
 
-            <!-- 후기 입력 폼 -->
+            <!-- 문의 입력 폼 -->
 
-            <div class="book-information-detail__qna-container js-book-information-detail__qna-container">
-              <form class="book-information-detail__qna-form" method="post">
+            <div class="book-information-detail__qna js-book-information-detail__qna">
+              <form class="qna-form" method="post">
 
-                <!-- 평가 제목 -->
+                <!-- 문의 제목 -->
 
-                <div class="book-information-detail__qna-form__qna-title clearfix">
-                  <div class="book-information-detail__qna-form__title">평가 제목</div>
-                  <div class="book-information-detail__qna-form__content">
-                    <input type="text" class="qna-title" />
+                <div class="qna-form__row clearfix">
+                  <div class="qna-form__title">문의 제목</div>
+                  <div class="qna-form__content">
+                    <input type="text" class="qna-form__qna-title" />
                   </div>
                 </div>
 
-                <!-- 평가 내용 -->
+                <!-- 문의 내용 -->
 
-                <div class="book-information-detail__qna-form__qna-content clearfix">
-                  <div class="book-information-detail__qna-form__detail">
+                <div class="qna-form__row--large clearfix">
+                  <div class="qna-form__detail">
                     <textarea></textarea>
                   </div>
 
-                  <button type="submit" class="book-information-detail__qna-form__submit">
+                  <button type="submit" class="qna-form__submit">
                     등록
                   </button>
                 </div>
               </form>
             </div>
 
-            <!-- 리뷰 목록 -->
+            <!-- 문의 목록 -->
 
-            <ul class="book-information-detail__qna js-book-information-detail__qna">
-              <li>
-                <div class="book-information-detail__qna__summary js-book-information-detail__qna__summary clearfix">
+            <ul class="qna-list js-qna-list">
+              <li class="qna-list__item js-qna-list__item">
+                <div class="qna-list__summary js-qna-list__summary clearfix">
 
-                  <!-- 리뷰 왼쪽 -->
+                  <!-- 문의 왼쪽 -->
 
-                  <div class="book-information-detail__qna--left clearfix">
-                    <span class="book-information-detail__qna__status ok">답변완료</span>
+                  <div class="qna-list--left clearfix">
+                    <span class="qna-list__status qna-list__status--ok">답변완료</span>
 
-                    <span class="book-information-detail__qna__title">
+                    <span class="qna-list__title">
                       <a href="#">제목</a>
                     </span>
                   </div>
 
                   <!-- 리뷰 오른쪽 -->
 
-                  <div class="book-information-detail__qna--right clearfix">
-                    <span class="book-information-detail__qna__nickname-container">
-                      ✏️ <span class="book-information-detail__qna__nickname">닉네임</span>
+                  <div class="qna-list--right clearfix">
+                    <span class="qna-list__writer">
+                      <span class="pencil-icon"></span>
+                      <span class="qna-list__nickname">닉네임</span>
                     </span>
 
-                    <span class="book-information-detail__qna__date">
+                    <span class="qna-list__date">
                       2018.07.14
                     </span>
 
-                    <button type="button" class="book-information-detail__qna__open js-book-information-detail__qna__open">
-                      내용보기
+                    <button type="button" class="qna-list__open js-qna-list__open">
+                      전체내용
                     </button>
                   </div>
                 </div>
 
-                <div class="book-information-detail__whole-qna js-book-information-detail__qna__whole-qna">
-                  <p class="book-information-detail__whole-qna__title">
+                <div class="qna-list__detail-qna js-qna-list__detail-qna">
+                  <p class="qna-list__detail-title">
                     제목
                   </p>
 
@@ -852,16 +855,16 @@
 
                   <!-- 답변 -->
 
-                  <div class="book-information-detail3__whole-qna__answer">
+                  <div class="qna-list__detail-content">
 
                     <!-- 상단 -->
 
-                    <div class="book-information-detail3__whole-qna__answer--top">
-                      <span class="book-information-detail3__whole-qna__answer__nickname">
+                    <div class="qna-list__detail-qna--top">
+                      <span class="qna-list__detail-qna__nickname">
                         퀸테센스코리아
                       </span>
 
-                      <span class="book-information-detail3__whole-qna__answer__date">
+                      <span class="qna-list__detail-qna__date">
                         2018.07.15
                       </span>
                     </div>
@@ -880,7 +883,7 @@
                 </div>
               </li>
 
-              <li>
+              <li class="qna-list__item js-qna-list__item">
                 <div class="book-information-detail__qna__summary js-book-information-detail__qna__summary clearfix">
 
                   <!-- 리뷰 왼쪽 -->
@@ -948,55 +951,49 @@
               </li>
             </ul>
 
-            <div class="book__section__page-num">
-              <div class="book__section__buttons">
-                <ul class="book__section__move clearfix">
-                  <li>
-                    <a href="#">
-                      <span class="all-prev-button"></span>
-                    </a>
+            <!-- 페이지 이동 -->
+
+            <div class="page-indicator">
+              <div class="page-indicator__buttons">
+                <ul class="page-indicator__move clearfix">
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__all-prev-button" href="#"></a>
                   </li>
 
-                  <li>
-                    <a href="#">
-                      <span class="prev-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__prev-button" href="#"></a>
                   </li>
                 </ul>
 
-                <ul class="book__section__page-num__list clearfix">
-                  <li class="active">
+                <ul class="page-indicator__numbers clearfix">
+                  <li class="page-indicator__item page-indicator__item--numbers active">
                     <a href="#">1</a>
                   </li>
 
-                  <li>
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">2</a>
                   </li>
 
-                  <li>
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">3</a>
                   </li>
 
-                  <li>
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">4</a>
                   </li>
 
-                  <li>
+                  <li class="page-indicator__item page-indicator__item--numbers">
                     <a href="#">5</a>
                   </li>
                 </ul>
 
-                <ul class="book__section__move clearfix">
-                  <li>
-                    <a href="#">
-                      <span class="all-next-button"></span>
-                    </a>
+                <ul class="page-indicator__move clearfix">
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__all-next-button" href="#"></a>
                   </li>
 
-                  <li>
-                    <a href="#">
-                      <span class="next-button"></span>
-                    </a>
+                  <li class="page-indicator__item page-indicator__item--move">
+                    <a class="page-indicator__next-button" href="#"></a>
                   </li>
                 </ul>
               </div>

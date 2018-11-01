@@ -47,13 +47,19 @@
 
 /* 이용후기 상단 */
 
-.book-information-detail2__header {
+.book-information-detail__header {
   margin-bottom: 15px;
 }
 
 /* 이용후기 주의 문구 */
 
-.book-information-detail2__alert {
+.book-information-detail2,
+.book-information-detail3 {
+  padding: 30px 0;
+}
+
+.book-information-detail2__alert,
+.book-information-detail3__alert {
   font-size: 12px;
   letter-spacing: -1px;
   float: left;
@@ -97,7 +103,8 @@
 
 /* 이용후기/qna 폼의 큰 열(평가 내용) */
 
-.review-form__row--large {
+.review-form__row--large,
+.qna-form__row--large {
   height: 105px;
   background-color: transparent;
   border: 0;
@@ -149,7 +156,8 @@
   float: left;
 }
 
-.review-form__detail > textarea {
+.review-form__detail > textarea,
+.qna-form__detail > textarea {
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
@@ -158,7 +166,8 @@
 
 /* 등록 버튼 */
 
-.review-form__submit {
+.review-form__submit,
+.qna-form__submit {
   width: 15.3%;
   height: 100%;
   color: #fff;
@@ -212,28 +221,19 @@
   margin-top: -8.5px;
 }
 
-
-/* 별점 */
-
-
-/* .book-information__detail__review--left
-.book-information__detail__review__base-star {
-  display: inline-block;
-  vertical-align: bottom;
-  float: none;
-} */
-
-.review-list__title {
+.review-list__title,
+.qna-list__title {
   margin-left: 15px;
-
 }
 
-.review-list__title > a {
+.review-list__title > a,
+.qna-list__title > a {
   color: #280F24;
   vertical-align: middle;
 }
 
-.review-list__title > a:hover {
+.review-list__title > a:hover,
+.qna-list__title > a:hover {
   text-decoration: underline;
 }
 
@@ -257,7 +257,7 @@
   color: #666;
 }
 
-.review-list__pencil {
+.pencil-icon {
   display: block;
   width: 17px;
   height: 17px;
@@ -305,7 +305,8 @@
   display: block;
 }
 
-.review-list__detail-title {
+.review-list__detail-title,
+.qna-list__detail-title {
   font-weight: bold;
   margin-bottom: 15px;
 }
