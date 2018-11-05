@@ -531,14 +531,14 @@
                 게시판 성격과 다른내용의 글을 등록하실 경우 임의로 삭제처리 될 수 있습니다.
               </p>
 
-              <button type="button" class="book-information-detail__add-review js-book-information-detail__add-review">
+              <button type="button" class="book-information-detail2__add-review js-book-information-detail2__add-review">
                 이용후기 입력하기
               </button>
             </div>
 
             <!-- 후기 입력 폼 -->
 
-            <div class="book-information-detail__review js-book-information-detail__review">
+            <div class="book-information-detail2__review js-book-information-detail2__review">
               <form class="review-form" method="post">
 
                 <!-- 평가점수 -->
@@ -742,9 +742,7 @@
             </div>
           </div>
 
-
-          <!-- 상품문의 (detail3) -->
-
+          <!-- 상품문의 (detail3) 탭 -->
 
           <div class="book-information-detail">
             <div id="detail3" class="book-information__scroll">detail3</div>
@@ -779,14 +777,14 @@
                 주문 및 배송 관련 문의는 1:1문의/고객게시판을 이용해 주세요.
               </p>
 
-              <button type="button" class="book-information-detail__add-qna js-book-information-detail__add-qna">
+              <button type="button" class="book-information-detail3__add-qna js-book-information-detail3__add-qna">
                 상품문의 입력하기
               </button>
             </div>
 
             <!-- 문의 입력 폼 -->
 
-            <div class="book-information-detail__qna js-book-information-detail__qna">
+            <div class="book-information-detail3__qna js-book-information-detail3__qna">
               <form class="qna-form" method="post">
 
                 <!-- 문의 제목 -->
@@ -846,105 +844,108 @@
                   </div>
                 </div>
 
-                <div class="qna-list__detail-qna js-qna-list__detail-qna">
+                <div class="qna-list__whole-qna js-qna-list__whole-qna">
                   <p class="qna-list__detail-title">
                     제목
                   </p>
 
-                  전체내용
+                  <div class="qna-list__detail-qna">
 
-                  <!-- 답변 -->
+                    <!-- 답변 -->
 
-                  <div class="qna-list__detail-content">
+                    <div class="qna-list__detail-content">
 
-                    <!-- 상단 -->
+                      <!-- 상단 -->
 
-                    <div class="qna-list__detail-qna--top">
-                      <span class="qna-list__detail-qna__nickname">
-                        퀸테센스코리아
-                      </span>
+                      <div class="qna-list__answer--top">
+                        <span class="qna-list__answer-nickname">
+                          퀸테센스코리아
+                        </span>
 
-                      <span class="qna-list__detail-qna__date">
-                        2018.07.15
-                      </span>
-                    </div>
+                        <span class="qna-list__answer-date">
+                          2018.07.15
+                        </span>
+                      </div>
 
-                    <!-- 하단 -->
+                      <!-- 하단 -->
 
-                    <div class="book-information-detail3__whole-qna__answer--bottom">
-                      헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.<br />
-                      공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.<br />
-                      대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 직업선택의 자유를 가진다.<br />
-                      국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출
-                      또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.<br />
+                      <div class="qna-list__answer--bottom">
+                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.<br />
+                        공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.<br />
+                        대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 직업선택의 자유를 가진다.<br />
+                        국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출
+                        또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.<br />
 
+                      </div>
                     </div>
                   </div>
                 </div>
               </li>
 
               <li class="qna-list__item js-qna-list__item">
-                <div class="book-information-detail__qna__summary js-book-information-detail__qna__summary clearfix">
+                <div class="qna-list__summary js-qna-list__summary clearfix">
 
                   <!-- 리뷰 왼쪽 -->
 
-                  <div class="book-information-detail__qna--left clearfix">
-                    <span class="book-information-detail__qna__status yet">답변대기</span>
+                  <div class="qna-list--left clearfix">
+                    <span class="qna-list__status qna-list__status--yet">답변대기</span>
 
-                    <span class="book-information-detail__qna__title">
+                    <span class="qna-list__title">
                       <a href="#">제목</a>
                     </span>
                   </div>
 
                   <!-- 리뷰 오른쪽 -->
 
-                  <div class="book-information-detail__qna--right clearfix">
-                    <span class="book-information-detail__qna__nickname-container">
-                      ✏️ <span class="book-information-detail__qna__nickname">닉네임</span>
+                  <div class="qna-list--right clearfix">
+                    <span class="qna-list__writer">
+                      <span class="pencil-icon"></span>
+                      <span class="qna-list__nickname">닉네임</span>
                     </span>
 
-                    <span class="book-information-detail__qna__date">
+                    <span class="qna-list__date">
                       2018.07.14
                     </span>
 
-                    <button type="button" class="book-information-detail__qna__open js-book-information-detail__qna__open">
-                      내용보기
+                    <button type="button" class="qna-list__open js-qna-list__open">
+                      전체내용
                     </button>
                   </div>
                 </div>
 
-                <div class="book-information-detail__whole-qna js-book-information-detail__qna__whole-qna">
-                  <p class="book-information-detail__whole-qna__title">
+                <div class="qna-list__whole-qna js-qna-list__whole-qna">
+                  <p class="qna-list__detail-title">
                     제목
                   </p>
 
-                  전체내용
+                  <div class="qna-list__detail">
 
-                  <!-- 답변 -->
+                    <!-- 답변 -->
 
-                  <div class="book-information-detail3__whole-qna__answer yet">
+                    <div class="qna-list__answer qna-list__answer--yet">
 
-                    <!-- 상단 -->
+                      <!-- 상단 -->
 
-                    <div class="book-information-detail3__whole-qna__answer--top">
-                      <span class="book-information-detail3__whole-qna__answer__nickname">
-                        퀸테센스코리아
-                      </span>
+                      <div class="qna-list__answer--top">
+                        <span class="qna-list__answer-nickname">
+                          퀸테센스코리아
+                        </span>
 
-                      <span class="book-information-detail3__whole-qna__answer__date">
-                        2018.07.15
-                      </span>
-                    </div>
+                        <span class="qna-list__answer-date">
+                          2018.07.15
+                        </span>
+                      </div>
 
-                    <!-- 하단 -->
+                      <!-- 하단 -->
 
-                    <div class="book-information-detail3__whole-qna__answer--bottom">
-                      헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.<br />
-                      공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.<br />
-                      대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 직업선택의 자유를 가진다.<br />
-                      국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출
-                      또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.<br />
+                      <div class="qna-list__answer--bottom">
+                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.<br />
+                        공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.<br />
+                        대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 직업선택의 자유를 가진다.<br />
+                        국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출
+                        또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.<br />
 
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1000,49 +1001,50 @@
             </div>
           </div>
 
-          <!-- 배송/반품/교환/AS (detail4) -->
+          <!-- 배송/반품/교환/AS (detail4) 탭 -->
 
           <div class="book-information-detail">
-            <div id="detail4" class="book-information__scroll">detail4</div>
+            <div id="detail4" class="book-information__scroll">detail3</div>
 
             <ul class="book-information-detail__list clearfix">
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail1">상세정보</a>
               </li>
 
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail2">이용후기</a>
               </li>
 
-              <li>
+              <li class="book-information-detail__item">
                 <a href="#detail3">상품문의</a>
               </li>
 
-              <li class="active">
+              <li class="book-information-detail__item active">
                 <a href="#detail4">배송/반품/교환/AS</a>
               </li>
             </ul>
           </div>
 
-          <!-- (detail4) 내용 -->
+          <!-- 배송/반품/교환/AS (detail4) 내용 -->
 
-          <div class="book-information-detail">
-            <h3 class="book-information-detail__title">
+          <div class="book-information-detail4">
+            <h3 class="book-information-detail4__title">
               ◎ 배송안내
             </h3>
 
             <div class="book-information-detail4__description">
-              <dl class="book-information-detail__description__row clearfix">
+              <dl class="book-information-detail4__row clearfix">
                 <dt>
                   배송비
                 </dt>
 
                 <dd>
-                  기본적으로 <span class="text--required">무료배송</span>이나, 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.
+                  기본적으로 <span class="text--required">무료배송</span>이나,
+                  산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.
                 </dd>
               </dl>
 
-              <dl class="book-information-detail__description__row clearfix">
+              <dl class="book-information-detail4__row clearfix">
                 <dt>
                   배송기간
                 </dt>
@@ -1053,7 +1055,7 @@
                 </dd>
               </dl>
 
-              <dl class="book-information-detail__description__row clearfix">
+              <dl class="book-information-detail4__row clearfix">
                 <dt>
                   배송정보
                 </dt>
@@ -1066,28 +1068,32 @@
 
             <!-- 반품/교환/AS안내 -->
 
-            <h3 class="book-information-detail__title">
+            <h3 class="book-information-detail4__title">
               ◎ 반품/교환/AS안내
             </h3>
 
             <div class="book-information-detail4__description">
-              <dl class="book-information-detail__description__row clearfix">
+              <dl class="book-information-detail4__row clearfix">
                 <dt>
                   반품/교환<br />
                   신청기준
                 </dt>
 
                 <dd>
-                  <h4>◎ 반품/교환 <span class="text--possible">가능</span></h4>
+                  <h4 class="book-information-detail4__subtitle">
+                    ◎ 반품/교환 <span class="text--possible">가능</span>
+                  </h4>
 
                   - 상품을 공급 받으신 날로부터 7일이내 단, 가전제품의 경우 포장을
                   개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br />
                   - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과 다르거나
                   다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내<br />
 
-                  <div class="book-information-detail__description__seperate"></div>
+                  <div class="book-information-detail4__seperate"></div>
 
-                  <h4>◎ 반품/교환 <span class="text--impossible">불가능</span></h4>
+                  <h4 class="book-information-detail4__subtitle">
+                    ◎ 반품/교환 <span class="text--impossible">불가능</span>
+                  </h4>
 
                   - 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여
                     포장 등을 훼손한 경우는 제외<br />
@@ -1103,22 +1109,26 @@
                 </dd>
               </dl>
 
-              <dl class="book-information-detail__description__row clearfix">
+              <dl class="book-information-detail4__row clearfix">
                 <dt>
                   A/S 안내
                 </dt>
 
                 <dd>
-                  <h4>◎ A/S 신청기준</h4>
+                  <h4 class="book-information-detail4__subtitle">
+                    ◎ A/S 신청기준
+                  </h4>
 
                   - 도서를 받으신 후 3개월 이내에 파본 발견시 무료로 교환해 드립니다.
                   또는 일부 페이지의 복사 및 스캔 요청도 가능합니다.<br />
                   - <span class="text--required">상품 수령시 바로 주문내역과 비교하여 누락되거나 오배송된 내역이 있는지 확인해 주세요.</span><br />
                   - 상품 수령 후 1주일이상 경과시 누락된 상품에 대해서는 책임지지 않습니다.
 
-                  <div class="book-information-detail__description__seperate"></div>
+                  <div class="book-information-detail4__seperate"></div>
 
-                  <h4>◎ 신청방법</h4>
+                  <h4 class="book-information-detail4__subtitle">
+                    ◎ 신청방법
+                  </h4>
 
                   - <span class="text--required">??택배를 이용하셔서 착불</span>로 발송해 주시면 도착시 새상품으로 교환해 드립니다.
                 </dd>
