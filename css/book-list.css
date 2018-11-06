@@ -14,7 +14,7 @@
   border-left: 1px solid #d7d7d7;
 }
 
-.move-category__list__item {
+.move-category-list__item {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -24,19 +24,19 @@
   position: relative;
 }
 
-.move-category__list.journal .move-category__list__item {
-  width: 33.333%;
+.move-category__list--journal .move-category-list__item {
+  width: 25%;
 }
 
-.move-category__list__item.active {
+.move-category-list__item.active {
   background-color: #1B62AB;
 }
 
-.move-category__list__item.active a {
-  color: #fff !important;
+.move-category-list__item.active a {
+  color: #fff;
 }
 
-.move-category__list__item a {
+.move-category-list__item a {
   display: block;
   width: 100%;
   height: 100%;
@@ -45,33 +45,32 @@
   line-height: 35px;
 }
 
-.move-category__list li:hover a {
+.move-category-list__item:hover a {
   color: #280F24;
 }
 
-.book__section__title {
+.book-section__title {
   color: #1B62AB;
   font-size: 22px;
   border-bottom: 2px solid #1B62AB;
-  /* margin-top: 45px; */
   margin-bottom: 15px;
   padding-bottom: 8px;
 }
 
-.book__section__top-menu {
+.book-section__top-menu {
   margin-bottom: 20px;
 }
 
-.book__section__order-standard {
+.order-standard__list {
   float: left;
 }
 
-.book__section__order-standard li {
+.order-standard-list__item {
   margin-right: 15px;
   float: left;
 }
 
-.book__section__order-standard li a {
+.order-standard-list__item > a {
   display: block;
   width: 100%;
   height: 100%;
@@ -79,8 +78,8 @@
   font-size: 12px;
 }
 
-.book__section__order-standard li:hover a,
-.book__section__order-standard li.active a {
+.order-standard-list__item:hover > a,
+.order-standard-list__item.active > a {
   color: #280F24;
 }
 
@@ -92,7 +91,7 @@
   background-position: 0 0;
 }
 
-.book__section__order-standard li:hover .down-direction,
-.book__section__order-standard li.active .down-direction {
+.book-section__order-standard li:hover .down-direction,
+.book-section__order-standard li.active .down-direction {
   background-position: 10px 0;
 }

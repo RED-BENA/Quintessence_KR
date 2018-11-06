@@ -125,20 +125,20 @@ input, textarea {
 
 /* login & join header */
 
-.section__header {
+.member-service__header {
   height: 120px;
   background-image: url(../images/dentist-1025338_1920.jpg);
   background-size: cover;
   background-position: center -225px;
 }
 
-.section__header__title {
+.member-service__title {
   width: 200px;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.5);
 }
 
-.section__header__title h2 {
+.member-service__title h2 {
   color: #fff;
   font-size: 23px;
   line-height: 120px;
@@ -149,7 +149,7 @@ input, textarea {
 /* 페이지 번호 이동 */
 
 
-.book__section__book-count {
+.book-section__book-count {
   color: #808080;
   font-size: 12px;
   border: 1px solid #c7c7c7;

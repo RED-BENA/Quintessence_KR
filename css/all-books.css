@@ -1,11 +1,11 @@
-.all-books__title {
+.all-books__theme {
   color: #333;
   font-size: 18px;
   font-weight: 400;
   margin: 30px 0 15px;
 }
 
-.all-books__title--blue {
+.all-books__theme--blue {
   color: #1B62AB;
 }
 

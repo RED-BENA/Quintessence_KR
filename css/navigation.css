@@ -78,7 +78,7 @@
   transform: translateY(-50%);
 }
 
-.hamburger-menu__arrow {
+.hamburger-menu.active .hamburger-menu__arrow {
   background-position: 13px 0;
 }
 

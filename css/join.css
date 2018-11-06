@@ -1,15 +1,13 @@
-.section--left {
-  width: 200px;
-  height: 100%;
-  float: left;
+.member-service__content {
+  position: relative;
 }
 
-.section__content__container {
+.member-service__container {
   border-left: 1px solid #d6d6d6;
   position: relative;
 }
 
-.section__content__container:before {
+.member-service__container:before {
   content: '';
   display: block;
   width: 1px;
@@ -20,15 +18,21 @@
   left: 200px;
 }
 
+.member-service--left {
+  width: 200px;
+  height: 100%;
+  float: left;
+}
+
 /* 좌측 이동메뉴 */
 
-.section--left__menu li {
+.member-service-menu__item {
   border-bottom: 1px solid #efefef;
   padding: 5px 20px;
   position: relative;
 }
 
-.section--left__menu li:before {
+.member-service-menu__item:before {
   content: '';
   display: block;
   width: 3px;
@@ -41,16 +45,16 @@
   transform: translateY(-50%);
 }
 
-.section--left__menu li.active:before {
+.member-service-menu__item.active:before {
   background: #1B62AB;
 }
 
-.section--left__menu li a {
+.member-service-menu__item a {
   color: #838383;
   font-size: 12px;
 }
 
-.section--left__menu li.active a {
+.member-service-menu__item.active a {
   color: #1B62AB;
 }
 
@@ -58,26 +62,26 @@
 /* 우측 회원가입 폼 */
 
 
-.section--right {
+.member-service--right {
   width: 739px;
   padding: 20px 30px;
   float: left;
 }
 
-.section--right__header {
+.member-service--right__header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 15px;
   position: relative;
 }
 
-.section--right__title {
+.member-service--right__title {
   display: inline-block;
   color: #280F24;
   font-size: 21px;
 }
 
-.section--right__location {
+.member-service--right__location {
   display: inline-block;
   color: #9c9c9c;
   font-size: 12px;
@@ -87,15 +91,11 @@
   bottom: 15px;
 }
 
-.join__form-box {
-
-}
-
 
 /* label 태그 */
 
 
-.join__form-box__row__input label {
+.form-box__input label {
   display: block;
   color: #888;
   height: 35px;
@@ -113,7 +113,7 @@
 /* 체크박스 / 라디오 */
 
 
-.join__form-box__row__right .checkbox {
+.form-box__right .checkbox {
   width: 13px;
   height: 13px;
   margin-top: 12px;
@@ -124,7 +124,7 @@
 /* 입력란 하단 설명 */
 
 
-.join__form-box__row__description {
+.form-box__description {
   color: #999;
   font-size: 12px;
   letter-spacing: -1px;
@@ -136,7 +136,7 @@
 /* 회원가입 폼 버튼 (아이디 중복체크, 닉네임 중복체크, 주소찾기) */
 
 
-.join__form-box__row__right .check-button {
+.form-box__right .check-button {
   color: #280F24;
   height: 35px;
   font-size 13px;
@@ -160,11 +160,11 @@
 
 /* 도로명 주소 */
 
-.adress {
+/* .address {
   width: 250px !important;
   margin-right: 10px;
   float: left;
-}
+} */
 
 
 /* (구) 우편번호 */
@@ -194,16 +194,16 @@
 
 /* 회원가입완료 / 이전페이지 */
 
-.join__form-box__buttons {
+.form-box__buttons {
   text-align: center;
   margin-top: 30px;
 }
 
-.join__form-box__buttons__list {
+.form-box__buttons-list {
   display: inline-block;
 }
 
-.join__form-box__buttons__item {
+.form-box__buttons-item {
   color: #fff;
   font-size: 17px;
   background-color: #505258;
