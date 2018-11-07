@@ -95,7 +95,7 @@
 /* label 태그 */
 
 
-.form-box__input label {
+.join-form-box__input label {
   display: block;
   color: #888;
   height: 35px;
@@ -113,7 +113,7 @@
 /* 체크박스 / 라디오 */
 
 
-.form-box__right .checkbox {
+.join-form-box__right .checkbox {
   width: 13px;
   height: 13px;
   margin-top: 12px;
@@ -124,19 +124,20 @@
 /* 입력란 하단 설명 */
 
 
-.form-box__description {
+.join-form-box__caution {
   color: #999;
   font-size: 12px;
   letter-spacing: -1px;
   line-height: 1.5;
   margin-top: 5px;
+  float: right;
 }
 
 
 /* 회원가입 폼 버튼 (아이디 중복체크, 닉네임 중복체크, 주소찾기) */
 
 
-.form-box__right .check-button {
+.join-form-box__right .check-button {
   color: #280F24;
   height: 35px;
   font-size 13px;
@@ -194,16 +195,16 @@
 
 /* 회원가입완료 / 이전페이지 */
 
-.form-box__buttons {
+.join-form-box__buttons {
   text-align: center;
   margin-top: 30px;
 }
 
-.form-box__buttons-list {
+.join-form-box__buttons-list {
   display: inline-block;
 }
 
-.form-box__buttons-item {
+.join-form-box__buttons-item {
   color: #fff;
   font-size: 17px;
   background-color: #505258;

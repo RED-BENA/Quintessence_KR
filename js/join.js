@@ -76,14 +76,14 @@ $(document).ready(function() {
     if (isOverlap) {
       $('.js-id').removeClass('input--success');
       $('.js-id').addClass('input--alert');
-      $('.js-row__description__id .text--alert').show();
-      $('.js-row__description__id .text--success').hide();
+      $('.js-form-box__description--id .text--alert').show();
+      $('.js-form-box__description--id .text--success').hide();
 
     } else {
       $('.js-id').addClass('input--success');
       $('.js-id').removeClass('input--alert');
-      $('.js-row__description__id .text--alert').hide();
-      $('.js-row__description__id .text--success').show();
+      $('.js-form-box__description--id .text--alert').hide();
+      $('.js-form-box__description--id .text--success').show();
     }
   });
 

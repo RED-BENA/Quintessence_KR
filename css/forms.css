@@ -1,13 +1,13 @@
-.form-box {
+.join-form-box {
   border-top: 2px solid #6F6F70;
 }
 
-.form-box__header {
+.join-form-box__header {
   padding-bottom: 10px;
   position: relative;
 }
 
-.form-box__title {
+.join-form-box__title {
   display: inline-block;
   color: #280F24;
   font-size: 19px;
@@ -15,14 +15,12 @@
   letter-spacing: -1px;
 }
 
-.form-box__description {
-  display: inline-block;
-  color: #9c9c9c;
+.join-form-box__description {
+  color: #999;
   font-size: 12px;
   letter-spacing: -1px;
-  position: absolute;
-  right: 0;
-  bottom: 10px;
+  line-height: 1.5;
+  margin-top: 5px;
 }
 
 .text--alert, .text--success {
@@ -59,7 +57,7 @@
 
 /* small row (50%) */
 
-.form-box__row {
+.join-form-box__row {
   background-color: #FBFBFB;
   border-bottom: 1px solid #dedede;
   float: left;
@@ -67,14 +65,14 @@
 
 /* large row (100%) */
 
-.form-box__row--large {
+.join-form-box__row--large {
   clear: both;
 }
 
 
 /* 입력 항목명 (left) */
 
-.form-box__left {
+.join-form-box__left {
   width: 135px;
   color: #280F24;
   font-size: 13px;
@@ -85,7 +83,7 @@
 
 /* 회원가입 폼 1/2열 (default) */
 
-.form-box__right {
+.join-form-box__right {
   width: 204.5px;
   height: 100%;
   background-color: #fff;
@@ -98,7 +96,7 @@
 /* 회원가입 폼 1열 */
 
 
-.form-box__right--large {
+.join-form-box__right--large {
   width: 544px;
 }
 
@@ -106,7 +104,7 @@
 /* 입력란 (기본 크기) */
 
 
-.form-box__right input {
+.join-form-box__right input {
   width: 180px;
   height: 35px;
   font-size: 12px;
@@ -120,6 +118,6 @@
 /* 입력란 (large) */
 
 
-.form-box__right--large input {
+.join-form-box__right--large input {
   width: 300px;
 }
