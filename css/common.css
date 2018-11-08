@@ -41,8 +41,22 @@ input, textarea {
   clear: both;
 }
 
+/* 글자색 */
+
 .not-required {
   color: #A9A9A9;
+}
+
+.text--alert {
+  color: #d9534f;
+}
+
+.text--success {
+  color: #28a745;
+}
+
+.text--required {
+  color: #ff7200;
 }
 
 /* Section */

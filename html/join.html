@@ -330,8 +330,8 @@
 
                     <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="id js-id" pattern="[a-zA-Z0-9]{8,20}$" required />
-                        <button type="button" class="check-button check-id">아이디 중복체크</button>
+                        <input type="text" class="text-field--id js-text-field--id" pattern="[a-zA-Z0-9]{8,20}$" required />
+                        <button type="button" class="check-button check-id js-check-id">아이디 중복체크</button>
                       </div>
 
                       <p class="join-form-box__description js-join-form-box__description--id">
@@ -359,7 +359,7 @@
 
                     <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="nickname js-nickname" pattern="[a-zA-Z0-9]{3,10}$" required />
+                        <input type="text" class="text-field--nickname js-text-field--nickname" pattern="[a-zA-Z0-9]{3,10}$" required />
                         <button type="button" class="check-button check-nickname">닉네임 중복체크</button>
                       </div>
 
@@ -387,7 +387,7 @@
 
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
-                        <input type="password" class="password js-password" pattern="[a-zA-Z0-9]{8,20}$" required />
+                        <input type="password" class="text-field--password js-text-field--password" pattern="[a-zA-Z0-9]{8,20}$" required />
                       </div>
 
                       <p class="join-form-box__description">
@@ -406,7 +406,7 @@
 
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
-                        <input type="password" class="password-cfm js-password-cfm" pattern="[a-zA-Z0-9]{8,20}$" required />
+                        <input type="password" class="text-field--password-cfm js-text-field--password-cfm" pattern="[a-zA-Z0-9]{8,20}$" required />
                       </div>
 
                       <p class="join-form-box__description js-join-form-box__description--password-cfm">
@@ -433,7 +433,7 @@
 
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="name js-name" name="name" required />
+                        <input type="text" class="text-field--name js-text-field--name" name="name" required />
                       </div>
 
                       <p class="join-form-box__description">
@@ -450,7 +450,7 @@
 
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
-                        <input type="date" class="birthday js-birthday" name="birthday" required />
+                        <input type="date" class="date--birthday js-date--birthday" name="birthday" required />
                       </div>
 
                       <p class="join-form-box__description">
@@ -492,7 +492,7 @@
 
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
-                        <input type="tel" class="phone-number js-phone-number" name="phone-number" pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}$" placeholder="하이픈(-) 없이 입력하세요." />
+                        <input type="tel" class="tel--phone-number js-tel--phone-number" name="phone-number" pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}$" placeholder="하이픈(-) 없이 입력하세요." />
                       </div>
 
                       <p class="join-form-box__description">
@@ -502,14 +502,14 @@
                   </div>
 
                   <!-- 휴대폰 번호 -->
-                  <div class="join-form-box__row large clearfix">
+                  <div class="join-form-box__row join-form-box__row--large clearfix">
                     <div class="join-form-box__left">
                       <span class="text--required">* </span>휴대폰 번호
                     </div>
 
-                    <div class="join-form-box__right large">
+                    <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="tel" class="cellphone-number js-cellphone-number" name="cellphone-number" placeholder="하이픈(-) 없이 입력하세요." pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}$" required />
+                        <input type="tel" class="tel--cellphone-number js-tel--cellphone-number" name="cellphone-number" placeholder="하이픈(-) 없이 입력하세요." pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}$" required />
                       </div>
 
                       <p class="join-form-box__description">
@@ -521,14 +521,14 @@
                   </div>
 
                   <!-- 이메일 주소 -->
-                  <div class="join-form-box__row large clearfix">
+                  <div class="join-form-box__row join-form-box__row--large clearfix">
                     <div class="join-form-box__left">
                       <span class="text--required">* </span>이메일 주소
                     </div>
 
-                    <div class="join-form-box__right large">
+                    <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="email" class="email js-email" name="email" required />
+                        <input type="email" class="text-field--email js-text-field--email" name="email" required />
                       </div>
 
                       <p class="join-form-box__description">
@@ -546,12 +546,12 @@
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
                         <label>
-                          <input type="radio" name="reception-sms" class="checkbox reception-sms js-reception-sms" value="yes" checked />
+                          <input type="radio" name="radio--reception-sms" class="checkbox radio--reception-sms js-radio--reception-sms" value="yes" checked />
                           수신
                         </label>
 
                         <label>
-                          <input type="radio" name="reception-sms" class="checkbox reception-sms js-reception-sms" value="no" />
+                          <input type="radio" name="radio--reception-sms" class="checkbox radio--reception-sms js-radio--reception-sms" value="no" />
                           수신거부
                         </label>
                       </div>
@@ -573,12 +573,12 @@
                     <div class="join-form-box__right">
                       <div class="join-form-box__input clearfix">
                         <label>
-                          <input type="radio" name="reception-email" class="checkbox reception-email js-reception-email" value="yes" checked />
+                          <input type="radio" name="radio--reception-email" class="checkbox radio--reception-email js-radio--reception-email" value="yes" checked />
                           수신
                         </label>
 
                         <label>
-                          <input type="radio" name="reception-email" class="checkbox reception-email js-reception-email" value="no" />
+                          <input type="radio" name="radio--reception-email" class="checkbox radio--reception-email js-radio--reception-email" value="no" />
                           수신거부
                         </label>
                       </div>
@@ -600,7 +600,7 @@
 
                     <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="zip-code js-zip-code" name="zip-code" placeholder="우편번호" disabled />
+                        <input type="text" class="text-field--zip-code js-text-field--zip-code" name="zip-code" placeholder="우편번호" disabled />
                         <button type="button" class="check-button find-address">주소찾기</button>
                       </div>
 
@@ -619,8 +619,8 @@
 
                     <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="address js-address" name="address1" placeholder="도로명 주소" disabled />
-                        <input type="text" class="address js-address" name="address2" placeholder="나머지 주소" />
+                        <input type="text" class="text-field--address js-text-field--address" name="address1" placeholder="도로명 주소" disabled />
+                        <input type="text" class="text-field--address js-text-field--address" name="address2" placeholder="나머지 주소" />
                       </div>
                     </div>
                   </div>
@@ -633,13 +633,13 @@
 
                     <div class="join-form-box__right join-form-box__right--large">
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="old-zip-code js-old-zip-code" name="old-zip-code1" disabled />
+                        <input type="text" class="text-field--old-zip-code js-text-field--old-zip-code" name="old-zip-code1" disabled />
                         <span class="dash"></span>
-                        <input type="text" class="old-zip-code js-old-zip-code" name="old-zip-code2" disabled />
+                        <input type="text" class="text-field--old-zip-code js-text-field--old-zip-code" name="old-zip-code2" disabled />
                       </div>
 
                       <div class="join-form-box__input clearfix">
-                        <input type="text" class="old-address js-old-address" name="old-address" disabled />
+                        <input type="text" class="text-field--old-address js-text-field--old-address" name="old-address" disabled />
                       </div>
 
                       <p class="join-form-box__description">

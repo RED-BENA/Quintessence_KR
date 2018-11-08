@@ -1,3 +1,76 @@
-.form-box__agree--all {
-  
+.advance-form-box__title {
+  color: #280F24;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.advance-form-box__agree {
+  color: #280F24;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.advance-form-box__agree--all {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.advance-form-box__agree--option {
+  padding: 15px;
+}
+
+.agree--option__item {
+  margin-bottom: 10px;
+}
+
+.agree--option__terms-title {
+  margin-right: 10px;
+  float: left;
+}
+
+.agree--option__terms-detail {
+  display: block;
+  color: #1B62AB;
+  background-color: #fff;
+  border: 1px solid #1B62AB;
+  border-radius: 10px;
+  padding: 2px 10px;
+  letter-spacing: -1px;
+  float: right;
+  cursor: pointer;
+}
+
+.certification__item {
+  width: 49.5%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  float: left;
+}
+
+.certification__item:first-child {
+  margin-right: 1%;
+}
+
+.certification__item > a {
+  display: inline-block;
+  color: #280F24;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.certification__icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+.certification__icon--phone {
+  background-image: url(../images/smartphone.png);
+}
+
+.certification__icon--email {
+  background-image: url(../images/message.png);
 }

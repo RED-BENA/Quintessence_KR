@@ -1,99 +1,94 @@
-.member-service__content {
+.join-form-box {
+  border-top: 2px solid #6F6F70;
+}
+
+.join-form-box__header {
+  padding-bottom: 10px;
   position: relative;
 }
 
-.member-service__container {
-  border-left: 1px solid #d6d6d6;
-  position: relative;
-}
-
-.member-service__container:before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: #d6d6d6;
-  position: absolute;
-  top: 0;
-  left: 200px;
-}
-
-.member-service--left {
-  width: 200px;
-  height: 100%;
-  float: left;
-}
-
-/* 좌측 이동메뉴 */
-
-.member-service-menu__item {
-  border-bottom: 1px solid #efefef;
-  padding: 5px 20px;
-  position: relative;
-}
-
-.member-service-menu__item:before {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 3px;
-  background: #838383;
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-.member-service-menu__item.active:before {
-  background: #1B62AB;
-}
-
-.member-service-menu__item a {
-  color: #838383;
-  font-size: 12px;
-}
-
-.member-service-menu__item.active a {
-  color: #1B62AB;
-}
-
-
-/* 우측 회원가입 폼 */
-
-
-.member-service--right {
-  width: 739px;
-  padding: 20px 30px;
-  float: left;
-}
-
-.member-service--right__header {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  position: relative;
-}
-
-.member-service--right__title {
+.join-form-box__title {
   display: inline-block;
   color: #280F24;
-  font-size: 21px;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
-.member-service--right__location {
-  display: inline-block;
-  color: #9c9c9c;
+.join-form-box__description {
+  color: #999;
   font-size: 12px;
   letter-spacing: -1px;
-  position: absolute;
-  right: 0;
-  bottom: 15px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* small row (50%) */
+
+.join-form-box__row {
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #dedede;
+  float: left;
+}
+
+/* large row (100%) */
+
+.join-form-box__row--large {
+  clear: both;
 }
 
 
-/* label 태그 */
+/* 입력 항목명 (left) */
 
+.join-form-box__left {
+  width: 135px;
+  color: #280F24;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px;
+  float: left;
+}
+
+/* 회원가입 폼 1/2열 (default) */
+
+.join-form-box__right {
+  width: 204.5px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #dedede;
+  padding: 10px;
+  float: left;
+}
+
+
+/* 회원가입 폼 1열 */
+
+
+.join-form-box__right--large {
+  width: 544px;
+}
+
+
+/* 입력란 (기본 크기) */
+
+
+.join-form-box__right input {
+  width: 180px;
+  height: 35px;
+  font-size: 12px;
+  background: #f1f1f1;
+  border: 1px solid #c1c1c1;
+  padding: 5px;
+  float: left;
+}
+
+
+/* 입력란 (large) */
+
+
+.join-form-box__right--large input {
+  width: 300px;
+}
 
 .join-form-box__input label {
   display: block;
@@ -154,24 +149,23 @@
 
 /* 우편번호 입력란 */
 
-.zip-code {
+.text-field--zip-code {
   width: 135px !important;
 }
 
 
 /* 도로명 주소 */
 
-/* .address {
+.text-field--address {
   width: 250px !important;
   margin-right: 10px;
   float: left;
-} */
+}
 
 
 /* (구) 우편번호 */
 
-
-.old-zip-code {
+.text-field--old-zip-code {
   width: 85px !important;
 }
 
@@ -187,7 +181,7 @@
 /* 지번주소 */
 
 
-.old-address {
+.text-field--old-address {
   width: 100% !important;
   margin-top: 10px;
 }

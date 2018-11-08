@@ -54,17 +54,11 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  // 아이디 정규표현식 체크
-
-  $('.js-id').keyup(function() {
-    id = $('.js-id').val();
-  });
-
   // 아이디 중복 체크
 
-  $('.check-id').click(function() {
+  $('.js-check-id').click(function() {
     var isOverlap = false; // 아이디 중복여부
-    id = $('.js-id').val(); // 아이디 입력값
+    id = $('.js-text-field--id').val(); // 아이디 입력값
 
     for (index in mock_data) {
       if (id == mock_data[index].id) {
@@ -74,14 +68,14 @@ $(document).ready(function() {
     }
 
     if (isOverlap) {
-      $('.js-id').removeClass('input--success');
-      $('.js-id').addClass('input--alert');
+      $('.js-text-field--id').removeClass('input--success');
+      $('.js-text-field--id').addClass('input--alert');
       $('.js-form-box__description--id .text--alert').show();
       $('.js-form-box__description--id .text--success').hide();
 
     } else {
-      $('.js-id').addClass('input--success');
-      $('.js-id').removeClass('input--alert');
+      $('.js-text-field--id').addClass('input--success');
+      $('.js-text-field--id').removeClass('input--alert');
       $('.js-form-box__description--id .text--alert').hide();
       $('.js-form-box__description--id .text--success').show();
     }
@@ -89,9 +83,9 @@ $(document).ready(function() {
 
   // 닉네임 중복체크
 
-  $('.check-nickname').click(function() {
+  $('.js-check-nickname').click(function() {
     var isOverlap = false; // 아이디 중복여부
-    nickname = $('.js-nickname').val(); // 아이디 입력값
+    nickname = $('.js-text-field--nickname').val(); // 아이디 입력값
 
     for (index in mock_data) {
       if (nickname == mock_data[index].nickname) {
@@ -101,14 +95,14 @@ $(document).ready(function() {
     }
 
     if (isOverlap) {
-      $('.js-nickname').removeClass('input--success');
-      $('.js-nickname').addClass('input--alert');
+      $('.js-text-field--nickname').removeClass('input--success');
+      $('.js-text-field--nickname').addClass('input--alert');
       $('.js-row__description__nickname .text--alert').show();
       $('.js-row__description__nickname .text--success').hide();
 
     } else {
-      $('.js-nickname').addClass('input--success');
-      $('.js-nickname').removeClass('input--alert');
+      $('.js-text-field--nickname').addClass('input--success');
+      $('.js-text-field--nickname').removeClass('input--alert');
       $('.js-row__description__nickname .text--alert').hide();
       $('.js-row__description__nickname .text--success').show();
     }
@@ -116,19 +110,19 @@ $(document).ready(function() {
 
   // 비밀번호와 비밀번호 확인 체크
 
-  $('.js-password, .js-password-cfm').keyup(function() {
+  $('.js-text-field--password, .js-text-field--password-cfm').keyup(function() {
     // 비밀번호와 비밀번호 확인 입력값
-    password = $('.js-password').val();
-    password_cfm = $('.js-password-cfm').val();
+    password = $('.js-text-field--password').val();
+    password_cfm = $('.js-text-field--password-cfm').val();
 
     $('.js-row__description__password-cfm .text--plain').hide(); // 기본문구 hide
 
     if (password != password_cfm) { // 아이디와 비밀번호가 일치하지 않을 때
-      $(".js-password-cfm").addClass('input--alert'); // 비밀번호 확인 항목을 alert 상태로 변경
+      $(".js-text-field--password-cfm").addClass('input--alert'); // 비밀번호 확인 항목을 alert 상태로 변경
       $('.js-row__description__password-cfm .text--alert').show(); // 경고문 show
       $('.js-row__description__password-cfm .text--success').hide(); // 성공문 hide
     } else { // 아이디와 비밀번호가 일치할 때
-      $(".js-password-cfm").removeClass('input--alert'); // 비밀번호 확인 항목 alert 상태 해제
+      $(".js-text-field--password-cfm").removeClass('input--alert'); // 비밀번호 확인 항목 alert 상태 해제
       $('.js-row__description__password-cfm .text--alert').hide(); // 경고문 hide
       $('.js-row__description__password-cfm .text--success').show(); // 성공문 show
     }
