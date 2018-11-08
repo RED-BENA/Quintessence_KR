@@ -1,3 +1,28 @@
+.terms-form__title {
+  color: #1B62AB;
+  font-size: 13px;
+  border-bottom: 2px solid #1B62AB;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.terms-form__push-pin {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/push-pin.png);
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.terms-form__content {
+  color: #280F24;
+  font-size: 13px;
+  letter-spacing: -1px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
 .term__form-box__background {
   background-color: #fafafa;
   padding: 25px;
