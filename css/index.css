@@ -150,6 +150,7 @@
 .new-book__thumbnail {
   width: 100px;
   height: 135px;
+  border: 0;
 }
 
 .new-book__name {
@@ -173,18 +174,19 @@
 
 .new-book__arrow a img {
   max-width: 100%;
+  border: 0;
 }
 
 .new-book__prev {
+  margin-top: -12.5px;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
 }
 
 .new-book__next {
+  margin-top: -12.5px;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
 }
 
 .new-book, .best-seller {
@@ -410,9 +412,9 @@
 .sns__list {
   width: 100%;
   position: absolute;
+  margin-top: -51.5px;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
 }
 
 .sns__item {
@@ -430,6 +432,7 @@
 .sns__item img {
   width: 80px;
   height: 80px;
+  border: 0;
 }
 
 .sns__item--kakaoplus span {

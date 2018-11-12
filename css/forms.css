@@ -39,10 +39,10 @@
   height: 3px;
   background: #838383;
   border-radius: 100%;
+  margin-top: -1.5px;
   position: absolute;
   top: 50%;
   left: 10px;
-  transform: translateY(-50%);
 }
 
 .member-service-menu__item.active:before {

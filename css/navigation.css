@@ -58,11 +58,11 @@
   font-size: 14px;
   font-weight: bold;
   letter-spacing: -1px;
+  margin-top: -25px;
   margin-left: 5px;
   position: absolute;
   top: 50%;
   left: 45px;
-  transform: translateY(-50%);
   white-space: nowrap;
 }
 
@@ -72,10 +72,10 @@
   width: 13px;
   height: 7px;
   background: url(../images/nav_sitemap_ic.png);
+  margin-top: -3.5px;
   position: absolute;
   top: 50%;
   right: 20px;
-  transform: translateY(-50%);
 }
 
 .hamburger-menu.active .hamburger-menu__arrow {

@@ -7,7 +7,7 @@
 }
 
 .top__right-menu {
-  transform: translateY(-50%);
+  margin-top: -10px;
   position: absolute;
   top: 50%;
   right: 0;

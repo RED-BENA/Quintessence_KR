@@ -26,6 +26,7 @@
 .companies__item a img {
   width: 100px;
   vertical-align: middle;
+  border: 0;
 }
 
 
